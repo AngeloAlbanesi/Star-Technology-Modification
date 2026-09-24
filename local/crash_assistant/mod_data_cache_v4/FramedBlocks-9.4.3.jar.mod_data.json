@@ -1,0 +1,1 @@
+{"jarName":"FramedBlocks-9.4.3.jar","modId":"framedblocks","name":"FramedBlocks","version":"9.4.3","mixinConfigs":["framedblocks.mixin.json"],"jarJarMods":[{"jarName":"caffeine-3.2.1.jar","mixinConfigs":[],"jarJarMods":[],"pathFromJarJar":"/META-INF/jarjar/"}],"curseForgeHash":380347176,"modrinthHash":"740c0feaab75455f32df7e137389f77c83fb490c"}

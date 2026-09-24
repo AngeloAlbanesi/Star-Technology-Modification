@@ -1,0 +1,427 @@
+Classfile /Users/angeloalbanesi/Library/Application Support/PrismLauncher/instances/Star Technology/minecraft/scratch/orig_ParallelHatch.class
+  Last modified 21 set 2026; size 4593 bytes
+  SHA-256 checksum 2622cbdbb008a0438e63bebe3d322c4d6b5b7bb886f169aff9a2fdc5d4eed467
+  Compiled from "ParallelHatchPartMachine.java"
+public class com.gregtechceu.gtceu.common.machine.multiblock.part.ParallelHatchPartMachine extends com.gregtechceu.gtceu.api.machine.multiblock.part.TieredPartMachine implements com.gregtechceu.gtceu.api.machine.feature.IFancyUIMachine,com.gregtechceu.gtceu.api.capability.IParallelHatch
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine
+  super_class: #4                         // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredPartMachine
+  interfaces: 2, fields: 4, methods: 7, attributes: 3
+Constant pool:
+    #1 = Utf8               com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine
+    #2 = Class              #1            // com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine
+    #3 = Utf8               com/gregtechceu/gtceu/api/machine/multiblock/part/TieredPartMachine
+    #4 = Class              #3            // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredPartMachine
+    #5 = Utf8               com/gregtechceu/gtceu/api/machine/feature/IFancyUIMachine
+    #6 = Class              #5            // com/gregtechceu/gtceu/api/machine/feature/IFancyUIMachine
+    #7 = Utf8               com/gregtechceu/gtceu/api/capability/IParallelHatch
+    #8 = Class              #7            // com/gregtechceu/gtceu/api/capability/IParallelHatch
+    #9 = Utf8               ParallelHatchPartMachine.java
+   #10 = Utf8               java/lang/invoke/MethodHandles$Lookup
+   #11 = Class              #10           // java/lang/invoke/MethodHandles$Lookup
+   #12 = Utf8               java/lang/invoke/MethodHandles
+   #13 = Class              #12           // java/lang/invoke/MethodHandles
+   #14 = Utf8               Lookup
+   #15 = Utf8               MANAGED_FIELD_HOLDER
+   #16 = Utf8               Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+   #17 = Utf8               MIN_PARALLEL
+   #18 = Utf8               I
+   #19 = Integer            1
+   #20 = Utf8               maxParallel
+   #21 = Utf8               currentParallel
+   #22 = Utf8               Lcom/lowdragmc/lowdraglib/syncdata/annotation/Persisted;
+   #23 = Utf8               <init>
+   #24 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;I)V
+   #25 = NameAndType        #23:#24       // "<init>":(Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;I)V
+   #26 = Methodref          #4.#25        // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredPartMachine."<init>":(Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;I)V
+   #27 = NameAndType        #21:#18       // currentParallel:I
+   #28 = Fieldref           #2.#27        // com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.currentParallel:I
+   #29 = Double             4.0d
+   #31 = Utf8               java/lang/Math
+   #32 = Class              #31           // java/lang/Math
+   #33 = Utf8               pow
+   #34 = Utf8               (DD)D
+   #35 = NameAndType        #33:#34       // pow:(DD)D
+   #36 = Methodref          #32.#35       // java/lang/Math.pow:(DD)D
+   #37 = NameAndType        #20:#18       // maxParallel:I
+   #38 = Fieldref           #2.#37        // com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.maxParallel:I
+   #39 = Utf8               this
+   #40 = Utf8               Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;
+   #41 = Utf8               holder
+   #42 = Utf8               Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;
+   #43 = Utf8               tier
+   #44 = Utf8               setCurrentParallel
+   #45 = Utf8               (I)V
+   #46 = Utf8               net/minecraft/util/Mth
+   #47 = Class              #46           // net/minecraft/util/Mth
+   #48 = Utf8               m_14045_
+   #49 = Utf8               (III)I
+   #50 = NameAndType        #48:#49       // m_14045_:(III)I
+   #51 = Methodref          #47.#50       // net/minecraft/util/Mth.m_14045_:(III)I
+   #52 = Utf8               getControllers
+   #53 = Utf8               ()Ljava/util/SortedSet;
+   #54 = NameAndType        #52:#53       // getControllers:()Ljava/util/SortedSet;
+   #55 = Methodref          #2.#54        // com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.getControllers:()Ljava/util/SortedSet;
+   #56 = Utf8               java/util/SortedSet
+   #57 = Class              #56           // java/util/SortedSet
+   #58 = Utf8               iterator
+   #59 = Utf8               ()Ljava/util/Iterator;
+   #60 = NameAndType        #58:#59       // iterator:()Ljava/util/Iterator;
+   #61 = InterfaceMethodref #57.#60       // java/util/SortedSet.iterator:()Ljava/util/Iterator;
+   #62 = Utf8               java/util/Iterator
+   #63 = Class              #62           // java/util/Iterator
+   #64 = Utf8               hasNext
+   #65 = Utf8               ()Z
+   #66 = NameAndType        #64:#65       // hasNext:()Z
+   #67 = InterfaceMethodref #63.#66       // java/util/Iterator.hasNext:()Z
+   #68 = Utf8               next
+   #69 = Utf8               ()Ljava/lang/Object;
+   #70 = NameAndType        #68:#69       // next:()Ljava/lang/Object;
+   #71 = InterfaceMethodref #63.#70       // java/util/Iterator.next:()Ljava/lang/Object;
+   #72 = Utf8               com/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController
+   #73 = Class              #72           // com/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController
+   #74 = Utf8               com/gregtechceu/gtceu/api/machine/feature/IRecipeLogicMachine
+   #75 = Class              #74           // com/gregtechceu/gtceu/api/machine/feature/IRecipeLogicMachine
+   #76 = Utf8               getRecipeLogic
+   #77 = Utf8               ()Lcom/gregtechceu/gtceu/api/machine/trait/RecipeLogic;
+   #78 = NameAndType        #76:#77       // getRecipeLogic:()Lcom/gregtechceu/gtceu/api/machine/trait/RecipeLogic;
+   #79 = InterfaceMethodref #75.#78       // com/gregtechceu/gtceu/api/machine/feature/IRecipeLogicMachine.getRecipeLogic:()Lcom/gregtechceu/gtceu/api/machine/trait/RecipeLogic;
+   #80 = Utf8               com/gregtechceu/gtceu/api/machine/trait/RecipeLogic
+   #81 = Class              #80           // com/gregtechceu/gtceu/api/machine/trait/RecipeLogic
+   #82 = Utf8               markLastRecipeDirty
+   #83 = Utf8               ()V
+   #84 = NameAndType        #82:#83       // markLastRecipeDirty:()V
+   #85 = Methodref          #81.#84       // com/gregtechceu/gtceu/api/machine/trait/RecipeLogic.markLastRecipeDirty:()V
+   #86 = Utf8               rlm
+   #87 = Utf8               Lcom/gregtechceu/gtceu/api/machine/feature/IRecipeLogicMachine;
+   #88 = Utf8               controller
+   #89 = Utf8               Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;
+   #90 = Utf8               parallelAmount
+   #91 = Utf8               createUIWidget
+   #92 = Utf8               ()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+   #93 = Utf8               com/lowdragmc/lowdraglib/gui/widget/WidgetGroup
+   #94 = Class              #93           // com/lowdragmc/lowdraglib/gui/widget/WidgetGroup
+   #95 = Utf8               (IIII)V
+   #96 = NameAndType        #23:#95       // "<init>":(IIII)V
+   #97 = Methodref          #94.#96       // com/lowdragmc/lowdraglib/gui/widget/WidgetGroup."<init>":(IIII)V
+   #98 = Utf8               com/gregtechceu/gtceu/api/gui/widget/IntInputWidget
+   #99 = Class              #98           // com/gregtechceu/gtceu/api/gui/widget/IntInputWidget
+  #100 = MethodType         #69           //  ()Ljava/lang/Object;
+  #101 = Utf8               getCurrentParallel
+  #102 = Utf8               ()I
+  #103 = NameAndType        #101:#102     // getCurrentParallel:()I
+  #104 = Methodref          #2.#103       // com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.getCurrentParallel:()I
+  #105 = MethodHandle       5:#104        // REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.getCurrentParallel:()I
+  #106 = Utf8               ()Ljava/lang/Integer;
+  #107 = MethodType         #106          //  ()Ljava/lang/Integer;
+  #108 = Utf8               java/lang/invoke/LambdaMetafactory
+  #109 = Class              #108          // java/lang/invoke/LambdaMetafactory
+  #110 = Utf8               metafactory
+  #111 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #112 = NameAndType        #110:#111     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #113 = Methodref          #109.#112     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #114 = MethodHandle       6:#113        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #115 = Utf8               get
+  #116 = Utf8               (Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;)Ljava/util/function/Supplier;
+  #117 = NameAndType        #115:#116     // get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;)Ljava/util/function/Supplier;
+  #118 = InvokeDynamic      #0:#117       // #0:get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;)Ljava/util/function/Supplier;
+  #119 = Utf8               (Ljava/lang/Object;)V
+  #120 = MethodType         #119          //  (Ljava/lang/Object;)V
+  #121 = NameAndType        #44:#45       // setCurrentParallel:(I)V
+  #122 = Methodref          #2.#121       // com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.setCurrentParallel:(I)V
+  #123 = MethodHandle       5:#122        // REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.setCurrentParallel:(I)V
+  #124 = Utf8               (Ljava/lang/Integer;)V
+  #125 = MethodType         #124          //  (Ljava/lang/Integer;)V
+  #126 = Utf8               accept
+  #127 = Utf8               (Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;)Ljava/util/function/Consumer;
+  #128 = NameAndType        #126:#127     // accept:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;)Ljava/util/function/Consumer;
+  #129 = InvokeDynamic      #1:#128       // #1:accept:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;)Ljava/util/function/Consumer;
+  #130 = Utf8               (Ljava/util/function/Supplier;Ljava/util/function/Consumer;)V
+  #131 = NameAndType        #23:#130      // "<init>":(Ljava/util/function/Supplier;Ljava/util/function/Consumer;)V
+  #132 = Methodref          #99.#131      // com/gregtechceu/gtceu/api/gui/widget/IntInputWidget."<init>":(Ljava/util/function/Supplier;Ljava/util/function/Consumer;)V
+  #133 = Utf8               java/lang/Integer
+  #134 = Class              #133          // java/lang/Integer
+  #135 = Utf8               valueOf
+  #136 = Utf8               (I)Ljava/lang/Integer;
+  #137 = NameAndType        #135:#136     // valueOf:(I)Ljava/lang/Integer;
+  #138 = Methodref          #134.#137     // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #139 = Utf8               setMin
+  #140 = Utf8               (Ljava/lang/Number;)Lcom/gregtechceu/gtceu/api/gui/widget/NumberInputWidget;
+  #141 = NameAndType        #139:#140     // setMin:(Ljava/lang/Number;)Lcom/gregtechceu/gtceu/api/gui/widget/NumberInputWidget;
+  #142 = Methodref          #99.#141      // com/gregtechceu/gtceu/api/gui/widget/IntInputWidget.setMin:(Ljava/lang/Number;)Lcom/gregtechceu/gtceu/api/gui/widget/NumberInputWidget;
+  #143 = Utf8               com/gregtechceu/gtceu/api/gui/widget/NumberInputWidget
+  #144 = Class              #143          // com/gregtechceu/gtceu/api/gui/widget/NumberInputWidget
+  #145 = Utf8               setMax
+  #146 = NameAndType        #145:#140     // setMax:(Ljava/lang/Number;)Lcom/gregtechceu/gtceu/api/gui/widget/NumberInputWidget;
+  #147 = Methodref          #144.#146     // com/gregtechceu/gtceu/api/gui/widget/NumberInputWidget.setMax:(Ljava/lang/Number;)Lcom/gregtechceu/gtceu/api/gui/widget/NumberInputWidget;
+  #148 = Utf8               addWidget
+  #149 = Utf8               (Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+  #150 = NameAndType        #148:#149     // addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+  #151 = Methodref          #94.#150      // com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+  #152 = Utf8               parallelAmountGroup
+  #153 = Utf8               Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+  #154 = Utf8               getFieldHolder
+  #155 = Utf8               ()Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+  #156 = Utf8               Lorg/jetbrains/annotations/NotNull;
+  #157 = NameAndType        #15:#16       // MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+  #158 = Fieldref           #2.#157       // com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+  #159 = Utf8               canShared
+  #160 = Utf8               Llombok/Generated;
+  #161 = Utf8               <clinit>
+  #162 = Utf8               com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder
+  #163 = Class              #162          // com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder
+  #164 = Utf8               com/gregtechceu/gtceu/api/machine/multiblock/part/MultiblockPartMachine
+  #165 = Class              #164          // com/gregtechceu/gtceu/api/machine/multiblock/part/MultiblockPartMachine
+  #166 = Fieldref           #165.#157     // com/gregtechceu/gtceu/api/machine/multiblock/part/MultiblockPartMachine.MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+  #167 = Utf8               (Ljava/lang/Class;Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;)V
+  #168 = NameAndType        #23:#167      // "<init>":(Ljava/lang/Class;Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;)V
+  #169 = Methodref          #163.#168     // com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder."<init>":(Ljava/lang/Class;Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;)V
+  #170 = Utf8               ConstantValue
+  #171 = Utf8               RuntimeVisibleAnnotations
+  #172 = Utf8               Code
+  #173 = Utf8               LineNumberTable
+  #174 = Utf8               LocalVariableTable
+  #175 = Utf8               StackMapTable
+  #176 = Utf8               RuntimeInvisibleAnnotations
+  #177 = Utf8               RuntimeInvisibleTypeAnnotations
+  #178 = Utf8               InnerClasses
+  #179 = Utf8               SourceFile
+  #180 = Utf8               BootstrapMethods
+{
+  protected static final com.lowdragmc.lowdraglib.syncdata.field.ManagedFieldHolder MANAGED_FIELD_HOLDER;
+    descriptor: Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+    flags: (0x001c) ACC_PROTECTED, ACC_STATIC, ACC_FINAL
+
+  private static final int MIN_PARALLEL;
+    descriptor: I
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 1
+
+  private final int maxParallel;
+    descriptor: I
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private int currentParallel;
+    descriptor: I
+    flags: (0x0002) ACC_PRIVATE
+    RuntimeVisibleAnnotations:
+      0: #22()
+        com.lowdragmc.lowdraglib.syncdata.annotation.Persisted
+
+  public com.gregtechceu.gtceu.common.machine.multiblock.part.ParallelHatchPartMachine(com.gregtechceu.gtceu.api.machine.IMachineBlockEntity, int);
+    descriptor: (Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=5, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: invokespecial #26                 // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredPartMachine."<init>":(Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;I)V
+         6: aload_0
+         7: iconst_1
+         8: putfield      #28                 // Field currentParallel:I
+        11: aload_0
+        12: ldc2_w        #29                 // double 4.0d
+        15: iload_2
+        16: iconst_4
+        17: isub
+        18: i2d
+        19: invokestatic  #36                 // Method java/lang/Math.pow:(DD)D
+        22: d2i
+        23: putfield      #38                 // Field maxParallel:I
+        26: aload_0
+        27: aload_0
+        28: getfield      #38                 // Field maxParallel:I
+        31: putfield      #28                 // Field currentParallel:I
+        34: return
+      LineNumberTable:
+        line 36: 0
+        line 31: 6
+        line 37: 11
+        line 38: 26
+        line 39: 34
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      35     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;
+            0      35     1 holder   Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;
+            0      35     2  tier   I
+
+  public void setCurrentParallel(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=5, args_size=2
+         0: aload_0
+         1: iload_1
+         2: iconst_1
+         3: aload_0
+         4: getfield      #38                 // Field maxParallel:I
+         7: invokestatic  #51                 // Method net/minecraft/util/Mth.m_14045_:(III)I
+        10: putfield      #28                 // Field currentParallel:I
+        13: aload_0
+        14: invokevirtual #55                 // Method getControllers:()Ljava/util/SortedSet;
+        17: invokeinterface #61,  1           // InterfaceMethod java/util/SortedSet.iterator:()Ljava/util/Iterator;
+        22: astore_2
+        23: aload_2
+        24: invokeinterface #67,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        29: ifeq          68
+        32: aload_2
+        33: invokeinterface #71,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        38: checkcast     #73                 // class com/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController
+        41: astore_3
+        42: aload_3
+        43: instanceof    #75                 // class com/gregtechceu/gtceu/api/machine/feature/IRecipeLogicMachine
+        46: ifeq          65
+        49: aload_3
+        50: checkcast     #75                 // class com/gregtechceu/gtceu/api/machine/feature/IRecipeLogicMachine
+        53: astore        4
+        55: aload         4
+        57: invokeinterface #79,  1           // InterfaceMethod com/gregtechceu/gtceu/api/machine/feature/IRecipeLogicMachine.getRecipeLogic:()Lcom/gregtechceu/gtceu/api/machine/trait/RecipeLogic;
+        62: invokevirtual #85                 // Method com/gregtechceu/gtceu/api/machine/trait/RecipeLogic.markLastRecipeDirty:()V
+        65: goto          23
+        68: return
+      StackMapTable: number_of_entries = 3
+        frame_type = 252 /* append */
+          offset_delta = 23
+          locals = [ class java/util/Iterator ]
+        frame_type = 41 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 2
+      LineNumberTable:
+        line 42: 0
+        line 43: 13
+        line 44: 42
+        line 45: 55
+        line 47: 65
+        line 48: 68
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           55      10     4   rlm   Lcom/gregtechceu/gtceu/api/machine/feature/IRecipeLogicMachine;
+           42      23     3 controller   Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;
+            0      69     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;
+            0      69     1 parallelAmount   I
+
+  public com.lowdragmc.lowdraglib.gui.widget.Widget createUIWidget();
+    descriptor: ()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=2, args_size=1
+         0: new           #94                 // class com/lowdragmc/lowdraglib/gui/widget/WidgetGroup
+         3: dup
+         4: iconst_0
+         5: iconst_0
+         6: bipush        100
+         8: bipush        20
+        10: invokespecial #97                 // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup."<init>":(IIII)V
+        13: astore_1
+        14: aload_1
+        15: new           #99                 // class com/gregtechceu/gtceu/api/gui/widget/IntInputWidget
+        18: dup
+        19: aload_0
+        20: invokedynamic #118,  0            // InvokeDynamic #0:get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;)Ljava/util/function/Supplier;
+        25: aload_0
+        26: invokedynamic #129,  0            // InvokeDynamic #1:accept:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;)Ljava/util/function/Consumer;
+        31: invokespecial #132                // Method com/gregtechceu/gtceu/api/gui/widget/IntInputWidget."<init>":(Ljava/util/function/Supplier;Ljava/util/function/Consumer;)V
+        34: iconst_1
+        35: invokestatic  #138                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        38: invokevirtual #142                // Method com/gregtechceu/gtceu/api/gui/widget/IntInputWidget.setMin:(Ljava/lang/Number;)Lcom/gregtechceu/gtceu/api/gui/widget/NumberInputWidget;
+        41: aload_0
+        42: getfield      #38                 // Field maxParallel:I
+        45: invokestatic  #138                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        48: invokevirtual #147                // Method com/gregtechceu/gtceu/api/gui/widget/NumberInputWidget.setMax:(Ljava/lang/Number;)Lcom/gregtechceu/gtceu/api/gui/widget/NumberInputWidget;
+        51: invokevirtual #151                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+        54: pop
+        55: aload_1
+        56: areturn
+      LineNumberTable:
+        line 52: 0
+        line 53: 14
+        line 54: 35
+        line 55: 45
+        line 53: 51
+        line 57: 55
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      57     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;
+           14      43     1 parallelAmountGroup   Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+
+  public com.lowdragmc.lowdraglib.syncdata.field.ManagedFieldHolder getFieldHolder();
+    descriptor: ()Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #158                // Field MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+         3: areturn
+      LineNumberTable:
+        line 63: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;
+    RuntimeInvisibleAnnotations:
+      0: #156()
+        org.jetbrains.annotations.NotNull
+    RuntimeInvisibleTypeAnnotations:
+      0: #156(): METHOD_RETURN
+        org.jetbrains.annotations.NotNull
+
+  public boolean canShared();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_0
+         1: ireturn
+      LineNumberTable:
+        line 68: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;
+
+  public int getCurrentParallel();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #28                 // Field currentParallel:I
+         4: ireturn
+      LineNumberTable:
+        line 32: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine;
+    RuntimeInvisibleAnnotations:
+      0: #160()
+        lombok.Generated
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=0, args_size=0
+         0: new           #163                // class com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder
+         3: dup
+         4: ldc           #2                  // class com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine
+         6: getstatic     #166                // Field com/gregtechceu/gtceu/api/machine/multiblock/part/MultiblockPartMachine.MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+         9: invokespecial #169                // Method com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder."<init>":(Ljava/lang/Class;Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;)V
+        12: putstatic     #158                // Field MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+        15: return
+      LineNumberTable:
+        line 25: 0
+}
+InnerClasses:
+  public static final #14= #11 of #13;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+SourceFile: "ParallelHatchPartMachine.java"
+BootstrapMethods:
+  0: #114 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #100 ()Ljava/lang/Object;
+      #105 REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.getCurrentParallel:()I
+      #107 ()Ljava/lang/Integer;
+  1: #114 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #120 (Ljava/lang/Object;)V
+      #123 REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/ParallelHatchPartMachine.setCurrentParallel:(I)V
+      #125 (Ljava/lang/Integer;)V

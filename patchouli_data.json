@@ -1,0 +1,31 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "laserio:laseriobook": {
+      "viewedEntries": [
+        "laserio:laser_node",
+        "laserio:laser_connector",
+        "laserio:laser_connector_advanced",
+        "laserio:logic_chip",
+        "laserio:laser_wrench",
+        "laserio:card_cloner",
+        "laserio:card_holder",
+        "laserio:overclocker_node",
+        "laserio:overclocker_card",
+        "laserio:card_item",
+        "laserio:card_fluid",
+        "laserio:card_redstone",
+        "laserio:card_energy",
+        "laserio:tickspeed",
+        "laserio:filter_basic",
+        "laserio:filter_nbt",
+        "laserio:filter_mod",
+        "laserio:filter_count",
+        "laserio:filter_tag"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}

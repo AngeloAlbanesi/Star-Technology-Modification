@@ -1,0 +1,50 @@
+[21:28:18] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[21:28:18] [INIT] Loaded plugins:
+[21:28:18] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[21:28:18] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[21:28:18] [INIT] - dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration
+[21:28:18] [INIT] - com.jesz.createdieselgenerators.compat.kubejs.CDGKubeJSPlugin
+[21:28:18] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[21:28:18] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.KubeJSIntegration
+[21:28:18] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbchunks.kubejs.FTBChunksKubeJSPlugin
+[21:28:18] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbteams.kubejs.FTBTeamsKubeJSPlugin
+[21:28:18] [INIT] - dev.latvian.mods.kubejs.thermal.KubeJSThermalPlugin
+[21:28:18] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
+[21:28:18] [INIT] - novamachina.exnihilosequentia.common.compat.kubejs.KubeJSExNihiloPlugin
+[21:28:18] [INIT] - dev.bluephs.vintage.compat.kubejs.VINTAGEKubeJSPlugin
+[21:28:18] [INIT] - com.startechnology.start_core.integration.kjs.StarTKubeJSPlugin
+[21:28:18] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
+[21:28:18] [INIT] - com.blakebr0.cucumber.compat.kubejs.CucumberKubeJSPlugin
+[21:28:18] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[21:28:18] [INFO] Skipped client_scripts:hardmode/renaming_items.js: Pack mode mismatch
+[21:28:18] [INFO] Skipped client_scripts:hardmode/info.js: Pack mode mismatch
+[21:28:18] [INFO] Skipped client_scripts:hardmode/jei.js: Pack mode mismatch
+[21:28:18] [INFO] ponder/utils.js#11: Loaded Java class 'com.gregtechceu.gtceu.api.blockentity.MetaMachineBlockEntity'
+[21:28:18] [INFO] ponder/utils.js#14: Loaded Java class 'com.gregtechceu.gtceu.api.block.IMachineBlock'
+[21:28:18] [INFO] ponder/utils.js#17: Loaded Java class 'com.gregtechceu.gtceu.api.pattern.util.RelativeDirection'
+[21:28:18] [INFO] ponder/utils.js#20: Loaded Java class 'com.gregtechceu.gtceu.api.machine.trait.RecipeLogic$Status'
+[21:28:18] [INFO] ponder/utils.js#23: Loaded Java class 'com.gregtechceu.gtceu.api.pipenet.IPipeNode'
+[21:28:18] [INFO] ponder/utils.js#26: Loaded Java class 'net.createmod.ponder.foundation.element.InputWindowElement'
+[21:28:18] [INFO] ponder/utils.js#29: Loaded Java class 'net.createmod.ponder.foundation.instruction.ShowInputInstruction'
+[21:28:18] [INFO] ponder/utils.js#32: Loaded Java class 'net.createmod.ponder.foundation.instruction.ReplaceBlocksInstruction'
+[21:28:18] [INFO] ponder/utils.js#35: Loaded Java class 'net.createmod.ponder.foundation.instruction.FadeOutOfSceneInstruction'
+[21:28:18] [INFO] ponder/utils.js#38: Loaded Java class 'net.createmod.ponder.foundation.instruction.DisplayWorldSectionInstruction'
+[21:28:18] [INFO] ponder/utils.js#41: Loaded Java class 'net.minecraftforge.registries.ForgeRegistries'
+[21:28:18] [INFO] Loaded script client_scripts:ponder/utils.js in 0.022 s
+[21:28:18] [INFO] Loaded script client_scripts:ponder/multis.js in 0.001 s
+[21:28:18] [INFO] Loaded script client_scripts:ponder/scenes/multiblock_construction.js in 0.001 s
+[21:28:18] [INFO] Loaded script client_scripts:ponder/scenes/mutliblock_wallsharing.js in 0.001 s
+[21:28:18] [INFO] ponder/scenes/classic_stargate.js#15: Loaded Java class 'net.minecraft.world.level.block.state.properties.BlockStateProperties'
+[21:28:18] [INFO] ponder/scenes/classic_stargate.js#18: Loaded Java class 'java.lang.Boolean'
+[21:28:18] [INFO] ponder/scenes/classic_stargate.js#19: Loaded Java class 'sonar.fluxnetworks.common.device.TileFluxPoint'
+[21:28:18] [INFO] Loaded script client_scripts:ponder/scenes/classic_stargate.js in 0.006 s
+[21:28:18] [INFO] Loaded script client_scripts:ponder/scenes/multiblock_introduction.js in 0.0 s
+[21:28:18] [INFO] Loaded script client_scripts:common/crystal_info.js in 0.0 s
+[21:28:18] [INFO] Loaded script client_scripts:common/projectred_tooltips.js in 0.0 s
+[21:28:18] [INFO] Loaded script client_scripts:common/item_hiding.js in 0.0 s
+[21:28:18] [INFO] Loaded script client_scripts:common/addedByStarT.js in 0.0 s
+[21:28:18] [INFO] Loaded script client_scripts:ponder/main.js in 0.002 s
+[21:28:18] [INFO] Loaded script client_scripts:common/tooltips.js in 0.0 s
+[21:28:18] [INFO] Loaded 12/12 KubeJS client scripts in 0.05 s with 0 errors and 0 warnings
+[21:28:24] [INFO] Client resource reload complete!
+[21:28:35] [INFO] ponder/main.js#82: Loaded Java class 'com.gregtechceu.gtceu.api.machine.MultiblockMachineDefinition'

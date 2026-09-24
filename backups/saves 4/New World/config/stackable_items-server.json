@@ -1,0 +1,29 @@
+{
+  "defaultStackSize": 64,
+  "boatGroup": 16,
+  "bucketGroup": 16,
+  "minecartGroup": 16,
+  "signGroup": 64,
+  "musicDiscGroup": 64,
+  "potionGroup": 16,
+  "horseArmorGroup": 16,
+  "bannerGroup": 64,
+  "bannerPatternGroup": 64,
+  "bedGroup": 64,
+  "shulkerBoxGroup": 16,
+  "itemList": [
+    "minecraft:saddle=16",
+    "minecraft:snowball=64",
+    "minecraft:ender_pearl=64",
+    "minecraft:writable_book=64",
+    "minecraft:written_book=64",
+    "minecraft:enchanted_book=64",
+    "minecraft:rabbit_stew=16",
+    "minecraft:mushroom_stew=16",
+    "minecraft:beetroot_soup=16",
+    "minecraft:suspicious_stew=16",
+    "minecraft:totem_of_undying=4",
+    "minecraft:cake=16",
+    "minecraft:egg=64"
+  ]
+}

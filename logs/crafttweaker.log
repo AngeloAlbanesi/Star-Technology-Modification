@@ -1,0 +1,36 @@
+[21:28:16.241][INFO][CraftTweaker-EarlyInit]: CraftTweaker is running on a Minecraft 1.20.1 production client modded with platform Forge
+[21:28:16.251][INFO][CraftTweaker-EarlyInit]: Successfully injected RecipeFS file system
+[21:28:16.281][INFO][CraftTweaker-Plugins]: Successfully identified and loaded plugin crafttweaker:builtin
+[21:28:16.282][INFO][CraftTweaker-Plugins]: Successfully identified and loaded plugin crafttweaker:builtin_forge
+[21:28:16.283][INFO][CraftTweaker-Plugins]: Successfully identified and loaded plugin farmersdelight:crafttweaker_plugin
+[21:28:16.890][INFO][CraftTweaker]: The following mods have explicit CraftTweaker support through the default plugin:
+[21:28:16.891][INFO][CraftTweaker]: - 'crafttweaker' at version '14.0.60'
+[21:28:16.891][INFO][CraftTweaker]: - 'exnihilosequentia' at version '5.0.0'
+[21:28:16.891][INFO][CraftTweaker]: - 'farmersdelight' at version '1.20.1-1.3.2'
+[21:28:16.891][INFO][CraftTweaker]: - 'gamestages' at version '15.0.2'
+[21:28:16.891][INFO][CraftTweaker]: - 'mysticalagriculture' at version '7.0.24'
+[21:28:16.891][INFO][CraftTweaker]: - 'redimstages' at version '1.0.0'
+[21:28:24.187][INFO][CraftTweaker-ZenCode]: Started loading scripts for loader 'initialize'
+[21:28:24.420][INFO][CraftTweaker-ZenCode]: Compiling and executing scripts
+[21:28:24.460][INFO][CraftTweaker-ZenCode]: Successfully initialized modules [crafttweaker, expansions]
+[21:28:24.536][INFO][CraftTweaker-ZenCode]: Execution for loader 'initialize' completed successfully
+[21:28:50.505][INFO][CraftTweaker-ZenCode]: Started loading scripts for loader 'tags'
+[21:28:50.522][INFO][CraftTweaker-ZenCode]: Compiling and executing scripts
+[21:28:50.532][INFO][CraftTweaker-ZenCode]: Successfully initialized modules [crafttweaker, expansions]
+[21:28:50.538][INFO][CraftTweaker-ZenCode]: Execution for loader 'tags' completed successfully
+[21:28:59.102][INFO][CraftTweaker]: CraftTweaker reload starting!
+[21:28:59.113][INFO][CraftTweaker-ZenCode]: Started loading scripts for loader 'crafttweaker'
+[21:28:59.126][INFO][CraftTweaker-ZenCode]: Compiling and executing scripts
+[21:28:59.297][INFO][CraftTweaker-ZenCode]: Successfully initialized modules [mods, crafttweaker, expansions]
+[21:28:59.298][INFO][CraftTweaker-ZenCode]: Loading file 'script.zs' with priority 0
+[21:28:59.305][INFO][Re-DimensionStages]: [Re-Dimension Stages] Staging dimension 'sgjourney:abydos' to stage(s) '[one]'. script.zs:4:0
+[21:28:59.306][INFO][Re-DimensionStages]: [Re-Dimension Stages] Staging dimension 'minecraft:the_nether' to stage(s) '[two]'. script.zs:6:0
+[21:28:59.306][INFO][Re-DimensionStages]: [Re-Dimension Stages] Staging dimension 'minecraft:the_end' to stage(s) '[three]'. script.zs:7:0
+[21:28:59.306][INFO][Re-DimensionStages]: [Re-Dimension Stages] Staging dimension 'sgjourney:cavum_tenebrae' to stage(s) '[four]'. script.zs:9:0
+[21:28:59.306][INFO][Re-DimensionStages]: [Re-Dimension Stages] Staging dimension 'sgjourney:lantea' to stage(s) '[five]'. script.zs:10:0
+[21:28:59.306][INFO][Re-DimensionStages]: [Re-Dimension Stages] Staging dimension 'sgjourney:chulak' to stage(s) '[six]'. script.zs:12:0
+[21:28:59.306][INFO][Re-DimensionStages]: [Re-Dimension Stages] Staging dimension 'sgjourney:rima' to stage(s) '[seven]'. script.zs:14:0
+[21:28:59.307][INFO][Re-DimensionStages]: [Re-Dimension Stages] Staging dimension 'sgjourney:athos' to stage(s) '[seven]'. script.zs:15:0
+[21:28:59.307][INFO][Re-DimensionStages]: [Re-Dimension Stages] Staging dimension 'sgjourney:unitas' to stage(s) '[seven]'. script.zs:16:0
+[21:28:59.307][INFO][CraftTweaker-ZenCode]: Execution for loader 'crafttweaker' completed successfully
+[21:28:59.307][INFO][CraftTweaker]: CraftTweaker reload complete!

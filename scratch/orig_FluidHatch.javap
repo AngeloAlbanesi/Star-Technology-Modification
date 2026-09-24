@@ -1,0 +1,2563 @@
+Classfile /Users/angeloalbanesi/Library/Application Support/PrismLauncher/instances/Star Technology/minecraft/scratch/orig_FluidHatch.class
+  Last modified 21 set 2026; size 21088 bytes
+  SHA-256 checksum 98425e4ed2f63379bb1bf1f6a466411f143f1c1958143382cf07a886abadd342
+  Compiled from "FluidHatchPartMachine.java"
+public class com.gregtechceu.gtceu.common.machine.multiblock.part.FluidHatchPartMachine extends com.gregtechceu.gtceu.api.machine.multiblock.part.TieredIOPartMachine implements com.gregtechceu.gtceu.api.machine.feature.IMachineLife,com.gregtechceu.gtceu.api.machine.feature.IHasCircuitSlot,com.gregtechceu.gtceu.api.blockentity.IPaintable
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine
+  super_class: #4                         // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine
+  interfaces: 3, fields: 10, methods: 35, attributes: 4
+Constant pool:
+    #1 = Utf8               com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine
+    #2 = Class              #1            // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine
+    #3 = Utf8               com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine
+    #4 = Class              #3            // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine
+    #5 = Utf8               com/gregtechceu/gtceu/api/machine/feature/IMachineLife
+    #6 = Class              #5            // com/gregtechceu/gtceu/api/machine/feature/IMachineLife
+    #7 = Utf8               com/gregtechceu/gtceu/api/machine/feature/IHasCircuitSlot
+    #8 = Class              #7            // com/gregtechceu/gtceu/api/machine/feature/IHasCircuitSlot
+    #9 = Utf8               com/gregtechceu/gtceu/api/blockentity/IPaintable
+   #10 = Class              #9            // com/gregtechceu/gtceu/api/blockentity/IPaintable
+   #11 = Utf8               FluidHatchPartMachine.java
+   #12 = Utf8               Ljavax/annotation/ParametersAreNonnullByDefault;
+   #13 = Utf8               Lnet/minecraft/MethodsReturnNonnullByDefault;
+   #14 = Utf8               com/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs
+   #15 = Class              #14           // com/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs
+   #16 = Utf8               com/gregtechceu/gtceu/config/ConfigHolder
+   #17 = Class              #16           // com/gregtechceu/gtceu/config/ConfigHolder
+   #18 = Utf8               MachineConfigs
+   #19 = Utf8               java/lang/invoke/MethodHandles$Lookup
+   #20 = Class              #19           // java/lang/invoke/MethodHandles$Lookup
+   #21 = Utf8               java/lang/invoke/MethodHandles
+   #22 = Class              #21           // java/lang/invoke/MethodHandles
+   #23 = Utf8               Lookup
+   #24 = Utf8               MANAGED_FIELD_HOLDER
+   #25 = Utf8               Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+   #26 = Utf8               INITIAL_TANK_CAPACITY_1X
+   #27 = Utf8               I
+   #28 = Integer            8000
+   #29 = Utf8               INITIAL_TANK_CAPACITY_4X
+   #30 = Integer            2000
+   #31 = Utf8               INITIAL_TANK_CAPACITY_9X
+   #32 = Integer            1000
+   #33 = Utf8               tank
+   #34 = Utf8               Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+   #35 = Utf8               Lcom/lowdragmc/lowdraglib/syncdata/annotation/Persisted;
+   #36 = Utf8               slots
+   #37 = Utf8               autoIOSubs
+   #38 = Utf8               Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+   #39 = Utf8               Lorg/jetbrains/annotations/Nullable;
+   #40 = Utf8               tankSubs
+   #41 = Utf8               Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+   #42 = Utf8               circuitSlotEnabled
+   #43 = Utf8               Z
+   #44 = Utf8               Lcom/lowdragmc/lowdraglib/syncdata/annotation/DescSynced;
+   #45 = Utf8               circuitInventory
+   #46 = Utf8               Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+   #47 = Utf8               <init>
+   #48 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;II[Ljava/lang/Object;)V
+   #49 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+   #50 = NameAndType        #47:#49       // "<init>":(Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+   #51 = Methodref          #4.#50        // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine."<init>":(Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+   #52 = NameAndType        #36:#27       // slots:I
+   #53 = Fieldref           #2.#52        // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.slots:I
+   #54 = Utf8               createTank
+   #55 = Utf8               (II[Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+   #56 = NameAndType        #54:#55       // createTank:(II[Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+   #57 = Methodref          #2.#56        // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.createTank:(II[Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+   #58 = NameAndType        #33:#34       // tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+   #59 = Fieldref           #2.#58        // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+   #60 = NameAndType        #42:#43       // circuitSlotEnabled:Z
+   #61 = Fieldref           #2.#60        // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.circuitSlotEnabled:Z
+   #62 = Utf8               java/lang/Object
+   #63 = Class              #62           // java/lang/Object
+   #64 = Utf8               createCircuitItemHandler
+   #65 = Utf8               ([Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+   #66 = NameAndType        #64:#65       // createCircuitItemHandler:([Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+   #67 = Methodref          #2.#66        // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.createCircuitItemHandler:([Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+   #68 = Utf8               com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler
+   #69 = Class              #68           // com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler
+   #70 = Utf8               shouldSearchContent
+   #71 = Utf8               (Z)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+   #72 = NameAndType        #70:#71       // shouldSearchContent:(Z)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+   #73 = Methodref          #69.#72       // com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.shouldSearchContent:(Z)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+   #74 = NameAndType        #45:#46       // circuitInventory:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+   #75 = Fieldref           #2.#74        // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.circuitInventory:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+   #76 = Utf8               this
+   #77 = Utf8               Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+   #78 = Utf8               holder
+   #79 = Utf8               Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;
+   #80 = Utf8               tier
+   #81 = Utf8               io
+   #82 = Utf8               Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+   #83 = Utf8               initialCapacity
+   #84 = Utf8               args
+   #85 = Utf8               [Ljava/lang/Object;
+   #86 = Utf8               getFieldHolder
+   #87 = Utf8               ()Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+   #88 = NameAndType        #24:#25       // MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+   #89 = Fieldref           #2.#88        // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+   #90 = Utf8               com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank
+   #91 = Class              #90           // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank
+   #92 = Utf8               getTier
+   #93 = Utf8               ()I
+   #94 = NameAndType        #92:#93       // getTier:()I
+   #95 = Methodref          #2.#94        // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getTier:()I
+   #96 = Utf8               getTankCapacity
+   #97 = Utf8               (II)I
+   #98 = NameAndType        #96:#97       // getTankCapacity:(II)I
+   #99 = Methodref          #2.#98        // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getTankCapacity:(II)I
+  #100 = NameAndType        #81:#82       // io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #101 = Fieldref           #2.#100       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #102 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/MetaMachine;IILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+  #103 = NameAndType        #47:#102      // "<init>":(Lcom/gregtechceu/gtceu/api/machine/MetaMachine;IILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+  #104 = Methodref          #91.#103      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank."<init>":(Lcom/gregtechceu/gtceu/api/machine/MetaMachine;IILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+  #105 = Utf8               java/lang/Math
+  #106 = Class              #105          // java/lang/Math
+  #107 = Utf8               min
+  #108 = NameAndType        #107:#97      // min:(II)I
+  #109 = Methodref          #106.#108     // java/lang/Math.min:(II)I
+  #110 = Utf8               com/gregtechceu/gtceu/api/capability/recipe/IO
+  #111 = Class              #110          // com/gregtechceu/gtceu/api/capability/recipe/IO
+  #112 = Utf8               IN
+  #113 = NameAndType        #112:#82      // IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #114 = Fieldref           #111.#113     // com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #115 = Utf8               NONE
+  #116 = NameAndType        #115:#82      // NONE:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #117 = Fieldref           #111.#116     // com/gregtechceu/gtceu/api/capability/recipe/IO.NONE:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #118 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/MetaMachine;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+  #119 = NameAndType        #47:#118      // "<init>":(Lcom/gregtechceu/gtceu/api/machine/MetaMachine;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+  #120 = Methodref          #69.#119      // com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler."<init>":(Lcom/gregtechceu/gtceu/api/machine/MetaMachine;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+  #121 = Utf8               (Ljava/lang/Object;)Z
+  #122 = MethodType         #121          //  (Ljava/lang/Object;)Z
+  #123 = Utf8               com/gregtechceu/gtceu/common/item/IntCircuitBehaviour
+  #124 = Class              #123          // com/gregtechceu/gtceu/common/item/IntCircuitBehaviour
+  #125 = Utf8               isIntegratedCircuit
+  #126 = Utf8               (Lnet/minecraft/world/item/ItemStack;)Z
+  #127 = NameAndType        #125:#126     // isIntegratedCircuit:(Lnet/minecraft/world/item/ItemStack;)Z
+  #128 = Methodref          #124.#127     // com/gregtechceu/gtceu/common/item/IntCircuitBehaviour.isIntegratedCircuit:(Lnet/minecraft/world/item/ItemStack;)Z
+  #129 = MethodHandle       6:#128        // REF_invokeStatic com/gregtechceu/gtceu/common/item/IntCircuitBehaviour.isIntegratedCircuit:(Lnet/minecraft/world/item/ItemStack;)Z
+  #130 = MethodType         #126          //  (Lnet/minecraft/world/item/ItemStack;)Z
+  #131 = Utf8               java/lang/invoke/LambdaMetafactory
+  #132 = Class              #131          // java/lang/invoke/LambdaMetafactory
+  #133 = Utf8               metafactory
+  #134 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #135 = NameAndType        #133:#134     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #136 = Methodref          #132.#135     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #137 = MethodHandle       6:#136        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #138 = Utf8               test
+  #139 = Utf8               ()Ljava/util/function/Predicate;
+  #140 = NameAndType        #138:#139     // test:()Ljava/util/function/Predicate;
+  #141 = InvokeDynamic      #0:#140       // #0:test:()Ljava/util/function/Predicate;
+  #142 = Utf8               setFilter
+  #143 = Utf8               (Ljava/util/function/Predicate;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+  #144 = NameAndType        #142:#143     // setFilter:(Ljava/util/function/Predicate;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+  #145 = Methodref          #69.#144      // com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.setFilter:(Ljava/util/function/Predicate;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+  #146 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/MetaMachine;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+  #147 = NameAndType        #47:#146      // "<init>":(Lcom/gregtechceu/gtceu/api/machine/MetaMachine;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+  #148 = Methodref          #69.#147      // com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler."<init>":(Lcom/gregtechceu/gtceu/api/machine/MetaMachine;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+  #149 = Utf8               onMachineRemoved
+  #150 = Utf8               ()V
+  #151 = Utf8               INSTANCE
+  #152 = Utf8               Lcom/gregtechceu/gtceu/config/ConfigHolder;
+  #153 = NameAndType        #151:#152     // INSTANCE:Lcom/gregtechceu/gtceu/config/ConfigHolder;
+  #154 = Fieldref           #17.#153      // com/gregtechceu/gtceu/config/ConfigHolder.INSTANCE:Lcom/gregtechceu/gtceu/config/ConfigHolder;
+  #155 = Utf8               machines
+  #156 = Utf8               Lcom/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs;
+  #157 = NameAndType        #155:#156     // machines:Lcom/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs;
+  #158 = Fieldref           #17.#157      // com/gregtechceu/gtceu/config/ConfigHolder.machines:Lcom/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs;
+  #159 = Utf8               ghostCircuit
+  #160 = NameAndType        #159:#43      // ghostCircuit:Z
+  #161 = Fieldref           #15.#160      // com/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs.ghostCircuit:Z
+  #162 = Utf8               storage
+  #163 = Utf8               Lcom/gregtechceu/gtceu/api/transfer/item/CustomItemStackHandler;
+  #164 = NameAndType        #162:#163     // storage:Lcom/gregtechceu/gtceu/api/transfer/item/CustomItemStackHandler;
+  #165 = Fieldref           #69.#164      // com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.storage:Lcom/gregtechceu/gtceu/api/transfer/item/CustomItemStackHandler;
+  #166 = Utf8               clearInventory
+  #167 = Utf8               (Lnet/minecraftforge/items/IItemHandlerModifiable;)V
+  #168 = NameAndType        #166:#167     // clearInventory:(Lnet/minecraftforge/items/IItemHandlerModifiable;)V
+  #169 = Methodref          #2.#168       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.clearInventory:(Lnet/minecraftforge/items/IItemHandlerModifiable;)V
+  #170 = Utf8               onLoad
+  #171 = NameAndType        #170:#150     // onLoad:()V
+  #172 = Methodref          #4.#171       // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onLoad:()V
+  #173 = Utf8               getLevel
+  #174 = Utf8               ()Lnet/minecraft/world/level/Level;
+  #175 = NameAndType        #173:#174     // getLevel:()Lnet/minecraft/world/level/Level;
+  #176 = Methodref          #2.#175       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getLevel:()Lnet/minecraft/world/level/Level;
+  #177 = Utf8               net/minecraft/server/level/ServerLevel
+  #178 = Class              #177          // net/minecraft/server/level/ServerLevel
+  #179 = Utf8               m_7654_
+  #180 = Utf8               ()Lnet/minecraft/server/MinecraftServer;
+  #181 = NameAndType        #179:#180     // m_7654_:()Lnet/minecraft/server/MinecraftServer;
+  #182 = Methodref          #178.#181     // net/minecraft/server/level/ServerLevel.m_7654_:()Lnet/minecraft/server/MinecraftServer;
+  #183 = Utf8               net/minecraft/server/TickTask
+  #184 = Class              #183          // net/minecraft/server/TickTask
+  #185 = MethodType         #150          //  ()V
+  #186 = Utf8               updateTankSubscription
+  #187 = NameAndType        #186:#150     // updateTankSubscription:()V
+  #188 = Methodref          #2.#187       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.updateTankSubscription:()V
+  #189 = MethodHandle       5:#188        // REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.updateTankSubscription:()V
+  #190 = Utf8               run
+  #191 = Utf8               (Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/lang/Runnable;
+  #192 = NameAndType        #190:#191     // run:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/lang/Runnable;
+  #193 = InvokeDynamic      #1:#192       // #1:run:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/lang/Runnable;
+  #194 = Utf8               (ILjava/lang/Runnable;)V
+  #195 = NameAndType        #47:#194      // "<init>":(ILjava/lang/Runnable;)V
+  #196 = Methodref          #184.#195     // net/minecraft/server/TickTask."<init>":(ILjava/lang/Runnable;)V
+  #197 = Utf8               net/minecraft/server/MinecraftServer
+  #198 = Class              #197          // net/minecraft/server/MinecraftServer
+  #199 = Utf8               m_6937_
+  #200 = Utf8               (Ljava/lang/Runnable;)V
+  #201 = NameAndType        #199:#200     // m_6937_:(Ljava/lang/Runnable;)V
+  #202 = Methodref          #198.#201     // net/minecraft/server/MinecraftServer.m_6937_:(Ljava/lang/Runnable;)V
+  #203 = Utf8               getHandlerList
+  #204 = Utf8               ()Lcom/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList;
+  #205 = NameAndType        #203:#204     // getHandlerList:()Lcom/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList;
+  #206 = Methodref          #2.#205       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getHandlerList:()Lcom/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList;
+  #207 = Utf8               getPaintingColor
+  #208 = NameAndType        #207:#93      // getPaintingColor:()I
+  #209 = Methodref          #2.#208       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getPaintingColor:()I
+  #210 = Utf8               com/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList
+  #211 = Class              #210          // com/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList
+  #212 = Utf8               setColor
+  #213 = Utf8               (I)V
+  #214 = NameAndType        #212:#213     // setColor:(I)V
+  #215 = Methodref          #211.#214     // com/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList.setColor:(I)V
+  #216 = Utf8               addChangedListener
+  #217 = Utf8               (Ljava/lang/Runnable;)Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+  #218 = NameAndType        #216:#217     // addChangedListener:(Ljava/lang/Runnable;)Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+  #219 = Methodref          #91.#218      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.addChangedListener:(Ljava/lang/Runnable;)Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+  #220 = NameAndType        #40:#41       // tankSubs:Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+  #221 = Fieldref           #2.#220       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.tankSubs:Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+  #222 = Utf8               serverLevel
+  #223 = Utf8               Lnet/minecraft/server/level/ServerLevel;
+  #224 = Utf8               onUnload
+  #225 = NameAndType        #224:#150     // onUnload:()V
+  #226 = Methodref          #4.#225       // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onUnload:()V
+  #227 = Utf8               com/lowdragmc/lowdraglib/syncdata/ISubscription
+  #228 = Class              #227          // com/lowdragmc/lowdraglib/syncdata/ISubscription
+  #229 = Utf8               unsubscribe
+  #230 = NameAndType        #229:#150     // unsubscribe:()V
+  #231 = InterfaceMethodref #228.#230     // com/lowdragmc/lowdraglib/syncdata/ISubscription.unsubscribe:()V
+  #232 = Utf8               onPaintingColorChanged
+  #233 = Utf8               (IZ)V
+  #234 = NameAndType        #212:#233     // setColor:(IZ)V
+  #235 = Methodref          #211.#234     // com/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList.setColor:(IZ)V
+  #236 = Utf8               color
+  #237 = Utf8               addedToController
+  #238 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;)V
+  #239 = Utf8               com/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController
+  #240 = Class              #239          // com/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController
+  #241 = Utf8               allowCircuitSlots
+  #242 = Utf8               ()Z
+  #243 = NameAndType        #241:#242     // allowCircuitSlots:()Z
+  #244 = InterfaceMethodref #240.#243     // com/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController.allowCircuitSlots:()Z
+  #245 = Utf8               net/minecraft/world/item/ItemStack
+  #246 = Class              #245          // net/minecraft/world/item/ItemStack
+  #247 = Utf8               f_41583_
+  #248 = Utf8               Lnet/minecraft/world/item/ItemStack;
+  #249 = NameAndType        #247:#248     // f_41583_:Lnet/minecraft/world/item/ItemStack;
+  #250 = Fieldref           #246.#249     // net/minecraft/world/item/ItemStack.f_41583_:Lnet/minecraft/world/item/ItemStack;
+  #251 = Utf8               setStackInSlot
+  #252 = Utf8               (ILnet/minecraft/world/item/ItemStack;)V
+  #253 = NameAndType        #251:#252     // setStackInSlot:(ILnet/minecraft/world/item/ItemStack;)V
+  #254 = Methodref          #69.#253      // com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.setStackInSlot:(ILnet/minecraft/world/item/ItemStack;)V
+  #255 = Utf8               setCircuitSlotEnabled
+  #256 = Utf8               (Z)V
+  #257 = NameAndType        #255:#256     // setCircuitSlotEnabled:(Z)V
+  #258 = Methodref          #2.#257       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.setCircuitSlotEnabled:(Z)V
+  #259 = NameAndType        #237:#238     // addedToController:(Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;)V
+  #260 = Methodref          #4.#259       // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.addedToController:(Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;)V
+  #261 = Utf8               controller
+  #262 = Utf8               Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;
+  #263 = Utf8               removedFromController
+  #264 = NameAndType        #263:#238     // removedFromController:(Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;)V
+  #265 = Methodref          #4.#264       // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.removedFromController:(Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;)V
+  #266 = Utf8               controllers
+  #267 = Utf8               Ljava/util/SortedSet;
+  #268 = NameAndType        #266:#267     // controllers:Ljava/util/SortedSet;
+  #269 = Fieldref           #2.#268       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.controllers:Ljava/util/SortedSet;
+  #270 = Utf8               java/util/SortedSet
+  #271 = Class              #270          // java/util/SortedSet
+  #272 = Utf8               iterator
+  #273 = Utf8               ()Ljava/util/Iterator;
+  #274 = NameAndType        #272:#273     // iterator:()Ljava/util/Iterator;
+  #275 = InterfaceMethodref #271.#274     // java/util/SortedSet.iterator:()Ljava/util/Iterator;
+  #276 = Utf8               java/util/Iterator
+  #277 = Class              #276          // java/util/Iterator
+  #278 = Utf8               hasNext
+  #279 = NameAndType        #278:#242     // hasNext:()Z
+  #280 = InterfaceMethodref #277.#279     // java/util/Iterator.hasNext:()Z
+  #281 = Utf8               next
+  #282 = Utf8               ()Ljava/lang/Object;
+  #283 = NameAndType        #281:#282     // next:()Ljava/lang/Object;
+  #284 = InterfaceMethodref #277.#283     // java/util/Iterator.next:()Ljava/lang/Object;
+  #285 = Utf8               c
+  #286 = Utf8               tintColor
+  #287 = Utf8               (I)I
+  #288 = Utf8               getRealColor
+  #289 = NameAndType        #288:#93      // getRealColor:()I
+  #290 = Methodref          #2.#289       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getRealColor:()I
+  #291 = Utf8               index
+  #292 = Utf8               onNeighborChanged
+  #293 = Utf8               (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/BlockPos;Z)V
+  #294 = NameAndType        #292:#293     // onNeighborChanged:(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/BlockPos;Z)V
+  #295 = Methodref          #4.#294       // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onNeighborChanged:(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/BlockPos;Z)V
+  #296 = Utf8               block
+  #297 = Utf8               Lnet/minecraft/world/level/block/Block;
+  #298 = Utf8               fromPos
+  #299 = Utf8               Lnet/minecraft/core/BlockPos;
+  #300 = Utf8               isMoving
+  #301 = Utf8               onRotated
+  #302 = Utf8               (Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;)V
+  #303 = NameAndType        #301:#302     // onRotated:(Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;)V
+  #304 = Methodref          #4.#303       // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onRotated:(Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;)V
+  #305 = Utf8               (Lnet/minecraft/core/Direction;)V
+  #306 = NameAndType        #186:#305     // updateTankSubscription:(Lnet/minecraft/core/Direction;)V
+  #307 = Methodref          #2.#306       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.updateTankSubscription:(Lnet/minecraft/core/Direction;)V
+  #308 = Utf8               oldFacing
+  #309 = Utf8               Lnet/minecraft/core/Direction;
+  #310 = Utf8               newFacing
+  #311 = Utf8               getFrontFacing
+  #312 = Utf8               ()Lnet/minecraft/core/Direction;
+  #313 = NameAndType        #311:#312     // getFrontFacing:()Lnet/minecraft/core/Direction;
+  #314 = Methodref          #2.#313       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getFrontFacing:()Lnet/minecraft/core/Direction;
+  #315 = Utf8               isWorkingEnabled
+  #316 = NameAndType        #315:#242     // isWorkingEnabled:()Z
+  #317 = Methodref          #2.#316       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.isWorkingEnabled:()Z
+  #318 = Utf8               OUT
+  #319 = NameAndType        #318:#82      // OUT:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #320 = Fieldref           #111.#319     // com/gregtechceu/gtceu/api/capability/recipe/IO.OUT:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #321 = Utf8               support
+  #322 = Utf8               (Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)Z
+  #323 = NameAndType        #321:#322     // support:(Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)Z
+  #324 = Methodref          #111.#323     // com/gregtechceu/gtceu/api/capability/recipe/IO.support:(Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)Z
+  #325 = Utf8               isEmpty
+  #326 = NameAndType        #325:#242     // isEmpty:()Z
+  #327 = Methodref          #91.#326      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.isEmpty:()Z
+  #328 = Utf8               getPos
+  #329 = Utf8               ()Lnet/minecraft/core/BlockPos;
+  #330 = NameAndType        #328:#329     // getPos:()Lnet/minecraft/core/BlockPos;
+  #331 = Methodref          #2.#330       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getPos:()Lnet/minecraft/core/BlockPos;
+  #332 = Utf8               com/gregtechceu/gtceu/utils/GTTransferUtils
+  #333 = Class              #332          // com/gregtechceu/gtceu/utils/GTTransferUtils
+  #334 = Utf8               hasAdjacentFluidHandler
+  #335 = Utf8               (Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
+  #336 = NameAndType        #334:#335     // hasAdjacentFluidHandler:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
+  #337 = Methodref          #333.#336     // com/gregtechceu/gtceu/utils/GTTransferUtils.hasAdjacentFluidHandler:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
+  #338 = NameAndType        #37:#38       // autoIOSubs:Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+  #339 = Fieldref           #2.#338       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.autoIOSubs:Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+  #340 = Utf8               autoIO
+  #341 = NameAndType        #340:#150     // autoIO:()V
+  #342 = Methodref          #2.#341       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.autoIO:()V
+  #343 = MethodHandle       5:#342        // REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.autoIO:()V
+  #344 = InvokeDynamic      #2:#192       // #2:run:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/lang/Runnable;
+  #345 = Utf8               subscribeServerTick
+  #346 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;Ljava/lang/Runnable;)Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+  #347 = NameAndType        #345:#346     // subscribeServerTick:(Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;Ljava/lang/Runnable;)Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+  #348 = Methodref          #2.#347       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.subscribeServerTick:(Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;Ljava/lang/Runnable;)Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+  #349 = Utf8               com/gregtechceu/gtceu/api/machine/TickableSubscription
+  #350 = Class              #349          // com/gregtechceu/gtceu/api/machine/TickableSubscription
+  #351 = Methodref          #350.#230     // com/gregtechceu/gtceu/api/machine/TickableSubscription.unsubscribe:()V
+  #352 = Utf8               getOffsetTimer
+  #353 = Utf8               ()J
+  #354 = NameAndType        #352:#353     // getOffsetTimer:()J
+  #355 = Methodref          #2.#354       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getOffsetTimer:()J
+  #356 = Long               5l
+  #358 = Utf8               net/minecraft/core/Direction
+  #359 = Class              #358          // net/minecraft/core/Direction
+  #360 = Utf8               exportToNearby
+  #361 = Utf8               ([Lnet/minecraft/core/Direction;)V
+  #362 = NameAndType        #360:#361     // exportToNearby:([Lnet/minecraft/core/Direction;)V
+  #363 = Methodref          #91.#362      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.exportToNearby:([Lnet/minecraft/core/Direction;)V
+  #364 = Utf8               importFromNearby
+  #365 = NameAndType        #364:#361     // importFromNearby:([Lnet/minecraft/core/Direction;)V
+  #366 = Methodref          #91.#365      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.importFromNearby:([Lnet/minecraft/core/Direction;)V
+  #367 = Utf8               BOTH
+  #368 = NameAndType        #367:#82      // BOTH:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #369 = Fieldref           #111.#368     // com/gregtechceu/gtceu/api/capability/recipe/IO.BOTH:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+  #370 = Utf8               m_122424_
+  #371 = NameAndType        #370:#312     // m_122424_:()Lnet/minecraft/core/Direction;
+  #372 = Methodref          #359.#371     // net/minecraft/core/Direction.m_122424_:()Lnet/minecraft/core/Direction;
+  #373 = Utf8               setWorkingEnabled
+  #374 = NameAndType        #373:#256     // setWorkingEnabled:(Z)V
+  #375 = Methodref          #4.#374       // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.setWorkingEnabled:(Z)V
+  #376 = Utf8               workingEnabled
+  #377 = Utf8               onScrewdriverClick
+  #378 = Utf8               (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/core/Direction;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;
+  #379 = NameAndType        #377:#378     // onScrewdriverClick:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/core/Direction;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;
+  #380 = Methodref          #4.#379       // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onScrewdriverClick:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/core/Direction;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;
+  #381 = Utf8               net/minecraft/world/InteractionResult
+  #382 = Class              #381          // net/minecraft/world/InteractionResult
+  #383 = Utf8               PASS
+  #384 = Utf8               Lnet/minecraft/world/InteractionResult;
+  #385 = NameAndType        #383:#384     // PASS:Lnet/minecraft/world/InteractionResult;
+  #386 = Fieldref           #382.#385     // net/minecraft/world/InteractionResult.PASS:Lnet/minecraft/world/InteractionResult;
+  #387 = Utf8               net/minecraft/world/entity/player/Player
+  #388 = Class              #387          // net/minecraft/world/entity/player/Player
+  #389 = Utf8               m_6144_
+  #390 = NameAndType        #389:#242     // m_6144_:()Z
+  #391 = Methodref          #388.#390     // net/minecraft/world/entity/player/Player.m_6144_:()Z
+  #392 = Utf8               swapIO
+  #393 = NameAndType        #392:#242     // swapIO:()Z
+  #394 = Methodref          #2.#393       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.swapIO:()Z
+  #395 = Utf8               m_9236_
+  #396 = NameAndType        #395:#174     // m_9236_:()Lnet/minecraft/world/level/Level;
+  #397 = Methodref          #388.#396     // net/minecraft/world/entity/player/Player.m_9236_:()Lnet/minecraft/world/level/Level;
+  #398 = Utf8               net/minecraft/world/level/Level
+  #399 = Class              #398          // net/minecraft/world/level/Level
+  #400 = Utf8               f_46443_
+  #401 = NameAndType        #400:#43      // f_46443_:Z
+  #402 = Fieldref           #399.#401     // net/minecraft/world/level/Level.f_46443_:Z
+  #403 = Utf8               m_19078_
+  #404 = Utf8               (Z)Lnet/minecraft/world/InteractionResult;
+  #405 = NameAndType        #403:#404     // m_19078_:(Z)Lnet/minecraft/world/InteractionResult;
+  #406 = Methodref          #382.#405     // net/minecraft/world/InteractionResult.m_19078_:(Z)Lnet/minecraft/world/InteractionResult;
+  #407 = Utf8               playerIn
+  #408 = Utf8               Lnet/minecraft/world/entity/player/Player;
+  #409 = Utf8               hand
+  #410 = Utf8               Lnet/minecraft/world/InteractionHand;
+  #411 = Utf8               gridSide
+  #412 = Utf8               hitResult
+  #413 = Utf8               Lnet/minecraft/world/phys/BlockHitResult;
+  #414 = Utf8               superResult
+  #415 = Utf8               getHolder
+  #416 = Utf8               ()Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;
+  #417 = NameAndType        #415:#416     // getHolder:()Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;
+  #418 = Methodref          #2.#417       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getHolder:()Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;
+  #419 = Utf8               com/gregtechceu/gtceu/api/machine/IMachineBlockEntity
+  #420 = Class              #419          // com/gregtechceu/gtceu/api/machine/IMachineBlockEntity
+  #421 = Utf8               pos
+  #422 = NameAndType        #421:#329     // pos:()Lnet/minecraft/core/BlockPos;
+  #423 = InterfaceMethodref #420.#422     // com/gregtechceu/gtceu/api/machine/IMachineBlockEntity.pos:()Lnet/minecraft/core/BlockPos;
+  #424 = Utf8               com/gregtechceu/gtceu/common/data/GTMachines
+  #425 = Class              #424          // com/gregtechceu/gtceu/common/data/GTMachines
+  #426 = Utf8               FLUID_EXPORT_HATCH
+  #427 = Utf8               [Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #428 = NameAndType        #426:#427     // FLUID_EXPORT_HATCH:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #429 = Fieldref           #425.#428     // com/gregtechceu/gtceu/common/data/GTMachines.FLUID_EXPORT_HATCH:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #430 = Utf8               net/minecraft/core/BlockPos
+  #431 = Class              #430          // net/minecraft/core/BlockPos
+  #432 = Utf8               com/gregtechceu/gtceu/api/machine/MachineDefinition
+  #433 = Class              #432          // com/gregtechceu/gtceu/api/machine/MachineDefinition
+  #434 = Utf8               FLUID_EXPORT_HATCH_4X
+  #435 = NameAndType        #434:#427     // FLUID_EXPORT_HATCH_4X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #436 = Fieldref           #425.#435     // com/gregtechceu/gtceu/common/data/GTMachines.FLUID_EXPORT_HATCH_4X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #437 = Utf8               FLUID_EXPORT_HATCH_9X
+  #438 = NameAndType        #437:#427     // FLUID_EXPORT_HATCH_9X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #439 = Fieldref           #425.#438     // com/gregtechceu/gtceu/common/data/GTMachines.FLUID_EXPORT_HATCH_9X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #440 = Utf8               FLUID_IMPORT_HATCH
+  #441 = NameAndType        #440:#427     // FLUID_IMPORT_HATCH:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #442 = Fieldref           #425.#441     // com/gregtechceu/gtceu/common/data/GTMachines.FLUID_IMPORT_HATCH:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #443 = Utf8               FLUID_IMPORT_HATCH_4X
+  #444 = NameAndType        #443:#427     // FLUID_IMPORT_HATCH_4X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #445 = Fieldref           #425.#444     // com/gregtechceu/gtceu/common/data/GTMachines.FLUID_IMPORT_HATCH_4X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #446 = Utf8               FLUID_IMPORT_HATCH_9X
+  #447 = NameAndType        #446:#427     // FLUID_IMPORT_HATCH_9X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #448 = Fieldref           #425.#447     // com/gregtechceu/gtceu/common/data/GTMachines.FLUID_IMPORT_HATCH_9X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #449 = Utf8               getBlock
+  #450 = Utf8               ()Lnet/minecraft/world/level/block/Block;
+  #451 = NameAndType        #449:#450     // getBlock:()Lnet/minecraft/world/level/block/Block;
+  #452 = Methodref          #433.#451     // com/gregtechceu/gtceu/api/machine/MachineDefinition.getBlock:()Lnet/minecraft/world/level/block/Block;
+  #453 = Utf8               net/minecraft/world/level/block/Block
+  #454 = Class              #453          // net/minecraft/world/level/block/Block
+  #455 = Utf8               m_49966_
+  #456 = Utf8               ()Lnet/minecraft/world/level/block/state/BlockState;
+  #457 = NameAndType        #455:#456     // m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+  #458 = Methodref          #454.#457     // net/minecraft/world/level/block/Block.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+  #459 = Utf8               m_46597_
+  #460 = Utf8               (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+  #461 = NameAndType        #459:#460     // m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+  #462 = Methodref          #399.#461     // net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+  #463 = Utf8               m_7702_
+  #464 = Utf8               (Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+  #465 = NameAndType        #463:#464     // m_7702_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+  #466 = Methodref          #399.#465     // net/minecraft/world/level/Level.m_7702_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+  #467 = Utf8               getMetaMachine
+  #468 = Utf8               ()Lcom/gregtechceu/gtceu/api/machine/MetaMachine;
+  #469 = NameAndType        #467:#468     // getMetaMachine:()Lcom/gregtechceu/gtceu/api/machine/MetaMachine;
+  #470 = InterfaceMethodref #420.#469     // com/gregtechceu/gtceu/api/machine/IMachineBlockEntity.getMetaMachine:()Lcom/gregtechceu/gtceu/api/machine/MetaMachine;
+  #471 = Utf8               setFrontFacing
+  #472 = NameAndType        #471:#305     // setFrontFacing:(Lnet/minecraft/core/Direction;)V
+  #473 = Methodref          #2.#472       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.setFrontFacing:(Lnet/minecraft/core/Direction;)V
+  #474 = Utf8               getUpwardsFacing
+  #475 = NameAndType        #474:#312     // getUpwardsFacing:()Lnet/minecraft/core/Direction;
+  #476 = Methodref          #2.#475       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getUpwardsFacing:()Lnet/minecraft/core/Direction;
+  #477 = Utf8               setUpwardsFacing
+  #478 = NameAndType        #477:#305     // setUpwardsFacing:(Lnet/minecraft/core/Direction;)V
+  #479 = Methodref          #2.#478       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.setUpwardsFacing:(Lnet/minecraft/core/Direction;)V
+  #480 = Utf8               setPaintingColor
+  #481 = NameAndType        #480:#213     // setPaintingColor:(I)V
+  #482 = Methodref          #2.#481       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.setPaintingColor:(I)V
+  #483 = Utf8               net/minecraft/world/level/block/state/BlockState
+  #484 = Class              #483          // net/minecraft/world/level/block/state/BlockState
+  #485 = Utf8               getTanks
+  #486 = NameAndType        #485:#93      // getTanks:()I
+  #487 = Methodref          #91.#486      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getTanks:()I
+  #488 = Utf8               getFluidInTank
+  #489 = Utf8               (I)Lnet/minecraftforge/fluids/FluidStack;
+  #490 = NameAndType        #488:#489     // getFluidInTank:(I)Lnet/minecraftforge/fluids/FluidStack;
+  #491 = Methodref          #91.#490      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getFluidInTank:(I)Lnet/minecraftforge/fluids/FluidStack;
+  #492 = Utf8               setFluidInTank
+  #493 = Utf8               (ILnet/minecraftforge/fluids/FluidStack;)V
+  #494 = NameAndType        #492:#493     // setFluidInTank:(ILnet/minecraftforge/fluids/FluidStack;)V
+  #495 = Methodref          #91.#494      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.setFluidInTank:(ILnet/minecraftforge/fluids/FluidStack;)V
+  #496 = Utf8               i
+  #497 = Utf8               newMachine
+  #498 = Utf8               newHolder
+  #499 = Utf8               blockPos
+  #500 = Utf8               newDefinition
+  #501 = Utf8               Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+  #502 = Utf8               newBlockState
+  #503 = Utf8               Lnet/minecraft/world/level/block/state/BlockState;
+  #504 = Utf8               attachConfigurators
+  #505 = Utf8               (Lcom/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel;)V
+  #506 = NameAndType        #504:#505     // attachConfigurators:(Lcom/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel;)V
+  #507 = Methodref          #4.#506       // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.attachConfigurators:(Lcom/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel;)V
+  #508 = Utf8               isCircuitSlotEnabled
+  #509 = NameAndType        #508:#242     // isCircuitSlotEnabled:()Z
+  #510 = Methodref          #2.#509       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.isCircuitSlotEnabled:()Z
+  #511 = Utf8               com/gregtechceu/gtceu/api/gui/fancy/IFancyConfigurator
+  #512 = Class              #511          // com/gregtechceu/gtceu/api/gui/fancy/IFancyConfigurator
+  #513 = Utf8               com/gregtechceu/gtceu/api/machine/fancyconfigurator/CircuitFancyConfigurator
+  #514 = Class              #513          // com/gregtechceu/gtceu/api/machine/fancyconfigurator/CircuitFancyConfigurator
+  #515 = Utf8               (Lnet/minecraftforge/items/ItemStackHandler;)V
+  #516 = NameAndType        #47:#515      // "<init>":(Lnet/minecraftforge/items/ItemStackHandler;)V
+  #517 = Methodref          #514.#516     // com/gregtechceu/gtceu/api/machine/fancyconfigurator/CircuitFancyConfigurator."<init>":(Lnet/minecraftforge/items/ItemStackHandler;)V
+  #518 = Utf8               com/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel
+  #519 = Class              #518          // com/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel
+  #520 = Utf8               ([Lcom/gregtechceu/gtceu/api/gui/fancy/IFancyConfigurator;)V
+  #521 = NameAndType        #504:#520     // attachConfigurators:([Lcom/gregtechceu/gtceu/api/gui/fancy/IFancyConfigurator;)V
+  #522 = Methodref          #519.#521     // com/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel.attachConfigurators:([Lcom/gregtechceu/gtceu/api/gui/fancy/IFancyConfigurator;)V
+  #523 = Utf8               configuratorPanel
+  #524 = Utf8               Lcom/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel;
+  #525 = Utf8               createUIWidget
+  #526 = Utf8               ()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+  #527 = Utf8               createSingleSlotGUI
+  #528 = NameAndType        #527:#526     // createSingleSlotGUI:()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+  #529 = Methodref          #2.#528       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.createSingleSlotGUI:()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+  #530 = Utf8               createMultiSlotGUI
+  #531 = NameAndType        #530:#526     // createMultiSlotGUI:()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+  #532 = Methodref          #2.#531       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.createMultiSlotGUI:()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+  #533 = Utf8               com/lowdragmc/lowdraglib/gui/widget/WidgetGroup
+  #534 = Class              #533          // com/lowdragmc/lowdraglib/gui/widget/WidgetGroup
+  #535 = Utf8               (IIII)V
+  #536 = NameAndType        #47:#535      // "<init>":(IIII)V
+  #537 = Methodref          #534.#536     // com/lowdragmc/lowdraglib/gui/widget/WidgetGroup."<init>":(IIII)V
+  #538 = Utf8               com/lowdragmc/lowdraglib/gui/widget/ImageWidget
+  #539 = Class              #538          // com/lowdragmc/lowdraglib/gui/widget/ImageWidget
+  #540 = Utf8               com/gregtechceu/gtceu/api/gui/GuiTextures
+  #541 = Class              #540          // com/gregtechceu/gtceu/api/gui/GuiTextures
+  #542 = Utf8               DISPLAY
+  #543 = Utf8               Lcom/lowdragmc/lowdraglib/gui/texture/ResourceTexture;
+  #544 = NameAndType        #542:#543     // DISPLAY:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceTexture;
+  #545 = Fieldref           #541.#544     // com/gregtechceu/gtceu/api/gui/GuiTextures.DISPLAY:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceTexture;
+  #546 = Utf8               (IIIILcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)V
+  #547 = NameAndType        #47:#546      // "<init>":(IIIILcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)V
+  #548 = Methodref          #539.#547     // com/lowdragmc/lowdraglib/gui/widget/ImageWidget."<init>":(IIIILcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)V
+  #549 = Utf8               addWidget
+  #550 = Utf8               (Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+  #551 = NameAndType        #549:#550     // addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+  #552 = Methodref          #534.#551     // com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+  #553 = Utf8               com/gregtechceu/gtceu/api/gui/widget/PhantomFluidWidget
+  #554 = Class              #553          // com/gregtechceu/gtceu/api/gui/widget/PhantomFluidWidget
+  #555 = Utf8               getLockedFluid
+  #556 = Utf8               ()Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+  #557 = NameAndType        #555:#556     // getLockedFluid:()Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+  #558 = Methodref          #91.#557      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getLockedFluid:()Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+  #559 = MethodType         #282          //  ()Ljava/lang/Object;
+  #560 = Utf8               lambda$createSingleSlotGUI$0
+  #561 = Utf8               ()Lnet/minecraftforge/fluids/FluidStack;
+  #562 = NameAndType        #560:#561     // lambda$createSingleSlotGUI$0:()Lnet/minecraftforge/fluids/FluidStack;
+  #563 = Methodref          #2.#562       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$0:()Lnet/minecraftforge/fluids/FluidStack;
+  #564 = MethodHandle       5:#563        // REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$0:()Lnet/minecraftforge/fluids/FluidStack;
+  #565 = MethodType         #561          //  ()Lnet/minecraftforge/fluids/FluidStack;
+  #566 = Utf8               get
+  #567 = Utf8               (Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/util/function/Supplier;
+  #568 = NameAndType        #566:#567     // get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/util/function/Supplier;
+  #569 = InvokeDynamic      #3:#568       // #3:get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/util/function/Supplier;
+  #570 = Utf8               (Ljava/lang/Object;)V
+  #571 = MethodType         #570          //  (Ljava/lang/Object;)V
+  #572 = Utf8               lambda$createSingleSlotGUI$1
+  #573 = Utf8               (Lnet/minecraftforge/fluids/FluidStack;)V
+  #574 = NameAndType        #572:#573     // lambda$createSingleSlotGUI$1:(Lnet/minecraftforge/fluids/FluidStack;)V
+  #575 = Methodref          #2.#574       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$1:(Lnet/minecraftforge/fluids/FluidStack;)V
+  #576 = MethodHandle       5:#575        // REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$1:(Lnet/minecraftforge/fluids/FluidStack;)V
+  #577 = MethodType         #573          //  (Lnet/minecraftforge/fluids/FluidStack;)V
+  #578 = Utf8               accept
+  #579 = Utf8               (Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/util/function/Consumer;
+  #580 = NameAndType        #578:#579     // accept:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/util/function/Consumer;
+  #581 = InvokeDynamic      #4:#580       // #4:accept:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/util/function/Consumer;
+  #582 = Utf8               (Lnet/minecraftforge/fluids/capability/IFluidHandler;IIIIILjava/util/function/Supplier;Ljava/util/function/Consumer;)V
+  #583 = NameAndType        #47:#582      // "<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIIIILjava/util/function/Supplier;Ljava/util/function/Consumer;)V
+  #584 = Methodref          #554.#583     // com/gregtechceu/gtceu/api/gui/widget/PhantomFluidWidget."<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIIIILjava/util/function/Supplier;Ljava/util/function/Consumer;)V
+  #585 = Utf8               setShowAmount
+  #586 = Utf8               (Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #587 = NameAndType        #585:#586     // setShowAmount:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #588 = Methodref          #554.#587     // com/gregtechceu/gtceu/api/gui/widget/PhantomFluidWidget.setShowAmount:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #589 = Utf8               com/gregtechceu/gtceu/api/gui/widget/TankWidget
+  #590 = Class              #589          // com/gregtechceu/gtceu/api/gui/widget/TankWidget
+  #591 = Utf8               setDrawHoverTips
+  #592 = NameAndType        #591:#586     // setDrawHoverTips:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #593 = Methodref          #590.#592     // com/gregtechceu/gtceu/api/gui/widget/TankWidget.setDrawHoverTips:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #594 = Utf8               FLUID_SLOT
+  #595 = Utf8               Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+  #596 = NameAndType        #594:#595     // FLUID_SLOT:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+  #597 = Fieldref           #541.#596     // com/gregtechceu/gtceu/api/gui/GuiTextures.FLUID_SLOT:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+  #598 = Utf8               setBackground
+  #599 = Utf8               (Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #600 = NameAndType        #598:#599     // setBackground:(Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #601 = Methodref          #590.#600     // com/gregtechceu/gtceu/api/gui/widget/TankWidget.setBackground:(Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #602 = Utf8               com/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget
+  #603 = Class              #602          // com/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget
+  #604 = Utf8               BUTTON_LOCK
+  #605 = NameAndType        #604:#543     // BUTTON_LOCK:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceTexture;
+  #606 = Fieldref           #541.#605     // com/gregtechceu/gtceu/api/gui/GuiTextures.BUTTON_LOCK:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceTexture;
+  #607 = Utf8               java/util/Objects
+  #608 = Class              #607          // java/util/Objects
+  #609 = Utf8               requireNonNull
+  #610 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #611 = NameAndType        #609:#610     // requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+  #612 = Methodref          #608.#611     // java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+  #613 = MethodType         #242          //  ()Z
+  #614 = Utf8               isLocked
+  #615 = NameAndType        #614:#242     // isLocked:()Z
+  #616 = Methodref          #91.#615      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.isLocked:()Z
+  #617 = MethodHandle       5:#616        // REF_invokeVirtual com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.isLocked:()Z
+  #618 = Utf8               getAsBoolean
+  #619 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;)Ljava/util/function/BooleanSupplier;
+  #620 = NameAndType        #618:#619     // getAsBoolean:(Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;)Ljava/util/function/BooleanSupplier;
+  #621 = InvokeDynamic      #5:#620       // #5:getAsBoolean:(Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;)Ljava/util/function/BooleanSupplier;
+  #622 = MethodType         #256          //  (Z)V
+  #623 = Utf8               setLocked
+  #624 = NameAndType        #623:#256     // setLocked:(Z)V
+  #625 = Methodref          #91.#624      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.setLocked:(Z)V
+  #626 = MethodHandle       5:#625        // REF_invokeVirtual com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.setLocked:(Z)V
+  #627 = Utf8               (Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;)Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;
+  #628 = NameAndType        #578:#627     // accept:(Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;)Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;
+  #629 = InvokeDynamic      #6:#628       // #6:accept:(Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;)Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;
+  #630 = Utf8               (IIIILcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;Ljava/util/function/BooleanSupplier;Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;)V
+  #631 = NameAndType        #47:#630      // "<init>":(IIIILcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;Ljava/util/function/BooleanSupplier;Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;)V
+  #632 = Methodref          #603.#631     // com/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget."<init>":(IIIILcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;Ljava/util/function/BooleanSupplier;Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;)V
+  #633 = Utf8               gtceu.gui.fluid_lock.tooltip
+  #634 = String             #633          // gtceu.gui.fluid_lock.tooltip
+  #635 = Utf8               setTooltipText
+  #636 = Utf8               (Ljava/lang/String;)Lcom/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget;
+  #637 = NameAndType        #635:#636     // setTooltipText:(Ljava/lang/String;)Lcom/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget;
+  #638 = Methodref          #603.#637     // com/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget.setTooltipText:(Ljava/lang/String;)Lcom/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget;
+  #639 = Utf8               setShouldUseBaseBackground
+  #640 = Utf8               ()Lcom/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget;
+  #641 = NameAndType        #639:#640     // setShouldUseBaseBackground:()Lcom/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget;
+  #642 = Methodref          #603.#641     // com/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget.setShouldUseBaseBackground:()Lcom/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget;
+  #643 = Utf8               getStorages
+  #644 = Utf8               ()[Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+  #645 = NameAndType        #643:#644     // getStorages:()[Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+  #646 = Methodref          #91.#645      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getStorages:()[Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+  #647 = Utf8               (Lnet/minecraftforge/fluids/capability/IFluidHandler;IIIIZZ)V
+  #648 = NameAndType        #47:#647      // "<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIIIZZ)V
+  #649 = Methodref          #590.#648     // com/gregtechceu/gtceu/api/gui/widget/TankWidget."<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIIIZZ)V
+  #650 = Methodref          #590.#587     // com/gregtechceu/gtceu/api/gui/widget/TankWidget.setShowAmount:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #651 = Utf8               com/lowdragmc/lowdraglib/gui/widget/LabelWidget
+  #652 = Class              #651          // com/lowdragmc/lowdraglib/gui/widget/LabelWidget
+  #653 = Utf8               gtceu.gui.fluid_amount
+  #654 = String             #653          // gtceu.gui.fluid_amount
+  #655 = Utf8               (IILjava/lang/String;)V
+  #656 = NameAndType        #47:#655      // "<init>":(IILjava/lang/String;)V
+  #657 = Methodref          #652.#656     // com/lowdragmc/lowdraglib/gui/widget/LabelWidget."<init>":(IILjava/lang/String;)V
+  #658 = Utf8               lambda$createSingleSlotGUI$2
+  #659 = Utf8               (Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+  #660 = NameAndType        #658:#659     // lambda$createSingleSlotGUI$2:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+  #661 = Methodref          #2.#660       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$2:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+  #662 = MethodHandle       5:#661        // REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$2:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+  #663 = Utf8               ()Ljava/lang/String;
+  #664 = MethodType         #663          //  ()Ljava/lang/String;
+  #665 = Utf8               (Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/util/function/Supplier;
+  #666 = NameAndType        #566:#665     // get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/util/function/Supplier;
+  #667 = InvokeDynamic      #7:#666       // #7:get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/util/function/Supplier;
+  #668 = Utf8               (IILjava/util/function/Supplier;)V
+  #669 = NameAndType        #47:#668      // "<init>":(IILjava/util/function/Supplier;)V
+  #670 = Methodref          #652.#669     // com/lowdragmc/lowdraglib/gui/widget/LabelWidget."<init>":(IILjava/util/function/Supplier;)V
+  #671 = Utf8               lambda$createSingleSlotGUI$3
+  #672 = NameAndType        #671:#659     // lambda$createSingleSlotGUI$3:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+  #673 = Methodref          #2.#672       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$3:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+  #674 = MethodHandle       5:#673        // REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$3:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+  #675 = InvokeDynamic      #8:#666       // #8:get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/util/function/Supplier;
+  #676 = Utf8               com/lowdragmc/lowdraglib/gui/texture/IGuiTexture
+  #677 = Class              #676          // com/lowdragmc/lowdraglib/gui/texture/IGuiTexture
+  #678 = Utf8               BACKGROUND_INVERSE
+  #679 = NameAndType        #678:#595     // BACKGROUND_INVERSE:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+  #680 = Fieldref           #541.#679     // com/gregtechceu/gtceu/api/gui/GuiTextures.BACKGROUND_INVERSE:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+  #681 = Utf8               ([Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+  #682 = NameAndType        #598:#681     // setBackground:([Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+  #683 = Methodref          #534.#682     // com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.setBackground:([Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+  #684 = Utf8               tankWidget
+  #685 = Utf8               Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+  #686 = Utf8               group
+  #687 = Utf8               Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+  #688 = Utf8               getFluidNameText
+  #689 = Utf8               (Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Lnet/minecraft/network/chat/Component;
+  #690 = Utf8               getTank
+  #691 = NameAndType        #690:#93      // getTank:()I
+  #692 = Methodref          #590.#691     // com/gregtechceu/gtceu/api/gui/widget/TankWidget.getTank:()I
+  #693 = Utf8               net/minecraftforge/fluids/FluidStack
+  #694 = Class              #693          // net/minecraftforge/fluids/FluidStack
+  #695 = Methodref          #694.#326     // net/minecraftforge/fluids/FluidStack.isEmpty:()Z
+  #696 = Utf8               getDisplayName
+  #697 = Utf8               ()Lnet/minecraft/network/chat/Component;
+  #698 = NameAndType        #696:#697     // getDisplayName:()Lnet/minecraft/network/chat/Component;
+  #699 = Methodref          #694.#698     // net/minecraftforge/fluids/FluidStack.getDisplayName:()Lnet/minecraft/network/chat/Component;
+  #700 = Utf8               com/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank
+  #701 = Class              #700          // com/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank
+  #702 = Utf8               getFluid
+  #703 = NameAndType        #702:#561     // getFluid:()Lnet/minecraftforge/fluids/FluidStack;
+  #704 = Methodref          #701.#703     // com/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank.getFluid:()Lnet/minecraftforge/fluids/FluidStack;
+  #705 = Utf8               net/minecraft/network/chat/Component
+  #706 = Class              #705          // net/minecraft/network/chat/Component
+  #707 = Utf8               translation
+  #708 = Utf8               Lnet/minecraft/network/chat/Component;
+  #709 = Utf8               getFluidAmountText
+  #710 = Utf8
+  #711 = String             #710          //
+  #712 = Utf8               getFormattedFluidAmount
+  #713 = Utf8               (Lnet/minecraftforge/fluids/FluidStack;)Ljava/lang/String;
+  #714 = NameAndType        #712:#713     // getFormattedFluidAmount:(Lnet/minecraftforge/fluids/FluidStack;)Ljava/lang/String;
+  #715 = Methodref          #2.#714       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getFormattedFluidAmount:(Lnet/minecraftforge/fluids/FluidStack;)Ljava/lang/String;
+  #716 = Utf8               java/lang/String
+  #717 = Class              #716          // java/lang/String
+  #718 = Utf8               0
+  #719 = String             #718          // 0
+  #720 = Utf8               fluidAmount
+  #721 = Utf8               Ljava/lang/String;
+  #722 = Utf8               %,d
+  #723 = String             #722          // %,d
+  #724 = Class              #85           // "[Ljava/lang/Object;"
+  #725 = Utf8               getAmount
+  #726 = NameAndType        #725:#93      // getAmount:()I
+  #727 = Methodref          #694.#726     // net/minecraftforge/fluids/FluidStack.getAmount:()I
+  #728 = Utf8               java/lang/Integer
+  #729 = Class              #728          // java/lang/Integer
+  #730 = Utf8               valueOf
+  #731 = Utf8               (I)Ljava/lang/Integer;
+  #732 = NameAndType        #730:#731     // valueOf:(I)Ljava/lang/Integer;
+  #733 = Methodref          #729.#732     // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #734 = Utf8               format
+  #735 = Utf8               (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #736 = NameAndType        #734:#735     // format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #737 = Methodref          #717.#736     // java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #738 = Utf8               fluidStack
+  #739 = Utf8               Lnet/minecraftforge/fluids/FluidStack;
+  #740 = Utf8               sqrt
+  #741 = Utf8               (D)D
+  #742 = NameAndType        #740:#741     // sqrt:(D)D
+  #743 = Methodref          #106.#742     // java/lang/Math.sqrt:(D)D
+  #744 = Utf8               (Lnet/minecraftforge/fluids/capability/IFluidHandler;IIZZ)V
+  #745 = NameAndType        #47:#744      // "<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIZZ)V
+  #746 = Methodref          #590.#745     // com/gregtechceu/gtceu/api/gui/widget/TankWidget."<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIZZ)V
+  #747 = Utf8               x
+  #748 = Utf8               y
+  #749 = Utf8               rowSize
+  #750 = Utf8               colSize
+  #751 = Utf8               container
+  #752 = Utf8               Llombok/Generated;
+  #753 = Utf8               getCircuitInventory
+  #754 = Utf8               ()Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+  #755 = NameAndType        #688:#689     // getFluidNameText:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Lnet/minecraft/network/chat/Component;
+  #756 = Methodref          #2.#755       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getFluidNameText:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Lnet/minecraft/network/chat/Component;
+  #757 = Utf8               getString
+  #758 = NameAndType        #757:#663     // getString:()Ljava/lang/String;
+  #759 = InterfaceMethodref #706.#758     // net/minecraft/network/chat/Component.getString:()Ljava/lang/String;
+  #760 = NameAndType        #709:#659     // getFluidAmountText:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+  #761 = Methodref          #2.#760       // com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.getFluidAmountText:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+  #762 = Utf8               copy
+  #763 = NameAndType        #762:#561     // copy:()Lnet/minecraftforge/fluids/FluidStack;
+  #764 = Methodref          #694.#763     // net/minecraftforge/fluids/FluidStack.copy:()Lnet/minecraftforge/fluids/FluidStack;
+  #765 = Utf8               setAmount
+  #766 = NameAndType        #765:#213     // setAmount:(I)V
+  #767 = Methodref          #694.#766     // net/minecraftforge/fluids/FluidStack.setAmount:(I)V
+  #768 = Utf8               (ZLnet/minecraftforge/fluids/FluidStack;)V
+  #769 = NameAndType        #623:#768     // setLocked:(ZLnet/minecraftforge/fluids/FluidStack;)V
+  #770 = Methodref          #91.#769      // com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.setLocked:(ZLnet/minecraftforge/fluids/FluidStack;)V
+  #771 = Utf8               newFluid
+  #772 = Utf8               f
+  #773 = Utf8               <clinit>
+  #774 = Utf8               com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder
+  #775 = Class              #774          // com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder
+  #776 = Fieldref           #4.#88        // com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+  #777 = Utf8               (Ljava/lang/Class;Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;)V
+  #778 = NameAndType        #47:#777      // "<init>":(Ljava/lang/Class;Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;)V
+  #779 = Methodref          #775.#778     // com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder."<init>":(Ljava/lang/Class;Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;)V
+  #780 = Utf8               ConstantValue
+  #781 = Utf8               RuntimeVisibleAnnotations
+  #782 = Utf8               RuntimeInvisibleAnnotations
+  #783 = Utf8               RuntimeInvisibleTypeAnnotations
+  #784 = Utf8               Code
+  #785 = Utf8               LineNumberTable
+  #786 = Utf8               LocalVariableTable
+  #787 = Utf8               StackMapTable
+  #788 = Utf8               InnerClasses
+  #789 = Utf8               SourceFile
+  #790 = Utf8               BootstrapMethods
+{
+  protected static final com.lowdragmc.lowdraglib.syncdata.field.ManagedFieldHolder MANAGED_FIELD_HOLDER;
+    descriptor: Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+    flags: (0x001c) ACC_PROTECTED, ACC_STATIC, ACC_FINAL
+
+  public static final int INITIAL_TANK_CAPACITY_1X;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 8000
+
+  public static final int INITIAL_TANK_CAPACITY_4X;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 2000
+
+  public static final int INITIAL_TANK_CAPACITY_9X;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 1000
+
+  public final com.gregtechceu.gtceu.api.machine.trait.NotifiableFluidTank tank;
+    descriptor: Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    RuntimeVisibleAnnotations:
+      0: #35()
+        com.lowdragmc.lowdraglib.syncdata.annotation.Persisted
+
+  private final int slots;
+    descriptor: I
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  protected com.gregtechceu.gtceu.api.machine.TickableSubscription autoIOSubs;
+    descriptor: Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+    flags: (0x0004) ACC_PROTECTED
+    RuntimeInvisibleAnnotations:
+      0: #39()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleTypeAnnotations:
+      0: #39(): FIELD
+        org.jetbrains.annotations.Nullable
+
+  protected com.lowdragmc.lowdraglib.syncdata.ISubscription tankSubs;
+    descriptor: Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+    flags: (0x0004) ACC_PROTECTED
+    RuntimeInvisibleAnnotations:
+      0: #39()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleTypeAnnotations:
+      0: #39(): FIELD
+        org.jetbrains.annotations.Nullable
+
+  protected boolean circuitSlotEnabled;
+    descriptor: Z
+    flags: (0x0004) ACC_PROTECTED
+    RuntimeVisibleAnnotations:
+      0: #35()
+        com.lowdragmc.lowdraglib.syncdata.annotation.Persisted
+      1: #44()
+        com.lowdragmc.lowdraglib.syncdata.annotation.DescSynced
+
+  protected final com.gregtechceu.gtceu.api.machine.trait.NotifiableItemStackHandler circuitInventory;
+    descriptor: Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+    RuntimeVisibleAnnotations:
+      0: #35()
+        com.lowdragmc.lowdraglib.syncdata.annotation.Persisted
+
+  public com.gregtechceu.gtceu.common.machine.multiblock.part.FluidHatchPartMachine(com.gregtechceu.gtceu.api.machine.IMachineBlockEntity, int, com.gregtechceu.gtceu.api.capability.recipe.IO, int, int, java.lang.Object...);
+    descriptor: (Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;II[Ljava/lang/Object;)V
+    flags: (0x0081) ACC_PUBLIC, ACC_VARARGS
+    Code:
+      stack=6, locals=7, args_size=7
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: aload_3
+         4: invokespecial #51                 // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine."<init>":(Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+         7: aload_0
+         8: iload         5
+        10: putfield      #53                 // Field slots:I
+        13: aload_0
+        14: aload_0
+        15: iload         4
+        17: iload         5
+        19: aload         6
+        21: invokevirtual #57                 // Method createTank:(II[Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        24: putfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        27: aload_0
+        28: iconst_1
+        29: putfield      #61                 // Field circuitSlotEnabled:Z
+        32: aload_0
+        33: aload_0
+        34: iconst_1
+        35: anewarray     #63                 // class java/lang/Object
+        38: dup
+        39: iconst_0
+        40: aload_3
+        41: aastore
+        42: invokevirtual #67                 // Method createCircuitItemHandler:([Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+        45: iconst_0
+        46: invokevirtual #73                 // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.shouldSearchContent:(Z)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+        49: putfield      #75                 // Field circuitInventory:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+        52: return
+      LineNumberTable:
+        line 87: 0
+        line 88: 7
+        line 89: 13
+        line 90: 27
+        line 91: 32
+        line 92: 52
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      53     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      53     1 holder   Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;
+            0      53     2  tier   I
+            0      53     3    io   Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+            0      53     4 initialCapacity   I
+            0      53     5 slots   I
+            0      53     6  args   [Ljava/lang/Object;
+
+  public com.lowdragmc.lowdraglib.syncdata.field.ManagedFieldHolder getFieldHolder();
+    descriptor: ()Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #89                 // Field MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+         3: areturn
+      LineNumberTable:
+        line 99: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+
+  protected com.gregtechceu.gtceu.api.machine.trait.NotifiableFluidTank createTank(int, int, java.lang.Object...);
+    descriptor: (II[Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+    flags: (0x0084) ACC_PROTECTED, ACC_VARARGS
+    Code:
+      stack=6, locals=4, args_size=4
+         0: new           #91                 // class com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank
+         3: dup
+         4: aload_0
+         5: iload_2
+         6: iload_1
+         7: aload_0
+         8: invokevirtual #95                 // Method getTier:()I
+        11: invokestatic  #99                 // Method getTankCapacity:(II)I
+        14: aload_0
+        15: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        18: invokespecial #104                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank."<init>":(Lcom/gregtechceu/gtceu/api/machine/MetaMachine;IILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+        21: areturn
+      LineNumberTable:
+        line 103: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      22     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      22     1 initialCapacity   I
+            0      22     2 slots   I
+            0      22     3  args   [Ljava/lang/Object;
+
+  public static int getTankCapacity(int, int);
+    descriptor: (II)I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: iload_0
+         1: iconst_1
+         2: bipush        9
+         4: iload_1
+         5: invokestatic  #109                // Method java/lang/Math.min:(II)I
+         8: ishl
+         9: imul
+        10: ireturn
+      LineNumberTable:
+        line 107: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0 initialCapacity   I
+            0      11     1  tier   I
+
+  protected com.gregtechceu.gtceu.api.machine.trait.NotifiableItemStackHandler createCircuitItemHandler(java.lang.Object...);
+    descriptor: ([Ljava/lang/Object;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+    flags: (0x0084) ACC_PROTECTED, ACC_VARARGS
+    Code:
+      stack=6, locals=4, args_size=2
+         0: aload_1
+         1: arraylength
+         2: ifle          52
+         5: aload_1
+         6: iconst_0
+         7: aaload
+         8: astore_3
+         9: aload_3
+        10: instanceof    #111                // class com/gregtechceu/gtceu/api/capability/recipe/IO
+        13: ifeq          52
+        16: aload_3
+        17: checkcast     #111                // class com/gregtechceu/gtceu/api/capability/recipe/IO
+        20: astore_2
+        21: aload_2
+        22: getstatic     #114                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        25: if_acmpne     52
+        28: new           #69                 // class com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler
+        31: dup
+        32: aload_0
+        33: iconst_1
+        34: getstatic     #114                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        37: getstatic     #117                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.NONE:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        40: invokespecial #120                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler."<init>":(Lcom/gregtechceu/gtceu/api/machine/MetaMachine;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+        43: invokedynamic #141,  0            // InvokeDynamic #0:test:()Ljava/util/function/Predicate;
+        48: invokevirtual #145                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.setFilter:(Ljava/util/function/Predicate;)Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+        51: areturn
+        52: new           #69                 // class com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler
+        55: dup
+        56: aload_0
+        57: iconst_0
+        58: getstatic     #117                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.NONE:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        61: invokespecial #148                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler."<init>":(Lcom/gregtechceu/gtceu/api/machine/MetaMachine;ILcom/gregtechceu/gtceu/api/capability/recipe/IO;)V
+        64: areturn
+      StackMapTable: number_of_entries = 1
+        frame_type = 52 /* same */
+      LineNumberTable:
+        line 111: 0
+        line 112: 28
+        line 113: 48
+        line 112: 51
+        line 115: 52
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           21      31     2    io   Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+            0      65     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      65     1  args   [Ljava/lang/Object;
+
+  public void onMachineRemoved();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #154                // Field com/gregtechceu/gtceu/config/ConfigHolder.INSTANCE:Lcom/gregtechceu/gtceu/config/ConfigHolder;
+         3: getfield      #158                // Field com/gregtechceu/gtceu/config/ConfigHolder.machines:Lcom/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs;
+         6: getfield      #161                // Field com/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs.ghostCircuit:Z
+         9: ifne          23
+        12: aload_0
+        13: aload_0
+        14: getfield      #75                 // Field circuitInventory:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+        17: getfield      #165                // Field com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.storage:Lcom/gregtechceu/gtceu/api/transfer/item/CustomItemStackHandler;
+        20: invokevirtual #169                // Method clearInventory:(Lnet/minecraftforge/items/IItemHandlerModifiable;)V
+        23: return
+      StackMapTable: number_of_entries = 1
+        frame_type = 23 /* same */
+      LineNumberTable:
+        line 121: 0
+        line 122: 12
+        line 124: 23
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      24     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+
+  public void onLoad();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=5, locals=3, args_size=1
+         0: aload_0
+         1: invokespecial #172                // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onLoad:()V
+         4: aload_0
+         5: invokevirtual #176                // Method getLevel:()Lnet/minecraft/world/level/Level;
+         8: astore_2
+         9: aload_2
+        10: instanceof    #178                // class net/minecraft/server/level/ServerLevel
+        13: ifeq          42
+        16: aload_2
+        17: checkcast     #178                // class net/minecraft/server/level/ServerLevel
+        20: astore_1
+        21: aload_1
+        22: invokevirtual #182                // Method net/minecraft/server/level/ServerLevel.m_7654_:()Lnet/minecraft/server/MinecraftServer;
+        25: new           #184                // class net/minecraft/server/TickTask
+        28: dup
+        29: iconst_0
+        30: aload_0
+        31: invokedynamic #193,  0            // InvokeDynamic #1:run:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/lang/Runnable;
+        36: invokespecial #196                // Method net/minecraft/server/TickTask."<init>":(ILjava/lang/Runnable;)V
+        39: invokevirtual #202                // Method net/minecraft/server/MinecraftServer.m_6937_:(Ljava/lang/Runnable;)V
+        42: aload_0
+        43: invokevirtual #206                // Method getHandlerList:()Lcom/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList;
+        46: aload_0
+        47: invokevirtual #209                // Method getPaintingColor:()I
+        50: invokevirtual #215                // Method com/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList.setColor:(I)V
+        53: aload_0
+        54: aload_0
+        55: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        58: aload_0
+        59: invokedynamic #193,  0            // InvokeDynamic #1:run:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/lang/Runnable;
+        64: invokevirtual #219                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.addChangedListener:(Ljava/lang/Runnable;)Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+        67: putfield      #221                // Field tankSubs:Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+        70: return
+      StackMapTable: number_of_entries = 1
+        frame_type = 42 /* same */
+      LineNumberTable:
+        line 128: 0
+        line 129: 4
+        line 130: 21
+        line 132: 42
+        line 133: 53
+        line 134: 70
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           21      21     1 serverLevel   Lnet/minecraft/server/level/ServerLevel;
+            0      71     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+
+  public void onUnload();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #226                // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onUnload:()V
+         4: aload_0
+         5: getfield      #221                // Field tankSubs:Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+         8: ifnull        25
+        11: aload_0
+        12: getfield      #221                // Field tankSubs:Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+        15: invokeinterface #231,  1          // InterfaceMethod com/lowdragmc/lowdraglib/syncdata/ISubscription.unsubscribe:()V
+        20: aload_0
+        21: aconst_null
+        22: putfield      #221                // Field tankSubs:Lcom/lowdragmc/lowdraglib/syncdata/ISubscription;
+        25: return
+      StackMapTable: number_of_entries = 1
+        frame_type = 25 /* same */
+      LineNumberTable:
+        line 138: 0
+        line 139: 4
+        line 140: 11
+        line 141: 20
+        line 143: 25
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      26     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+
+  public void onPaintingColorChanged(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: aload_0
+         1: invokevirtual #206                // Method getHandlerList:()Lcom/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList;
+         4: iload_1
+         5: iconst_1
+         6: invokevirtual #235                // Method com/gregtechceu/gtceu/api/machine/trait/RecipeHandlerList.setColor:(IZ)V
+         9: return
+      LineNumberTable:
+        line 147: 0
+        line 148: 9
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      10     1 color   I
+
+  public void addedToController(com.gregtechceu.gtceu.api.machine.feature.multiblock.IMultiController);
+    descriptor: (Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: aload_1
+         1: invokeinterface #244,  1          // InterfaceMethod com/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController.allowCircuitSlots:()Z
+         6: ifne          51
+         9: getstatic     #154                // Field com/gregtechceu/gtceu/config/ConfigHolder.INSTANCE:Lcom/gregtechceu/gtceu/config/ConfigHolder;
+        12: getfield      #158                // Field com/gregtechceu/gtceu/config/ConfigHolder.machines:Lcom/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs;
+        15: getfield      #161                // Field com/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs.ghostCircuit:Z
+        18: ifne          35
+        21: aload_0
+        22: aload_0
+        23: getfield      #75                 // Field circuitInventory:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+        26: getfield      #165                // Field com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.storage:Lcom/gregtechceu/gtceu/api/transfer/item/CustomItemStackHandler;
+        29: invokevirtual #169                // Method clearInventory:(Lnet/minecraftforge/items/IItemHandlerModifiable;)V
+        32: goto          46
+        35: aload_0
+        36: getfield      #75                 // Field circuitInventory:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+        39: iconst_0
+        40: getstatic     #250                // Field net/minecraft/world/item/ItemStack.f_41583_:Lnet/minecraft/world/item/ItemStack;
+        43: invokevirtual #254                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.setStackInSlot:(ILnet/minecraft/world/item/ItemStack;)V
+        46: aload_0
+        47: iconst_0
+        48: invokevirtual #258                // Method setCircuitSlotEnabled:(Z)V
+        51: aload_0
+        52: aload_1
+        53: invokespecial #260                // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.addedToController:(Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;)V
+        56: return
+      StackMapTable: number_of_entries = 3
+        frame_type = 35 /* same */
+        frame_type = 10 /* same */
+        frame_type = 4 /* same */
+      LineNumberTable:
+        line 152: 0
+        line 153: 9
+        line 154: 21
+        line 156: 35
+        line 158: 46
+        line 160: 51
+        line 161: 56
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      57     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      57     1 controller   Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;
+
+  public void removedFromController(com.gregtechceu.gtceu.api.machine.feature.multiblock.IMultiController);
+    descriptor: (Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokespecial #265                // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.removedFromController:(Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;)V
+         5: aload_0
+         6: getfield      #269                // Field controllers:Ljava/util/SortedSet;
+         9: invokeinterface #275,  1          // InterfaceMethod java/util/SortedSet.iterator:()Ljava/util/Iterator;
+        14: astore_2
+        15: aload_2
+        16: invokeinterface #280,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        21: ifeq          47
+        24: aload_2
+        25: invokeinterface #284,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        30: checkcast     #240                // class com/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController
+        33: astore_3
+        34: aload_3
+        35: invokeinterface #244,  1          // InterfaceMethod com/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController.allowCircuitSlots:()Z
+        40: ifne          44
+        43: return
+        44: goto          15
+        47: aload_0
+        48: iconst_1
+        49: invokevirtual #258                // Method setCircuitSlotEnabled:(Z)V
+        52: return
+      StackMapTable: number_of_entries = 3
+        frame_type = 252 /* append */
+          offset_delta = 15
+          locals = [ class java/util/Iterator ]
+        frame_type = 28 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 2
+      LineNumberTable:
+        line 165: 0
+        line 166: 5
+        line 167: 34
+        line 168: 43
+        line 170: 44
+        line 171: 47
+        line 172: 52
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           34      10     3     c   Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;
+            0      53     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      53     1 controller   Lcom/gregtechceu/gtceu/api/machine/feature/multiblock/IMultiController;
+
+  public int tintColor(int);
+    descriptor: (I)I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_1
+         1: bipush        9
+         3: if_icmpne     11
+         6: aload_0
+         7: invokevirtual #290                // Method getRealColor:()I
+        10: ireturn
+        11: iconst_m1
+        12: ireturn
+      StackMapTable: number_of_entries = 1
+        frame_type = 11 /* same */
+      LineNumberTable:
+        line 176: 0
+        line 177: 11
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      13     1 index   I
+
+  public void onNeighborChanged(net.minecraft.world.level.block.Block, net.minecraft.core.BlockPos, boolean);
+    descriptor: (Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/BlockPos;Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=4, args_size=4
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: iload_3
+         4: invokespecial #295                // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onNeighborChanged:(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/BlockPos;Z)V
+         7: aload_0
+         8: invokevirtual #188                // Method updateTankSubscription:()V
+        11: return
+      LineNumberTable:
+        line 186: 0
+        line 187: 7
+        line 188: 11
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      12     1 block   Lnet/minecraft/world/level/block/Block;
+            0      12     2 fromPos   Lnet/minecraft/core/BlockPos;
+            0      12     3 isMoving   Z
+
+  public void onRotated(net.minecraft.core.Direction, net.minecraft.core.Direction);
+    descriptor: (Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokespecial #304                // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onRotated:(Lnet/minecraft/core/Direction;Lnet/minecraft/core/Direction;)V
+         6: aload_0
+         7: aload_2
+         8: invokevirtual #307                // Method updateTankSubscription:(Lnet/minecraft/core/Direction;)V
+        11: return
+      LineNumberTable:
+        line 192: 0
+        line 193: 6
+        line 194: 11
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      12     1 oldFacing   Lnet/minecraft/core/Direction;
+            0      12     2 newFacing   Lnet/minecraft/core/Direction;
+
+  protected void updateTankSubscription();
+    descriptor: ()V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: aload_0
+         2: invokevirtual #314                // Method getFrontFacing:()Lnet/minecraft/core/Direction;
+         5: invokevirtual #307                // Method updateTankSubscription:(Lnet/minecraft/core/Direction;)V
+         8: return
+      LineNumberTable:
+        line 197: 0
+        line 198: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+
+  protected void updateTankSubscription(net.minecraft.core.Direction);
+    descriptor: (Lnet/minecraft/core/Direction;)V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=4, locals=2, args_size=2
+         0: aload_0
+         1: invokevirtual #317                // Method isWorkingEnabled:()Z
+         4: ifeq          79
+         7: aload_0
+         8: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        11: getstatic     #320                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.OUT:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        14: invokevirtual #324                // Method com/gregtechceu/gtceu/api/capability/recipe/IO.support:(Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)Z
+        17: ifeq          30
+        20: aload_0
+        21: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        24: invokevirtual #327                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.isEmpty:()Z
+        27: ifeq          43
+        30: aload_0
+        31: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        34: getstatic     #114                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        37: invokevirtual #324                // Method com/gregtechceu/gtceu/api/capability/recipe/IO.support:(Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)Z
+        40: ifeq          79
+        43: aload_0
+        44: invokevirtual #176                // Method getLevel:()Lnet/minecraft/world/level/Level;
+        47: aload_0
+        48: invokevirtual #331                // Method getPos:()Lnet/minecraft/core/BlockPos;
+        51: aload_1
+        52: invokestatic  #337                // Method com/gregtechceu/gtceu/utils/GTTransferUtils.hasAdjacentFluidHandler:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;)Z
+        55: ifeq          79
+        58: aload_0
+        59: aload_0
+        60: aload_0
+        61: getfield      #339                // Field autoIOSubs:Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+        64: aload_0
+        65: invokedynamic #344,  0            // InvokeDynamic #2:run:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/lang/Runnable;
+        70: invokevirtual #348                // Method subscribeServerTick:(Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;Ljava/lang/Runnable;)Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+        73: putfield      #339                // Field autoIOSubs:Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+        76: goto          98
+        79: aload_0
+        80: getfield      #339                // Field autoIOSubs:Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+        83: ifnull        98
+        86: aload_0
+        87: getfield      #339                // Field autoIOSubs:Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+        90: invokevirtual #351                // Method com/gregtechceu/gtceu/api/machine/TickableSubscription.unsubscribe:()V
+        93: aload_0
+        94: aconst_null
+        95: putfield      #339                // Field autoIOSubs:Lcom/gregtechceu/gtceu/api/machine/TickableSubscription;
+        98: return
+      StackMapTable: number_of_entries = 4
+        frame_type = 30 /* same */
+        frame_type = 12 /* same */
+        frame_type = 35 /* same */
+        frame_type = 18 /* same */
+      LineNumberTable:
+        line 201: 0
+        line 202: 44
+        line 203: 58
+        line 204: 79
+        line 205: 86
+        line 206: 93
+        line 208: 98
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      99     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      99     1 newFacing   Lnet/minecraft/core/Direction;
+
+  protected void autoIO();
+    descriptor: ()V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=5, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #355                // Method getOffsetTimer:()J
+         4: ldc2_w        #356                // long 5l
+         7: lrem
+         8: lconst_0
+         9: lcmp
+        10: ifne          135
+        13: aload_0
+        14: invokevirtual #317                // Method isWorkingEnabled:()Z
+        17: ifeq          131
+        20: aload_0
+        21: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        24: getstatic     #320                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.OUT:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        27: if_acmpne     51
+        30: aload_0
+        31: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        34: iconst_1
+        35: anewarray     #359                // class net/minecraft/core/Direction
+        38: dup
+        39: iconst_0
+        40: aload_0
+        41: invokevirtual #314                // Method getFrontFacing:()Lnet/minecraft/core/Direction;
+        44: aastore
+        45: invokevirtual #363                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.exportToNearby:([Lnet/minecraft/core/Direction;)V
+        48: goto          131
+        51: aload_0
+        52: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        55: getstatic     #114                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        58: if_acmpne     82
+        61: aload_0
+        62: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        65: iconst_1
+        66: anewarray     #359                // class net/minecraft/core/Direction
+        69: dup
+        70: iconst_0
+        71: aload_0
+        72: invokevirtual #314                // Method getFrontFacing:()Lnet/minecraft/core/Direction;
+        75: aastore
+        76: invokevirtual #366                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.importFromNearby:([Lnet/minecraft/core/Direction;)V
+        79: goto          131
+        82: aload_0
+        83: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        86: getstatic     #369                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.BOTH:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        89: if_acmpne     131
+        92: aload_0
+        93: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        96: iconst_1
+        97: anewarray     #359                // class net/minecraft/core/Direction
+       100: dup
+       101: iconst_0
+       102: aload_0
+       103: invokevirtual #314                // Method getFrontFacing:()Lnet/minecraft/core/Direction;
+       106: aastore
+       107: invokevirtual #366                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.importFromNearby:([Lnet/minecraft/core/Direction;)V
+       110: aload_0
+       111: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+       114: iconst_1
+       115: anewarray     #359                // class net/minecraft/core/Direction
+       118: dup
+       119: iconst_0
+       120: aload_0
+       121: invokevirtual #314                // Method getFrontFacing:()Lnet/minecraft/core/Direction;
+       124: invokevirtual #372                // Method net/minecraft/core/Direction.m_122424_:()Lnet/minecraft/core/Direction;
+       127: aastore
+       128: invokevirtual #363                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.exportToNearby:([Lnet/minecraft/core/Direction;)V
+       131: aload_0
+       132: invokevirtual #188                // Method updateTankSubscription:()V
+       135: return
+      StackMapTable: number_of_entries = 4
+        frame_type = 51 /* same */
+        frame_type = 30 /* same */
+        frame_type = 48 /* same */
+        frame_type = 3 /* same */
+      LineNumberTable:
+        line 211: 0
+        line 212: 13
+        line 213: 20
+        line 214: 30
+        line 215: 51
+        line 216: 61
+        line 217: 82
+        line 218: 92
+        line 219: 110
+        line 222: 131
+        line 224: 135
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     136     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+
+  public void setWorkingEnabled(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: invokespecial #375                // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.setWorkingEnabled:(Z)V
+         5: aload_0
+         6: invokevirtual #188                // Method updateTankSubscription:()V
+         9: return
+      LineNumberTable:
+        line 228: 0
+        line 229: 5
+        line 230: 9
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      10     1 workingEnabled   Z
+
+  protected net.minecraft.world.InteractionResult onScrewdriverClick(net.minecraft.world.entity.player.Player, net.minecraft.world.InteractionHand, net.minecraft.core.Direction, net.minecraft.world.phys.BlockHitResult);
+    descriptor: (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/core/Direction;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=5, locals=6, args_size=5
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: aload_3
+         4: aload         4
+         6: invokespecial #380                // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.onScrewdriverClick:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/core/Direction;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/InteractionResult;
+         9: astore        5
+        11: aload         5
+        13: getstatic     #386                // Field net/minecraft/world/InteractionResult.PASS:Lnet/minecraft/world/InteractionResult;
+        16: if_acmpeq     22
+        19: aload         5
+        21: areturn
+        22: aload_0
+        23: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        26: getstatic     #369                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.BOTH:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        29: if_acmpne     36
+        32: getstatic     #386                // Field net/minecraft/world/InteractionResult.PASS:Lnet/minecraft/world/InteractionResult;
+        35: areturn
+        36: aload_1
+        37: invokevirtual #391                // Method net/minecraft/world/entity/player/Player.m_6144_:()Z
+        40: ifeq          61
+        43: aload_0
+        44: invokevirtual #394                // Method swapIO:()Z
+        47: ifeq          61
+        50: aload_1
+        51: invokevirtual #397                // Method net/minecraft/world/entity/player/Player.m_9236_:()Lnet/minecraft/world/level/Level;
+        54: getfield      #402                // Field net/minecraft/world/level/Level.f_46443_:Z
+        57: invokestatic  #406                // Method net/minecraft/world/InteractionResult.m_19078_:(Z)Lnet/minecraft/world/InteractionResult;
+        60: areturn
+        61: getstatic     #386                // Field net/minecraft/world/InteractionResult.PASS:Lnet/minecraft/world/InteractionResult;
+        64: areturn
+      StackMapTable: number_of_entries = 3
+        frame_type = 252 /* append */
+          offset_delta = 22
+          locals = [ class net/minecraft/world/InteractionResult ]
+        frame_type = 13 /* same */
+        frame_type = 24 /* same */
+      LineNumberTable:
+        line 235: 0
+        line 236: 11
+        line 237: 22
+        line 238: 36
+        line 239: 43
+        line 240: 50
+        line 243: 61
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      65     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      65     1 playerIn   Lnet/minecraft/world/entity/player/Player;
+            0      65     2  hand   Lnet/minecraft/world/InteractionHand;
+            0      65     3 gridSide   Lnet/minecraft/core/Direction;
+            0      65     4 hitResult   Lnet/minecraft/world/phys/BlockHitResult;
+           11      54     5 superResult   Lnet/minecraft/world/InteractionResult;
+
+  public boolean swapIO();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=7, args_size=1
+         0: aload_0
+         1: invokevirtual #418                // Method getHolder:()Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;
+         4: invokeinterface #423,  1          // InterfaceMethod com/gregtechceu/gtceu/api/machine/IMachineBlockEntity.pos:()Lnet/minecraft/core/BlockPos;
+         9: astore_1
+        10: aconst_null
+        11: astore_2
+        12: aload_0
+        13: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        16: getstatic     #114                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        19: if_acmpne     83
+        22: aload_0
+        23: getfield      #53                 // Field slots:I
+        26: iconst_1
+        27: if_icmpne     42
+        30: getstatic     #429                // Field com/gregtechceu/gtceu/common/data/GTMachines.FLUID_EXPORT_HATCH:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+        33: aload_0
+        34: invokevirtual #95                 // Method getTier:()I
+        37: aaload
+        38: astore_2
+        39: goto          151
+        42: aload_0
+        43: getfield      #53                 // Field slots:I
+        46: iconst_4
+        47: if_icmpne     62
+        50: getstatic     #436                // Field com/gregtechceu/gtceu/common/data/GTMachines.FLUID_EXPORT_HATCH_4X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+        53: aload_0
+        54: invokevirtual #95                 // Method getTier:()I
+        57: aaload
+        58: astore_2
+        59: goto          151
+        62: aload_0
+        63: getfield      #53                 // Field slots:I
+        66: bipush        9
+        68: if_icmpne     151
+        71: getstatic     #439                // Field com/gregtechceu/gtceu/common/data/GTMachines.FLUID_EXPORT_HATCH_9X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+        74: aload_0
+        75: invokevirtual #95                 // Method getTier:()I
+        78: aaload
+        79: astore_2
+        80: goto          151
+        83: aload_0
+        84: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        87: getstatic     #320                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.OUT:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        90: if_acmpne     151
+        93: aload_0
+        94: getfield      #53                 // Field slots:I
+        97: iconst_1
+        98: if_icmpne     113
+       101: getstatic     #442                // Field com/gregtechceu/gtceu/common/data/GTMachines.FLUID_IMPORT_HATCH:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+       104: aload_0
+       105: invokevirtual #95                 // Method getTier:()I
+       108: aaload
+       109: astore_2
+       110: goto          151
+       113: aload_0
+       114: getfield      #53                 // Field slots:I
+       117: iconst_4
+       118: if_icmpne     133
+       121: getstatic     #445                // Field com/gregtechceu/gtceu/common/data/GTMachines.FLUID_IMPORT_HATCH_4X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+       124: aload_0
+       125: invokevirtual #95                 // Method getTier:()I
+       128: aaload
+       129: astore_2
+       130: goto          151
+       133: aload_0
+       134: getfield      #53                 // Field slots:I
+       137: bipush        9
+       139: if_icmpne     151
+       142: getstatic     #448                // Field com/gregtechceu/gtceu/common/data/GTMachines.FLUID_IMPORT_HATCH_9X:[Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+       145: aload_0
+       146: invokevirtual #95                 // Method getTier:()I
+       149: aaload
+       150: astore_2
+       151: aload_2
+       152: ifnonnull     157
+       155: iconst_0
+       156: ireturn
+       157: aload_2
+       158: invokevirtual #452                // Method com/gregtechceu/gtceu/api/machine/MachineDefinition.getBlock:()Lnet/minecraft/world/level/block/Block;
+       161: invokevirtual #458                // Method net/minecraft/world/level/block/Block.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+       164: astore_3
+       165: aload_0
+       166: invokevirtual #176                // Method getLevel:()Lnet/minecraft/world/level/Level;
+       169: aload_1
+       170: aload_3
+       171: invokevirtual #462                // Method net/minecraft/world/level/Level.m_46597_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z
+       174: pop
+       175: aload_0
+       176: invokevirtual #176                // Method getLevel:()Lnet/minecraft/world/level/Level;
+       179: aload_1
+       180: invokevirtual #466                // Method net/minecraft/world/level/Level.m_7702_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/entity/BlockEntity;
+       183: astore        5
+       185: aload         5
+       187: instanceof    #420                // class com/gregtechceu/gtceu/api/machine/IMachineBlockEntity
+       190: ifeq          291
+       193: aload         5
+       195: checkcast     #420                // class com/gregtechceu/gtceu/api/machine/IMachineBlockEntity
+       198: astore        4
+       200: aload         4
+       202: invokeinterface #470,  1          // InterfaceMethod com/gregtechceu/gtceu/api/machine/IMachineBlockEntity.getMetaMachine:()Lcom/gregtechceu/gtceu/api/machine/MetaMachine;
+       207: astore        6
+       209: aload         6
+       211: instanceof    #2                  // class com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine
+       214: ifeq          291
+       217: aload         6
+       219: checkcast     #2                  // class com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine
+       222: astore        5
+       224: aload         5
+       226: aload_0
+       227: invokevirtual #314                // Method getFrontFacing:()Lnet/minecraft/core/Direction;
+       230: invokevirtual #473                // Method setFrontFacing:(Lnet/minecraft/core/Direction;)V
+       233: aload         5
+       235: aload_0
+       236: invokevirtual #476                // Method getUpwardsFacing:()Lnet/minecraft/core/Direction;
+       239: invokevirtual #479                // Method setUpwardsFacing:(Lnet/minecraft/core/Direction;)V
+       242: aload         5
+       244: aload_0
+       245: invokevirtual #209                // Method getPaintingColor:()I
+       248: invokevirtual #482                // Method setPaintingColor:(I)V
+       251: iconst_0
+       252: istore        6
+       254: iload         6
+       256: aload_0
+       257: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+       260: invokevirtual #487                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getTanks:()I
+       263: if_icmpge     291
+       266: aload         5
+       268: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+       271: iload         6
+       273: aload_0
+       274: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+       277: iload         6
+       279: invokevirtual #491                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getFluidInTank:(I)Lnet/minecraftforge/fluids/FluidStack;
+       282: invokevirtual #495                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.setFluidInTank:(ILnet/minecraftforge/fluids/FluidStack;)V
+       285: iinc          6, 1
+       288: goto          254
+       291: iconst_1
+       292: ireturn
+      StackMapTable: number_of_entries = 9
+        frame_type = 253 /* append */
+          offset_delta = 42
+          locals = [ class net/minecraft/core/BlockPos, class com/gregtechceu/gtceu/api/machine/MachineDefinition ]
+        frame_type = 19 /* same */
+        frame_type = 20 /* same */
+        frame_type = 29 /* same */
+        frame_type = 19 /* same */
+        frame_type = 17 /* same */
+        frame_type = 5 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 96
+          locals = [ class com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine, class net/minecraft/core/BlockPos, class com/gregtechceu/gtceu/api/machine/MachineDefinition, class net/minecraft/world/level/block/state/BlockState, class com/gregtechceu/gtceu/api/machine/IMachineBlockEntity, class com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine, int ]
+          stack = []
+        frame_type = 248 /* chop */
+          offset_delta = 36
+      LineNumberTable:
+        line 247: 0
+        line 248: 10
+        line 250: 12
+        line 251: 22
+        line 252: 42
+        line 253: 62
+        line 254: 83
+        line 255: 93
+        line 256: 113
+        line 257: 133
+        line 259: 151
+        line 261: 157
+        line 263: 165
+        line 265: 175
+        line 266: 200
+        line 267: 224
+        line 268: 233
+        line 269: 242
+        line 270: 251
+        line 271: 266
+        line 270: 285
+        line 275: 291
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+          254      37     6     i   I
+          224      67     5 newMachine   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+          200      91     4 newHolder   Lcom/gregtechceu/gtceu/api/machine/IMachineBlockEntity;
+            0     293     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+           10     283     1 blockPos   Lnet/minecraft/core/BlockPos;
+           12     281     2 newDefinition   Lcom/gregtechceu/gtceu/api/machine/MachineDefinition;
+          165     128     3 newBlockState   Lnet/minecraft/world/level/block/state/BlockState;
+
+  public void attachConfigurators(com.gregtechceu.gtceu.api.gui.fancy.ConfiguratorPanel);
+    descriptor: (Lcom/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=7, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokespecial #507                // Method com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.attachConfigurators:(Lcom/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel;)V
+         5: aload_0
+         6: invokevirtual #510                // Method isCircuitSlotEnabled:()Z
+         9: ifeq          47
+        12: aload_0
+        13: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        16: getstatic     #114                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        19: if_acmpne     47
+        22: aload_1
+        23: iconst_1
+        24: anewarray     #512                // class com/gregtechceu/gtceu/api/gui/fancy/IFancyConfigurator
+        27: dup
+        28: iconst_0
+        29: new           #514                // class com/gregtechceu/gtceu/api/machine/fancyconfigurator/CircuitFancyConfigurator
+        32: dup
+        33: aload_0
+        34: getfield      #75                 // Field circuitInventory:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+        37: getfield      #165                // Field com/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler.storage:Lcom/gregtechceu/gtceu/api/transfer/item/CustomItemStackHandler;
+        40: invokespecial #517                // Method com/gregtechceu/gtceu/api/machine/fancyconfigurator/CircuitFancyConfigurator."<init>":(Lnet/minecraftforge/items/ItemStackHandler;)V
+        43: aastore
+        44: invokevirtual #522                // Method com/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel.attachConfigurators:([Lcom/gregtechceu/gtceu/api/gui/fancy/IFancyConfigurator;)V
+        47: return
+      StackMapTable: number_of_entries = 1
+        frame_type = 47 /* same */
+      LineNumberTable:
+        line 284: 0
+        line 285: 5
+        line 286: 22
+        line 288: 47
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      48     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      48     1 configuratorPanel   Lcom/gregtechceu/gtceu/api/gui/fancy/ConfiguratorPanel;
+
+  public com.lowdragmc.lowdraglib.gui.widget.Widget createUIWidget();
+    descriptor: ()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #53                 // Field slots:I
+         4: iconst_1
+         5: if_icmpne     13
+         8: aload_0
+         9: invokevirtual #529                // Method createSingleSlotGUI:()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+        12: areturn
+        13: aload_0
+        14: invokevirtual #532                // Method createMultiSlotGUI:()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+        17: areturn
+      StackMapTable: number_of_entries = 1
+        frame_type = 13 /* same */
+      LineNumberTable:
+        line 292: 0
+        line 293: 8
+        line 295: 13
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+
+  protected com.lowdragmc.lowdraglib.gui.widget.Widget createSingleSlotGUI();
+    descriptor: ()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=11, locals=3, args_size=1
+         0: new           #534                // class com/lowdragmc/lowdraglib/gui/widget/WidgetGroup
+         3: dup
+         4: iconst_0
+         5: iconst_0
+         6: bipush        89
+         8: bipush        63
+        10: invokespecial #537                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup."<init>":(IIII)V
+        13: astore_1
+        14: aload_1
+        15: new           #539                // class com/lowdragmc/lowdraglib/gui/widget/ImageWidget
+        18: dup
+        19: iconst_4
+        20: iconst_4
+        21: bipush        81
+        23: bipush        55
+        25: getstatic     #545                // Field com/gregtechceu/gtceu/api/gui/GuiTextures.DISPLAY:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceTexture;
+        28: invokespecial #548                // Method com/lowdragmc/lowdraglib/gui/widget/ImageWidget."<init>":(IIIILcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)V
+        31: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+        34: pop
+        35: aload_0
+        36: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        39: getstatic     #320                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.OUT:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+        42: if_acmpne     216
+        45: aload_1
+        46: new           #554                // class com/gregtechceu/gtceu/api/gui/widget/PhantomFluidWidget
+        49: dup
+        50: aload_0
+        51: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        54: invokevirtual #558                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getLockedFluid:()Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+        57: iconst_0
+        58: bipush        67
+        60: bipush        40
+        62: bipush        18
+        64: bipush        18
+        66: aload_0
+        67: invokedynamic #569,  0            // InvokeDynamic #3:get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/util/function/Supplier;
+        72: aload_0
+        73: invokedynamic #581,  0            // InvokeDynamic #4:accept:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;)Ljava/util/function/Consumer;
+        78: invokespecial #584                // Method com/gregtechceu/gtceu/api/gui/widget/PhantomFluidWidget."<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIIIILjava/util/function/Supplier;Ljava/util/function/Consumer;)V
+        81: iconst_0
+        82: invokevirtual #588                // Method com/gregtechceu/gtceu/api/gui/widget/PhantomFluidWidget.setShowAmount:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+        85: iconst_1
+        86: invokevirtual #593                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.setDrawHoverTips:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+        89: getstatic     #597                // Field com/gregtechceu/gtceu/api/gui/GuiTextures.FLUID_SLOT:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+        92: invokevirtual #601                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.setBackground:(Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+        95: dup
+        96: astore_2
+        97: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+       100: pop
+       101: aload_1
+       102: new           #603                // class com/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget
+       105: dup
+       106: bipush        7
+       108: bipush        40
+       110: bipush        18
+       112: bipush        18
+       114: getstatic     #606                // Field com/gregtechceu/gtceu/api/gui/GuiTextures.BUTTON_LOCK:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceTexture;
+       117: aload_0
+       118: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+       121: dup
+       122: invokestatic  #612                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+       125: pop
+       126: invokedynamic #621,  0            // InvokeDynamic #5:getAsBoolean:(Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;)Ljava/util/function/BooleanSupplier;
+       131: aload_0
+       132: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+       135: dup
+       136: invokestatic  #612                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+       139: pop
+       140: invokedynamic #629,  0            // InvokeDynamic #6:accept:(Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;)Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;
+       145: invokespecial #632                // Method com/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget."<init>":(IIIILcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;Ljava/util/function/BooleanSupplier;Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;)V
+       148: ldc_w         #634                // String gtceu.gui.fluid_lock.tooltip
+       151: invokevirtual #638                // Method com/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget.setTooltipText:(Ljava/lang/String;)Lcom/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget;
+       154: invokevirtual #642                // Method com/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget.setShouldUseBaseBackground:()Lcom/gregtechceu/gtceu/api/gui/widget/ToggleButtonWidget;
+       157: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+       160: new           #590                // class com/gregtechceu/gtceu/api/gui/widget/TankWidget
+       163: dup
+       164: aload_0
+       165: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+       168: invokevirtual #646                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getStorages:()[Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+       171: iconst_0
+       172: aaload
+       173: bipush        67
+       175: bipush        22
+       177: bipush        18
+       179: bipush        18
+       181: iconst_1
+       182: aload_0
+       183: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+       186: getstatic     #114                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+       189: invokevirtual #324                // Method com/gregtechceu/gtceu/api/capability/recipe/IO.support:(Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)Z
+       192: invokespecial #649                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget."<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIIIZZ)V
+       195: iconst_1
+       196: invokevirtual #650                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.setShowAmount:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+       199: iconst_1
+       200: invokevirtual #593                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.setDrawHoverTips:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+       203: getstatic     #597                // Field com/gregtechceu/gtceu/api/gui/GuiTextures.FLUID_SLOT:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+       206: invokevirtual #601                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.setBackground:(Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+       209: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+       212: pop
+       213: goto          272
+       216: aload_1
+       217: new           #590                // class com/gregtechceu/gtceu/api/gui/widget/TankWidget
+       220: dup
+       221: aload_0
+       222: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+       225: invokevirtual #646                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getStorages:()[Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+       228: iconst_0
+       229: aaload
+       230: bipush        67
+       232: bipush        22
+       234: bipush        18
+       236: bipush        18
+       238: iconst_1
+       239: aload_0
+       240: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+       243: getstatic     #114                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+       246: invokevirtual #324                // Method com/gregtechceu/gtceu/api/capability/recipe/IO.support:(Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)Z
+       249: invokespecial #649                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget."<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIIIZZ)V
+       252: iconst_1
+       253: invokevirtual #650                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.setShowAmount:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+       256: iconst_1
+       257: invokevirtual #593                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.setDrawHoverTips:(Z)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+       260: getstatic     #597                // Field com/gregtechceu/gtceu/api/gui/GuiTextures.FLUID_SLOT:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+       263: invokevirtual #601                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.setBackground:(Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+       266: dup
+       267: astore_2
+       268: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+       271: pop
+       272: aload_1
+       273: new           #652                // class com/lowdragmc/lowdraglib/gui/widget/LabelWidget
+       276: dup
+       277: bipush        8
+       279: bipush        8
+       281: ldc_w         #654                // String gtceu.gui.fluid_amount
+       284: invokespecial #657                // Method com/lowdragmc/lowdraglib/gui/widget/LabelWidget."<init>":(IILjava/lang/String;)V
+       287: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+       290: new           #652                // class com/lowdragmc/lowdraglib/gui/widget/LabelWidget
+       293: dup
+       294: bipush        8
+       296: bipush        18
+       298: aload_0
+       299: aload_2
+       300: invokedynamic #667,  0            // InvokeDynamic #7:get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/util/function/Supplier;
+       305: invokespecial #670                // Method com/lowdragmc/lowdraglib/gui/widget/LabelWidget."<init>":(IILjava/util/function/Supplier;)V
+       308: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+       311: new           #652                // class com/lowdragmc/lowdraglib/gui/widget/LabelWidget
+       314: dup
+       315: bipush        8
+       317: bipush        28
+       319: aload_0
+       320: aload_2
+       321: invokedynamic #675,  0            // InvokeDynamic #8:get:(Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/util/function/Supplier;
+       326: invokespecial #670                // Method com/lowdragmc/lowdraglib/gui/widget/LabelWidget."<init>":(IILjava/util/function/Supplier;)V
+       329: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+       332: pop
+       333: aload_1
+       334: iconst_1
+       335: anewarray     #677                // class com/lowdragmc/lowdraglib/gui/texture/IGuiTexture
+       338: dup
+       339: iconst_0
+       340: getstatic     #680                // Field com/gregtechceu/gtceu/api/gui/GuiTextures.BACKGROUND_INVERSE:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+       343: aastore
+       344: invokevirtual #683                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.setBackground:([Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+       347: pop
+       348: aload_1
+       349: areturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 216
+          locals = [ class com/lowdragmc/lowdraglib/gui/widget/WidgetGroup ]
+        frame_type = 252 /* append */
+          offset_delta = 55
+          locals = [ class com/gregtechceu/gtceu/api/gui/widget/TankWidget ]
+      LineNumberTable:
+        line 300: 0
+        line 301: 14
+        line 305: 35
+        line 307: 45
+        line 319: 82
+        line 307: 97
+        line 321: 101
+        line 322: 122
+        line 323: 151
+        line 324: 154
+        line 321: 157
+        line 326: 168
+        line 327: 196
+        line 326: 209
+        line 329: 216
+        line 330: 253
+        line 329: 268
+        line 333: 272
+        line 334: 308
+        line 335: 329
+        line 337: 333
+        line 338: 348
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           97     119     2 tankWidget   Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+            0     350     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+           14     336     1 group   Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+          268      82     2 tankWidget   Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+
+  private net.minecraft.network.chat.Component getFluidNameText(com.gregtechceu.gtceu.api.gui.widget.TankWidget);
+    descriptor: (Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Lnet/minecraft/network/chat/Component;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=3, args_size=2
+         0: aload_0
+         1: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+         4: aload_1
+         5: invokevirtual #692                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.getTank:()I
+         8: invokevirtual #491                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getFluidInTank:(I)Lnet/minecraftforge/fluids/FluidStack;
+        11: invokevirtual #695                // Method net/minecraftforge/fluids/FluidStack.isEmpty:()Z
+        14: ifne          35
+        17: aload_0
+        18: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        21: aload_1
+        22: invokevirtual #692                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.getTank:()I
+        25: invokevirtual #491                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getFluidInTank:(I)Lnet/minecraftforge/fluids/FluidStack;
+        28: invokevirtual #699                // Method net/minecraftforge/fluids/FluidStack.getDisplayName:()Lnet/minecraft/network/chat/Component;
+        31: astore_2
+        32: goto          49
+        35: aload_0
+        36: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        39: invokevirtual #558                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getLockedFluid:()Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+        42: invokevirtual #704                // Method com/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank.getFluid:()Lnet/minecraftforge/fluids/FluidStack;
+        45: invokevirtual #699                // Method net/minecraftforge/fluids/FluidStack.getDisplayName:()Lnet/minecraft/network/chat/Component;
+        48: astore_2
+        49: aload_2
+        50: areturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 35 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 13
+          locals = [ class net/minecraft/network/chat/Component ]
+      LineNumberTable:
+        line 343: 0
+        line 344: 17
+        line 346: 35
+        line 348: 49
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           32       3     2 translation   Lnet/minecraft/network/chat/Component;
+            0      51     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      51     1 tankWidget   Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+           49       2     2 translation   Lnet/minecraft/network/chat/Component;
+
+  private java.lang.String getFluidAmountText(com.gregtechceu.gtceu.api.gui.widget.TankWidget);
+    descriptor: (Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=3, args_size=2
+         0: ldc_w         #711                // String
+         3: astore_2
+         4: aload_0
+         5: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+         8: aload_1
+         9: invokevirtual #692                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.getTank:()I
+        12: invokevirtual #491                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getFluidInTank:(I)Lnet/minecraftforge/fluids/FluidStack;
+        15: invokevirtual #695                // Method net/minecraftforge/fluids/FluidStack.isEmpty:()Z
+        18: ifne          40
+        21: aload_0
+        22: aload_0
+        23: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        26: aload_1
+        27: invokevirtual #692                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.getTank:()I
+        30: invokevirtual #491                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getFluidInTank:(I)Lnet/minecraftforge/fluids/FluidStack;
+        33: invokevirtual #715                // Method getFormattedFluidAmount:(Lnet/minecraftforge/fluids/FluidStack;)Ljava/lang/String;
+        36: astore_2
+        37: goto          60
+        40: aload_0
+        41: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        44: invokevirtual #558                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getLockedFluid:()Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+        47: invokevirtual #704                // Method com/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank.getFluid:()Lnet/minecraftforge/fluids/FluidStack;
+        50: invokevirtual #695                // Method net/minecraftforge/fluids/FluidStack.isEmpty:()Z
+        53: ifne          60
+        56: ldc_w         #719                // String 0
+        59: astore_2
+        60: aload_2
+        61: areturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 40
+          locals = [ class java/lang/String ]
+        frame_type = 19 /* same */
+      LineNumberTable:
+        line 352: 0
+        line 353: 4
+        line 354: 21
+        line 357: 40
+        line 358: 56
+        line 361: 60
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      62     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      62     1 tankWidget   Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+            4      58     2 fluidAmount   Ljava/lang/String;
+
+  public java.lang.String getFormattedFluidAmount(net.minecraftforge.fluids.FluidStack);
+    descriptor: (Lnet/minecraftforge/fluids/FluidStack;)Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=5, locals=2, args_size=2
+         0: ldc_w         #723                // String %,d
+         3: iconst_1
+         4: anewarray     #63                 // class java/lang/Object
+         7: dup
+         8: iconst_0
+         9: aload_1
+        10: invokevirtual #695                // Method net/minecraftforge/fluids/FluidStack.isEmpty:()Z
+        13: ifeq          20
+        16: iconst_0
+        17: goto          24
+        20: aload_1
+        21: invokevirtual #727                // Method net/minecraftforge/fluids/FluidStack.getAmount:()I
+        24: invokestatic  #733                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        27: aastore
+        28: invokestatic  #737                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+        31: areturn
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 20
+          locals = [ class com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine, class net/minecraftforge/fluids/FluidStack ]
+          stack = [ class java/lang/String, class "[Ljava/lang/Object;", class "[Ljava/lang/Object;", int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 3
+          locals = [ class com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine, class net/minecraftforge/fluids/FluidStack ]
+          stack = [ class java/lang/String, class "[Ljava/lang/Object;", class "[Ljava/lang/Object;", int, int ]
+      LineNumberTable:
+        line 365: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      32     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      32     1 fluidStack   Lnet/minecraftforge/fluids/FluidStack;
+
+  protected com.lowdragmc.lowdraglib.gui.widget.Widget createMultiSlotGUI();
+    descriptor: ()Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=9, locals=8, args_size=1
+         0: aload_0
+         1: getfield      #53                 // Field slots:I
+         4: i2d
+         5: invokestatic  #743                // Method java/lang/Math.sqrt:(D)D
+         8: d2i
+         9: istore_1
+        10: iload_1
+        11: istore_2
+        12: aload_0
+        13: getfield      #53                 // Field slots:I
+        16: bipush        8
+        18: if_icmpne     25
+        21: iconst_4
+        22: istore_1
+        23: iconst_2
+        24: istore_2
+        25: new           #534                // class com/lowdragmc/lowdraglib/gui/widget/WidgetGroup
+        28: dup
+        29: iconst_0
+        30: iconst_0
+        31: bipush        18
+        33: iload_1
+        34: imul
+        35: bipush        16
+        37: iadd
+        38: bipush        18
+        40: iload_2
+        41: imul
+        42: bipush        16
+        44: iadd
+        45: invokespecial #537                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup."<init>":(IIII)V
+        48: astore_3
+        49: new           #534                // class com/lowdragmc/lowdraglib/gui/widget/WidgetGroup
+        52: dup
+        53: iconst_4
+        54: iconst_4
+        55: bipush        18
+        57: iload_1
+        58: imul
+        59: bipush        8
+        61: iadd
+        62: bipush        18
+        64: iload_2
+        65: imul
+        66: bipush        8
+        68: iadd
+        69: invokespecial #537                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup."<init>":(IIII)V
+        72: astore        4
+        74: iconst_0
+        75: istore        5
+        77: iconst_0
+        78: istore        6
+        80: iload         6
+        82: iload_2
+        83: if_icmpge     164
+        86: iconst_0
+        87: istore        7
+        89: iload         7
+        91: iload_1
+        92: if_icmpge     158
+        95: aload         4
+        97: new           #590                // class com/gregtechceu/gtceu/api/gui/widget/TankWidget
+       100: dup
+       101: aload_0
+       102: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+       105: invokevirtual #646                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getStorages:()[Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+       108: iload         5
+       110: iinc          5, 1
+       113: aaload
+       114: iconst_4
+       115: iload         7
+       117: bipush        18
+       119: imul
+       120: iadd
+       121: iconst_4
+       122: iload         6
+       124: bipush        18
+       126: imul
+       127: iadd
+       128: iconst_1
+       129: aload_0
+       130: getfield      #101                // Field io:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+       133: getstatic     #114                // Field com/gregtechceu/gtceu/api/capability/recipe/IO.IN:Lcom/gregtechceu/gtceu/api/capability/recipe/IO;
+       136: invokevirtual #324                // Method com/gregtechceu/gtceu/api/capability/recipe/IO.support:(Lcom/gregtechceu/gtceu/api/capability/recipe/IO;)Z
+       139: invokespecial #746                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget."<init>":(Lnet/minecraftforge/fluids/capability/IFluidHandler;IIZZ)V
+       142: getstatic     #597                // Field com/gregtechceu/gtceu/api/gui/GuiTextures.FLUID_SLOT:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+       145: invokevirtual #601                // Method com/gregtechceu/gtceu/api/gui/widget/TankWidget.setBackground:(Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+       148: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+       151: pop
+       152: iinc          7, 1
+       155: goto          89
+       158: iinc          6, 1
+       161: goto          80
+       164: aload         4
+       166: iconst_1
+       167: anewarray     #677                // class com/lowdragmc/lowdraglib/gui/texture/IGuiTexture
+       170: dup
+       171: iconst_0
+       172: getstatic     #680                // Field com/gregtechceu/gtceu/api/gui/GuiTextures.BACKGROUND_INVERSE:Lcom/lowdragmc/lowdraglib/gui/texture/ResourceBorderTexture;
+       175: aastore
+       176: invokevirtual #683                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.setBackground:([Lcom/lowdragmc/lowdraglib/gui/texture/IGuiTexture;)Lcom/lowdragmc/lowdraglib/gui/widget/Widget;
+       179: pop
+       180: aload_3
+       181: aload         4
+       183: invokevirtual #552                // Method com/lowdragmc/lowdraglib/gui/widget/WidgetGroup.addWidget:(Lcom/lowdragmc/lowdraglib/gui/widget/Widget;)Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+       186: pop
+       187: aload_3
+       188: areturn
+      StackMapTable: number_of_entries = 5
+        frame_type = 253 /* append */
+          offset_delta = 25
+          locals = [ int, int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 54
+          locals = [ class com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine, int, int, class com/lowdragmc/lowdraglib/gui/widget/WidgetGroup, class com/lowdragmc/lowdraglib/gui/widget/WidgetGroup, int, int ]
+          stack = []
+        frame_type = 252 /* append */
+          offset_delta = 8
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 68
+        frame_type = 250 /* chop */
+          offset_delta = 5
+      LineNumberTable:
+        line 369: 0
+        line 370: 10
+        line 371: 12
+        line 372: 21
+        line 373: 23
+        line 376: 25
+        line 377: 49
+        line 379: 74
+        line 380: 77
+        line 381: 86
+        line 382: 95
+        line 383: 105
+        line 384: 145
+        line 382: 148
+        line 381: 152
+        line 380: 158
+        line 388: 164
+        line 389: 180
+        line 391: 187
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           89      69     7     x   I
+           80      84     6     y   I
+            0     189     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+           10     179     1 rowSize   I
+           12     177     2 colSize   I
+           49     140     3 group   Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+           74     115     4 container   Lcom/lowdragmc/lowdraglib/gui/widget/WidgetGroup;
+           77     112     5 index   I
+
+  public boolean isCircuitSlotEnabled();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #61                 // Field circuitSlotEnabled:Z
+         4: ireturn
+      LineNumberTable:
+        line 74: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+    RuntimeInvisibleAnnotations:
+      0: #752()
+        lombok.Generated
+
+  public void setCircuitSlotEnabled(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #61                 // Field circuitSlotEnabled:Z
+         5: return
+      LineNumberTable:
+        line 75: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0       6     1 circuitSlotEnabled   Z
+    RuntimeInvisibleAnnotations:
+      0: #752()
+        lombok.Generated
+
+  public com.gregtechceu.gtceu.api.machine.trait.NotifiableItemStackHandler getCircuitInventory();
+    descriptor: ()Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #75                 // Field circuitInventory:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableItemStackHandler;
+         4: areturn
+      LineNumberTable:
+        line 79: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+    RuntimeInvisibleAnnotations:
+      0: #752()
+        lombok.Generated
+
+  private java.lang.String lambda$createSingleSlotGUI$3(com.gregtechceu.gtceu.api.gui.widget.TankWidget);
+    descriptor: (Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #756                // Method getFluidNameText:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Lnet/minecraft/network/chat/Component;
+         5: invokeinterface #759,  1          // InterfaceMethod net/minecraft/network/chat/Component.getString:()Ljava/lang/String;
+        10: areturn
+      LineNumberTable:
+        line 335: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      11     1 tankWidget   Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+
+  private java.lang.String lambda$createSingleSlotGUI$2(com.gregtechceu.gtceu.api.gui.widget.TankWidget);
+    descriptor: (Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #761                // Method getFluidAmountText:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+         5: areturn
+      LineNumberTable:
+        line 334: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0       6     1 tankWidget   Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;
+
+  private void lambda$createSingleSlotGUI$1(net.minecraftforge.fluids.FluidStack);
+    descriptor: (Lnet/minecraftforge/fluids/FluidStack;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+         4: iconst_0
+         5: invokevirtual #491                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getFluidInTank:(I)Lnet/minecraftforge/fluids/FluidStack;
+         8: invokevirtual #695                // Method net/minecraftforge/fluids/FluidStack.isEmpty:()Z
+        11: ifne          15
+        14: return
+        15: aload_1
+        16: ifnull        26
+        19: aload_1
+        20: invokevirtual #695                // Method net/minecraftforge/fluids/FluidStack.isEmpty:()Z
+        23: ifeq          37
+        26: aload_0
+        27: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        30: iconst_0
+        31: invokevirtual #625                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.setLocked:(Z)V
+        34: goto          56
+        37: aload_1
+        38: invokevirtual #764                // Method net/minecraftforge/fluids/FluidStack.copy:()Lnet/minecraftforge/fluids/FluidStack;
+        41: astore_2
+        42: aload_2
+        43: iconst_1
+        44: invokevirtual #767                // Method net/minecraftforge/fluids/FluidStack.setAmount:(I)V
+        47: aload_0
+        48: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+        51: iconst_1
+        52: aload_2
+        53: invokevirtual #770                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.setLocked:(ZLnet/minecraftforge/fluids/FluidStack;)V
+        56: return
+      StackMapTable: number_of_entries = 4
+        frame_type = 15 /* same */
+        frame_type = 10 /* same */
+        frame_type = 10 /* same */
+        frame_type = 18 /* same */
+      LineNumberTable:
+        line 309: 0
+        line 310: 14
+        line 312: 15
+        line 313: 26
+        line 315: 37
+        line 316: 42
+        line 317: 47
+        line 319: 56
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           42      14     2 newFluid   Lnet/minecraftforge/fluids/FluidStack;
+            0      57     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+            0      57     1     f   Lnet/minecraftforge/fluids/FluidStack;
+
+  private net.minecraftforge.fluids.FluidStack lambda$createSingleSlotGUI$0();
+    descriptor: ()Lnet/minecraftforge/fluids/FluidStack;
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #59                 // Field tank:Lcom/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank;
+         4: invokevirtual #558                // Method com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.getLockedFluid:()Lcom/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank;
+         7: invokevirtual #704                // Method com/gregtechceu/gtceu/api/transfer/fluid/CustomFluidTank.getFluid:()Lnet/minecraftforge/fluids/FluidStack;
+        10: areturn
+      LineNumberTable:
+        line 308: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lcom/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine;
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=0, args_size=0
+         0: new           #775                // class com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder
+         3: dup
+         4: ldc           #2                  // class com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine
+         6: getstatic     #776                // Field com/gregtechceu/gtceu/api/machine/multiblock/part/TieredIOPartMachine.MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+         9: invokespecial #779                // Method com/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder."<init>":(Ljava/lang/Class;Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;)V
+        12: putstatic     #89                 // Field MANAGED_FIELD_HOLDER:Lcom/lowdragmc/lowdraglib/syncdata/field/ManagedFieldHolder;
+        15: return
+      LineNumberTable:
+        line 60: 0
+}
+InnerClasses:
+  public static #18= #15 of #17;          // MachineConfigs=class com/gregtechceu/gtceu/config/ConfigHolder$MachineConfigs of class com/gregtechceu/gtceu/config/ConfigHolder
+  public static final #23= #20 of #22;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+SourceFile: "FluidHatchPartMachine.java"
+RuntimeVisibleAnnotations:
+  0: #12()
+    javax.annotation.ParametersAreNonnullByDefault
+  1: #13()
+    net.minecraft.MethodsReturnNonnullByDefault
+BootstrapMethods:
+  0: #137 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #122 (Ljava/lang/Object;)Z
+      #129 REF_invokeStatic com/gregtechceu/gtceu/common/item/IntCircuitBehaviour.isIntegratedCircuit:(Lnet/minecraft/world/item/ItemStack;)Z
+      #130 (Lnet/minecraft/world/item/ItemStack;)Z
+  1: #137 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #185 ()V
+      #189 REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.updateTankSubscription:()V
+      #185 ()V
+  2: #137 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #185 ()V
+      #343 REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.autoIO:()V
+      #185 ()V
+  3: #137 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #559 ()Ljava/lang/Object;
+      #564 REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$0:()Lnet/minecraftforge/fluids/FluidStack;
+      #565 ()Lnet/minecraftforge/fluids/FluidStack;
+  4: #137 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #571 (Ljava/lang/Object;)V
+      #576 REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$1:(Lnet/minecraftforge/fluids/FluidStack;)V
+      #577 (Lnet/minecraftforge/fluids/FluidStack;)V
+  5: #137 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #613 ()Z
+      #617 REF_invokeVirtual com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.isLocked:()Z
+      #613 ()Z
+  6: #137 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #622 (Z)V
+      #626 REF_invokeVirtual com/gregtechceu/gtceu/api/machine/trait/NotifiableFluidTank.setLocked:(Z)V
+      #622 (Z)V
+  7: #137 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #559 ()Ljava/lang/Object;
+      #662 REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$2:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+      #664 ()Ljava/lang/String;
+  8: #137 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #559 ()Ljava/lang/Object;
+      #674 REF_invokeVirtual com/gregtechceu/gtceu/common/machine/multiblock/part/FluidHatchPartMachine.lambda$createSingleSlotGUI$3:(Lcom/gregtechceu/gtceu/api/gui/widget/TankWidget;)Ljava/lang/String;
+      #664 ()Ljava/lang/String;

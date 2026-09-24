@@ -1,0 +1,76 @@
+
+[buildinggadgetsae2request]
+	#プレイヤー1人が同時に持てるAE2リクエストの最大数
+	#Range: 1 ~ 64
+	maxConcurrentRequests = 3
+	#新規プレイヤーのデフォルトのリクエストトリガー方式。専用GUIから個別に変更可能。
+	#KEYBIND: 専用キー(デフォルトShift+G相当のリクエストキー)を押した時のみAE2へ要求します。
+	#AUTO: 資材が不足しているガジェット操作を検知すると自動的にAE2へ要求します。
+	#Allowed Values: KEYBIND, AUTO
+	defaultTriggerMode = "AUTO"
+	#trueの場合、クラフト完了後に要求時の座標でBuilding/Exchange/Pasteを自動実行します。
+	autoExecuteOnComplete = true
+	#自動実行時、要求時の座標からこの距離(ブロック)を超えて離れている場合は自動実行をスキップします。
+	#Range: 1 ~ 1024
+	autoExecuteMaxDistance = 64
+	#trueの場合、リクエスト開始時に専用GUIを自動的に開きます。
+	#この既定値はプレイヤーごとに専用GUIの「GUI自動オープン」ボタンから個別に上書きできます。
+	openScreenOnRequest = true
+	#trueの場合、リクエストキャンセル時に確保済みの資材をAE2ネットワークへ返却します。
+	returnSecuredItemsOnCancel = true
+	#完了/失敗したリクエストをGUI上に表示し続けるTick数(20Tick=1秒)。
+	#immediateDeleteCompletedRequestsがfalseの場合のみ使用されます。
+	#Range: 0 ~ 72000
+	completedRetentionTicks = 600
+	#trueの場合、完了/失敗したリクエストをcompletedRetentionTicksを待たずに即座にリストから削除します。
+	#ただし、ガジェット未所持等により自動実行が行えなかったリクエストは対象外で、
+	#GUIから手動で「実行」または「破棄」するまで表示され続けます(awaitingManualExecutionTimeoutTicksも参照)。
+	immediateDeleteCompletedRequests = true
+	#自動実行できずGUIでの手動実行待ちになっているリクエストを、
+	#完了からこのTick数が経過した時点で自動的に破棄します。0で無期限に待機します(20Tick=1秒)。
+	#Range: > 0
+	awaitingManualExecutionTimeoutTicks = 0
+	#リクエストのタイムアウトTick数。0で無効(無期限に待機し続けます)。
+	#Range: > 0
+	requestTimeoutTicks = 0
+	#AE2 Crafting Priorityが導入されている場合、投入したクラフトジョブの優先度をcraftPriorityの値に設定します。
+	boostPriorityWithAE2CraftPriority = true
+	#boostPriorityWithAE2CraftPriorityが有効な場合に、投入するクラフトジョブへ適用する優先度の値。
+	#値が大きいほど優先されます(AE2 Crafting Priority側の仕様に準拠)。専用GUIにも表示されます。
+	#Range: -1000 ~ 1000
+	craftPriority = 0
+	#1つのリクエストが同時に使用できるAE2クラフトCPUの最大数。0で無制限。
+	#Range: 0 ~ 256
+	maxCpusPerRequest = 0
+	#クラフト計算でサブ素材不足(missingItems)が検出された場合、即座に諦めず何回までリトライするか。
+	#農場等でゆっくり自動生成される資源は、直前のリクエストが使い切った直後は一時的に不足していることが多く、
+	#リトライせずに即座に諦めると(EXCLUDED_INSUFFICIENTとして扱われ、その資材だけ欠けたままペースト/交換が
+	#実行されてしまう)複数リクエストを連続実行した際に不完全なペーストが高確率で発生する原因になる。
+	#Range: 0 ~ 6000
+	calculationRetryMaxAttempts = 60
+	#上記リトライの間隔(Tick数、20Tick=1秒)。
+	#Range: 1 ~ 1200
+	calculationRetryIntervalTicks = 20
+	#trueの場合、対応ガジェット(Building/Exchange/CopyPasteのpasteモード)を手持ちしている間、
+	#キューに入っている(実行待ち〜設置中の)リクエストが設置予定のブロック位置にゴーストブロックを表示します。
+	ghostPreviewEnabled = true
+	#1リクエストあたりゴーストブロックプレビューとしてクライアントへ送信するブロック数の上限。
+	#非常に大きなペースト/交換の際にネットワーク帯域を圧迫しないための上限で、超過分は先頭から
+	#この数までに切り詰められます(プレビュー表示のみに影響し、実際のBuild/Exchange/Paste自体には影響しません)。
+	#Range: 0 ~ 65536
+	ghostPreviewMaxBlocks = 4096
+	#trueの場合、対応ガジェットを手持ちしていなくても、キューに入っているリクエストのゴーストブロックプレビューを常に表示します。
+	#falseの場合(既定)、対応ガジェットを手持ちしている間のみ表示します(従来の挙動)。
+	#この既定値はプレイヤーごとに専用GUIの「ゴースト常時表示」ボタンから個別に上書きできます。
+	ghostPreviewAlwaysShown = true
+	#クラフト完了(DONE)したアイテムをAE2ネットワークから実際に回収(reserve)できない状態が
+	#このTick数だけ連続した場合、そのアイテムは回収を諦めて資材不足(EXCLUDED_INSUFFICIENT)として
+	#扱い、リクエストの完了処理へ進めます(20Tick=1秒)。
+	#回収できない状態は通常、他の自動化(エクスポートバス等)による一時的な横取りですぐ解消しますが、
+	#恒久的に解消しない場合にリクエストが「処理中」のまま無期限に止まってしまう(AE2側には
+	#該当のクラフトジョブが既に1つも残っていないのに完了しない)問題を防ぐためのタイムアウトです。
+	#0を指定すると無期限に待機し続けます(この場合、上記の恒久的な回収失敗が起きるとリクエストが
+	#止まったままになる可能性があります)。
+	#Range: > 0
+	reservationShortfallTimeoutTicks = 1200
+
