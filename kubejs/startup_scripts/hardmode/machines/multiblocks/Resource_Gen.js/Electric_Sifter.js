@@ -12,9 +12,12 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+    const $StarTPartAbility = Java.loadClass('com.startechnology.start_core.machine.StarTPartAbility');
+
     event.create('electric_sifter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('electric_sifter')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:treatedwood_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('A   A', 'ABBBA', 'ABBBA', 'ABBBA', 'ABBBA', 'ABBBA', ' AAA ') 
@@ -27,7 +30,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('B', Predicates.blocks('kubejs:treatedwood_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(3).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(6).setPreviewCount(1))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2)))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities($StarTPartAbility.ABSOLUTE_PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where('C', Predicates.blocks('gtceu:steel_pipe_casing'))
             .where('D', Predicates.blocks('kubejs:meshblock'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))

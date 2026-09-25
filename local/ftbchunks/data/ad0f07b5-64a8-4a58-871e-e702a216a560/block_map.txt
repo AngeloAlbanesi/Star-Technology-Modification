@@ -404,6 +404,7 @@
 #19222E rsrequestify:requester
 #99B23D gtceu:rock_filtrator
 #D47998 chipped:rough_andesite
+#10781F gtceu:rtm_alloy_coil_block
 #86FC77 minecraft:sand
 #6CA56E chipped:sanded_andesite
 #D3CCFE create:shaft

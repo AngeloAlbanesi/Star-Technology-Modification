@@ -1,9 +1,9 @@
 -jarPath
-local/crash_assistant/37192_1790278084200_app.jar
+local/crash_assistant/76856_1790335165118_app.jar
 -parentPID
-37192
+76856
 -parentStarted
-1790278084200
+1790335165118
 -platform
 FORGE
 -platformOwerridenData
@@ -23,7 +23,7 @@ L1VzZXJzLzxVU0VSPi9MaWJyYXJ5L0FwcGxpY2F0aW9uIFN1cHBvcnQvUHJpc21MYXVuY2hlci9saWJy
 -crashAssistantModJarName
 CrashAssistant-forge-1.19-1.20.1-1.11.9.jar
 -classPath
-local/crash_assistant/37192_1790278084200_app.jar:local/crash_assistant/37192_1790278084200_mod.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/com/github/oshi/oshi-core/6.2.2/oshi-core-6.2.2.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar
+local/crash_assistant/76856_1790335165118_app.jar:local/crash_assistant/76856_1790335165118_mod.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/com/github/oshi/oshi-core/6.2.2/oshi-core-6.2.2.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar:/Users/angeloalbanesi/Library/Application Support/PrismLauncher/libraries/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar
 -minecraftXms
 896m
 -minecraftXmx
@@ -31,13 +31,13 @@ local/crash_assistant/37192_1790278084200_app.jar:local/crash_assistant/37192_17
 -systemRAM
 32g
 -systemUsedRAMAtMinecraftLaunchMoment
-23.5g
+19.7g
 -systemSwapSpace
 0m
 -systemUsedSwapSpaceAtMinecraftLaunchMoment
 0m
 -systemDiskFreeSpaceAtMinecraftLaunchMoment
-336.8g
+336.1g
 -minecraftSunJavaCommand
 org.prismlauncher.EntryPoint
 -processor

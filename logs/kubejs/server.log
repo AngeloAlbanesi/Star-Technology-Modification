@@ -1,1264 +1,1265 @@
-[21:28:48] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[21:28:48] [INIT] Loaded plugins:
-[21:28:48] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[21:28:48] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[21:28:48] [INIT] - dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration
-[21:28:48] [INIT] - com.jesz.createdieselgenerators.compat.kubejs.CDGKubeJSPlugin
-[21:28:48] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
-[21:28:48] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.KubeJSIntegration
-[21:28:48] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbchunks.kubejs.FTBChunksKubeJSPlugin
-[21:28:48] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbteams.kubejs.FTBTeamsKubeJSPlugin
-[21:28:48] [INIT] - dev.latvian.mods.kubejs.thermal.KubeJSThermalPlugin
-[21:28:48] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
-[21:28:48] [INIT] - novamachina.exnihilosequentia.common.compat.kubejs.KubeJSExNihiloPlugin
-[21:28:48] [INIT] - dev.bluephs.vintage.compat.kubejs.VINTAGEKubeJSPlugin
-[21:28:48] [INIT] - com.startechnology.start_core.integration.kjs.StarTKubeJSPlugin
-[21:28:48] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
-[21:28:48] [INIT] - com.blakebr0.cucumber.compat.kubejs.CucumberKubeJSPlugin
-[21:28:48] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/geodes.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/void_drilling/drilling.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/void_drilling/processing.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/blast_furnaces.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/sieve_n_sift.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/misc.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/pre-lv.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/exnihilo/melting.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/exnihilo/sieving.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/exnihilo/heat.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/lines/rare_earth_line.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/Resource_Gen/lines/plat_line.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/utils/tag_changes.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/utils/loot_tables.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/utils/events/on_load.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/misc.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/general_progression/machines.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/general_progression/circuits.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/general_progression/components.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/general_progression/casings.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/misc.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/create.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/steam.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/ulv.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/primitive.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/create_age.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/recipe_renames.js: Pack mode mismatch
-[21:28:48] [INFO] Skipped server_scripts:hardmode/mass_removals.js: Pack mode mismatch
-[21:28:48] [INFO] Loaded script server_scripts:utils/id_loader.js in 0.001 s
-[21:28:48] [INFO] utils/helpers/tag_loader.js#5: Loaded Java class 'com.startechnology.start_core.machine.abyssal_containment.StarTAbyssalContainmentMachine'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#8: Loaded Java class 'com.google.gson.JsonObject'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#11: Loaded Java class 'com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#15: Loaded Java class 'net.minecraft.server.level.ServerLevel'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#16: Loaded Java class 'net.minecraft.core.BlockPos'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#17: Loaded Java class 'net.minecraft.world.level.ChunkPos'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#18: Loaded Java class 'net.minecraft.core.SectionPos'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#19: Loaded Java class 'net.minecraft.resources.ResourceLocation'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#20: Loaded Java class 'net.minecraft.core.registries.Registries'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#21: Loaded Java class 'net.minecraft.core.HolderSet'
-[21:28:48] [INFO] utils/helpers/tag_loader.js#22: Loaded Java class 'net.minecraft.core.Holder'
-[21:28:48] [INFO] Loaded script server_scripts:utils/helpers/tag_loader.js in 0.056 s
-[21:28:48] [INFO] Loaded script server_scripts:utils/helpers/packmode_helpers.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/mass_removals.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:utils/helpers/recipe_helpers.js in 0.002 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/components/component_materials.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/general_recycling_info.js in 0.002 s
-[21:28:48] [INFO] Loaded script server_scripts:common/utils/dimensional/helpers.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/systems/agriculture/farming.js in 0.009 s
-[21:28:48] [INFO] Loaded script server_scripts:common/utils/tags.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:additions/machines_and_parts/tiered_machines/large_energy_hatches.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:additions/machines_and_parts/converters.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/intermediate_multis.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/hatches_and_busses.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/single_blocks.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/large_energy_hatches.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/modular_power_hatches.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/parallel_hatches.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/transformers.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/low_tier_parallel_hatches.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/storages.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/singleblocks.js in 0.002 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/io_hatches.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/large_multis.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/converters.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/coils.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/early_game/composter.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/early_game/sieving.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/early_game/blast_furnaces.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/early_game/alloys and tools.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/early_game/casket.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/early_game/backports.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/early_game/barrels.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/early_game/misc_and_qol.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/circuit_etching.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/superconductors.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/additions/progression/lines/dimensional_air.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/modifications/pipez.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/modifications/item_collectors.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/modifications/create/new_age.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/modifications/create/base.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/modifications/create/vintage.js in 0.015 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/fission/nuclear_fission.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/fission/nuclear_reactor.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/ore_factory_processing.js in 0.002 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/resource_generation/pebbling.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/resource_generation/geodes.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/resource_generation/latex.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/resource_generation/mechanical_sieve.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/resource_generation/void_drill_line/crystallisation.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/resource_generation/void_drill_line/clusters.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/resource_generation/void_drill_line/minerals.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:default/systems/resource_generation/void_drill_line/rare_ore_residue.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:utils/info_dump.js in 0.0 s
-[21:28:48] [INFO] utils/calculator.js#1: Loaded Java class 'com.gregtechceu.gtceu.utils.GTUtil'
-[21:28:48] [INFO] utils/calculator.js#2: Loaded Java class 'com.gregtechceu.gtceu.api.recipe.GTRecipe'
-[21:28:48] [INFO] utils/calculator.js#3: Loaded Java class 'com.gregtechceu.gtceu.api.recipe.RecipeHelper'
-[21:28:48] [INFO] utils/calculator.js#6: Loaded Java class 'dev.latvian.mods.kubejs.server.KubeJSReloadListener'
-[21:28:48] [INFO] Loaded script server_scripts:utils/calculator.js in 0.016 s
-[21:28:48] [INFO] Loaded script server_scripts:personal_movement_speed.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/pre_gate_multis.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/multiblock_barrels.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/old_to_new_fusion_temp.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/end_multis.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/nether_multis.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/riftic_multis.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/abydos_multis.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/large_rock_crusher.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/vacuum_chemical_reactor.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/bacterial_multiblocks.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/chemical_plant.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/fluid_drill.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/recipe_changes.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/hermetic_casings.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/parallel_hatches.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/fusion_coils.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/components.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/converters.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/singleblocks.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/fusion_casings.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/dreamlinks.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/recycling/coils.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/power/modular_combustion.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/power/thermal_augments.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/power/solar.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/power/wireless_power.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/misc_additions.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/komaru/modules.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/komaru/frame.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/components/luv_to_uv_components.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/components/uhv_to_uiv_components.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/components/component_nexus.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/components/component_parts.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/casings.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/netherite.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/end_lines/abyssal_room.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/end_lines/misc_materials.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/cryptands.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_stars.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/modifications.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/pedot_pss.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/perfluoroelastomer.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/misc_utilization.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/peek.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/polycarbonate.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/polyimide.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/intermediate_multis.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/combustion_lines.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/gate_lines/runic_convergence.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/gate_lines/aerogels.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/hexafluorobromic_acid.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/magmas.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/atomic_nether_sludge.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/estalt.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/misc_materials.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/adamantine.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/calamatium_and_isovol.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/mythril.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/sodium_persulfate_bulk.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/riftic/riftion.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/riftic/misc.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/riftic/faematter_filaments.js in 0.001 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/zapolgium.js in 0.0 s
-[21:28:48] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/ultimate.js in 0.002 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/rare_earth.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/naquadite.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/zirconium.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/magma.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/sic_bite.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/akreyrium.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/misc_materials.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/deionized_water.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/lines/brine_line.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/circuitry/universal_circuits.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/circuitry/circuits.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/circuitry/draco_circuit_assembly.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/additions/progression/circuitry/circuit_parts.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/utils/fluid_veins.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/utils/ore_veins.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/utils/dimensional/buffs.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/utils/dimensional/effects.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/utils/dimensional/defense.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/utils/dimensional/armors.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/utils/loot.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/flux_networks.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/project_red.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/functional_storage.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/exnihilo.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/solar_energy.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/thermal.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/ae2/machinery.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/ae2/storage_components.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/ae2/components.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/ae2/ae2_qol.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/ae2/gt_compat.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/ae2/removals.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/ae2/storage_cells.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/xycraft.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/general.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/create_hypertubes.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/travel_anchors.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/agriculture/wild_garden.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/agriculture/fishery.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/agriculture/tree_greenhouse.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/fusion/plasma_turbines.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/fusion/fusion_scaling.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/fusion/start_fusion_machines.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/draco_infusion.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/greenhouse_growing.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/mystical_agriculture.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/essence_burning.js in 0.002 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/essence_enchancer.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/essence_replication.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/hellforge.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/gate_based/dsg.js in 0.003 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/gate_based/misc.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/gate_based/csg.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/gate_based/quantum_compressor.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/gate_based/asg.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/gate_based/dimensional_pinging.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/gate_based/misc_materials.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/gate_based/runes.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/cryostate_quantum_chiller.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/research.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/resource gen/abyss_harvesting.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/resource gen/dimensional_destabilising.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/resource gen/seawater.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/resource gen/hydrocarbons.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/resource gen/exotic_gas_siphon.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/threading.js in 0.001 s
-[21:28:49] [INFO] tiab_modes.js#5: Loaded Java class 'net.minecraft.server.level.ServerPlayer'
-[21:28:49] [INFO] tiab_modes.js#6: Loaded Java class 'com.gregtechceu.gtceu.api.blockentity.MetaMachineBlockEntity'
-[21:28:49] [INFO] Loaded script server_scripts:tiab_modes.js in 0.01 s
-[21:28:49] [INFO] Loaded script server_scripts:deprecated/chemical_builder.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:deprecated/kinetic_box.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:deprecated/resource_gen/filtration.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:deprecated/resource_gen/meteorites.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:deprecated/resource_gen/produce.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:deprecated/resource_gen/large_filtration.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:deprecated/large_sieve.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:deprecated/cobbleworks.js in 0.0 s
-[21:28:49] [INFO] Loaded script server_scripts:common/systems/pulverizer.js in 0.001 s
-[21:28:49] [INFO] Loaded script server_scripts:common/modifications/ebf_speedup.js in 0.0 s
-[21:28:49] [INFO] Loaded 197/197 KubeJS server scripts in 0.194 s with 0 errors and 0 warnings
-[21:28:49] [INFO] Scripts loaded
-[21:28:49] [INFO] Initializing recipe event...
-[21:28:49] [INFO] [minecraft:fluid] Found 956 tags, added 1 objects, removed 2 objects
-[21:28:50] [INFO] [minecraft:block] Found 2450 tags, added 1249 objects, removed 3 objects
-[21:28:50] [INFO] [minecraft:item] Found 8758 tags, added 130 objects, removed 22 objects
-[21:28:51] [INFO] Processing recipes...
-[21:28:51] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_cherry[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:cherry_log\"}
-[21:28:51] [WARN] Failed to parse recipe 'vintage:craft/aluminum_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:51] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_oak[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:oak_log\"}
-[21:28:52] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_dark_oak[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:dark_oak_log\",\"Properties\":{\"axis\":\"y\"}}
-[21:28:52] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_spruce[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:spruce_log\",\"Properties\":{\"axis\":\"y\"}}
-[21:28:52] [WARN] Failed to parse recipe 'vintage:craft/palladium_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_wireless_crafting_monitor[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_wireless_grid[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_portable_grid[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'vintage:craft/platinum_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_controller[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'ironchests:netherite_chest[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'base' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_rubberwood[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"thermal:rubberwood_log\",\"Properties\":{\"axis\":\"y\"}}
-[21:28:52] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_jungle[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:jungle_log\",\"Properties\":{\"axis\":\"y\"}}
-[21:28:52] [WARN] Failed to parse recipe 'vintage:craft/rhodium_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'vintage:craft/palladium_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'vintage:craft/aluminum_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'ironchests:netherite_upgrade[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'base' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_birch[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:birch_log\",\"Properties\":{\"axis\":\"y\"}}
-[21:28:52] [WARN] Failed to parse recipe 'vintage:craft/rhodium_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_wireless_fluid_grid[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'ironchests:netherite_barrel[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'base' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'vintage:craft/electrum_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'vintage:craft/electrum_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'vintage:craft/platinum_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
-[21:28:52] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_acacia[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:acacia_log\",\"Properties\":{\"axis\":\"y\"}}
-[21:28:52] [INFO] Found 73903 recipes in 952.6 ms
-[21:28:56] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/mars, Max itemInputs: 3
-[21:28:56] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/vasilisa, Max itemInputs: 3
-[21:28:56] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/valenok, Max itemInputs: 3
-[21:28:56] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/poomba, Max itemInputs: 3
-[21:28:56] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/maxwell, Max itemInputs: 3
-[21:28:56] [WARN] common/additions/progression/misc_additions.js#133: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/why_are_you_worrying, Max itemInputs: 3
-[21:28:57] [INFO] common/modifications/ebf_speedup.js#100: [KubeJS EBF Speedup] Velocizzate con successo 377 ricette della EBF (durata divisa per 10).
-[21:28:57] [INFO] Posted recipe events in 4.821 s
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_1024a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+[13:20:43] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[13:20:43] [INIT] Loaded plugins:
+[13:20:43] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[13:20:43] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[13:20:43] [INIT] - dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration
+[13:20:43] [INIT] - com.jesz.createdieselgenerators.compat.kubejs.CDGKubeJSPlugin
+[13:20:43] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[13:20:43] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.KubeJSIntegration
+[13:20:43] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbchunks.kubejs.FTBChunksKubeJSPlugin
+[13:20:43] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbteams.kubejs.FTBTeamsKubeJSPlugin
+[13:20:43] [INIT] - dev.latvian.mods.kubejs.thermal.KubeJSThermalPlugin
+[13:20:43] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
+[13:20:43] [INIT] - novamachina.exnihilosequentia.common.compat.kubejs.KubeJSExNihiloPlugin
+[13:20:43] [INIT] - dev.bluephs.vintage.compat.kubejs.VINTAGEKubeJSPlugin
+[13:20:43] [INIT] - com.startechnology.start_core.integration.kjs.StarTKubeJSPlugin
+[13:20:43] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
+[13:20:43] [INIT] - com.blakebr0.cucumber.compat.kubejs.CucumberKubeJSPlugin
+[13:20:43] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/geodes.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/void_drilling/drilling.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/void_drilling/processing.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/blast_furnaces.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/sieve_n_sift.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/misc.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/pre-lv.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/exnihilo/melting.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/exnihilo/sieving.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/exnihilo/heat.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/lines/rare_earth_line.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/Resource_Gen/lines/plat_line.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/utils/tag_changes.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/utils/loot_tables.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/utils/events/on_load.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/misc.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/general_progression/machines.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/general_progression/circuits.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/general_progression/components.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/general_progression/casings.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/misc.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/create.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/steam.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/ulv.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/primitive.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/progression/pre_lv/create_age.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/recipe_renames.js: Pack mode mismatch
+[13:20:43] [INFO] Skipped server_scripts:hardmode/mass_removals.js: Pack mode mismatch
+[13:20:43] [INFO] Loaded script server_scripts:utils/id_loader.js in 0.0 s
+[13:20:43] [INFO] utils/helpers/tag_loader.js#5: Loaded Java class 'com.startechnology.start_core.machine.abyssal_containment.StarTAbyssalContainmentMachine'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#8: Loaded Java class 'com.google.gson.JsonObject'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#11: Loaded Java class 'com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#15: Loaded Java class 'net.minecraft.server.level.ServerLevel'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#16: Loaded Java class 'net.minecraft.core.BlockPos'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#17: Loaded Java class 'net.minecraft.world.level.ChunkPos'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#18: Loaded Java class 'net.minecraft.core.SectionPos'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#19: Loaded Java class 'net.minecraft.resources.ResourceLocation'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#20: Loaded Java class 'net.minecraft.core.registries.Registries'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#21: Loaded Java class 'net.minecraft.core.HolderSet'
+[13:20:43] [INFO] utils/helpers/tag_loader.js#22: Loaded Java class 'net.minecraft.core.Holder'
+[13:20:43] [INFO] Loaded script server_scripts:utils/helpers/tag_loader.js in 0.044 s
+[13:20:43] [INFO] Loaded script server_scripts:utils/helpers/packmode_helpers.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/mass_removals.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:utils/helpers/recipe_helpers.js in 0.003 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/components/component_materials.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/general_recycling_info.js in 0.009 s
+[13:20:43] [INFO] Loaded script server_scripts:common/utils/dimensional/helpers.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/agriculture/farming.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/utils/tags.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:additions/machines_and_parts/tiered_machines/large_energy_hatches.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:additions/machines_and_parts/converters.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/intermediate_multis.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/hatches_and_busses.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/single_blocks.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/large_energy_hatches.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/modular_power_hatches.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/parallel_hatches.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/transformers.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/low_tier_parallel_hatches.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/storages.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/singleblocks.js in 0.002 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/tiered_machines/io_hatches.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/large_multis.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/converters.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/machines_and_parts/coils.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/early_game/composter.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/early_game/sieving.js in 0.002 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/early_game/blast_furnaces.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/early_game/alloys and tools.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/early_game/casket.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/early_game/backports.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/early_game/barrels.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/early_game/misc_and_qol.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/circuit_etching.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/superconductors.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/additions/progression/lines/dimensional_air.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/modifications/pipez.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/modifications/item_collectors.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/modifications/create/new_age.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/modifications/create/base.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/modifications/create/vintage.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/fission/nuclear_fission.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/fission/nuclear_reactor.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/ore_factory_processing.js in 0.002 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/resource_generation/pebbling.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/resource_generation/geodes.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/resource_generation/latex.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/resource_generation/mechanical_sieve.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/resource_generation/void_drill_line/crystallisation.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/resource_generation/void_drill_line/clusters.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/resource_generation/void_drill_line/minerals.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:default/systems/resource_generation/void_drill_line/rare_ore_residue.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:utils/info_dump.js in 0.0 s
+[13:20:43] [INFO] utils/calculator.js#1: Loaded Java class 'com.gregtechceu.gtceu.utils.GTUtil'
+[13:20:43] [INFO] utils/calculator.js#2: Loaded Java class 'com.gregtechceu.gtceu.api.recipe.GTRecipe'
+[13:20:43] [INFO] utils/calculator.js#3: Loaded Java class 'com.gregtechceu.gtceu.api.recipe.RecipeHelper'
+[13:20:43] [INFO] utils/calculator.js#6: Loaded Java class 'dev.latvian.mods.kubejs.server.KubeJSReloadListener'
+[13:20:43] [INFO] Loaded script server_scripts:utils/calculator.js in 0.015 s
+[13:20:43] [INFO] Loaded script server_scripts:personal_movement_speed.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/pre_gate_multis.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/multiblock_barrels.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/old_to_new_fusion_temp.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/end_multis.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/nether_multis.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/riftic_multis.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/abydos_multis.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/large_rock_crusher.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/vacuum_chemical_reactor.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/bacterial_multiblocks.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/chemical_plant.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/multiblock_recipes/fluid_drill.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/recipe_changes.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/hermetic_casings.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/parallel_hatches.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/fusion_coils.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/components.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/converters.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/singleblocks.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/fusion_casings.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/dreamlinks.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/recycling/coils.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/power/modular_combustion.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/power/thermal_augments.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/power/solar.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/power/wireless_power.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/misc_additions.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/komaru/modules.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/komaru/frame.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/components/luv_to_uv_components.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/components/uhv_to_uiv_components.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/components/component_nexus.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/components/component_parts.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/casings.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/netherite.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/end_lines/abyssal_room.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/end_lines/misc_materials.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/cryptands.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_stars.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/modifications.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/pedot_pss.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/perfluoroelastomer.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/misc_utilization.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/peek.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/polycarbonate.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/polymers/polyimide.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/intermediate_multis.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/combustion_lines.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/gate_lines/runic_convergence.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/gate_lines/aerogels.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/hexafluorobromic_acid.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/magmas.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/atomic_nether_sludge.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/estalt.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/misc_materials.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/adamantine.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/calamatium_and_isovol.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/nether_lines/mythril.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/sodium_persulfate_bulk.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/riftic/riftion.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/riftic/misc.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/riftic/faematter_filaments.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/zapolgium.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/ultimate.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/rare_earth.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/naquadite.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/zirconium.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/magma.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/sic_bite.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/akreyrium.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/misc_materials.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/abydos_lines/deionized_water.js in 0.002 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/lines/brine_line.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/circuitry/universal_circuits.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/circuitry/circuits.js in 0.002 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/circuitry/draco_circuit_assembly.js in 0.002 s
+[13:20:43] [INFO] Loaded script server_scripts:common/additions/progression/circuitry/circuit_parts.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/utils/fluid_veins.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/utils/ore_veins.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/utils/dimensional/buffs.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/utils/dimensional/effects.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/utils/dimensional/defense.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/utils/dimensional/armors.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/utils/loot.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/flux_networks.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/project_red.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/functional_storage.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/exnihilo.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/solar_energy.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/thermal.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/ae2/machinery.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/ae2/storage_components.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/ae2/components.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/ae2/ae2_qol.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/ae2/gt_compat.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/ae2/removals.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/ae2/storage_cells.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/xycraft.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/general.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/create_hypertubes.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/travel_anchors.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/agriculture/wild_garden.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/agriculture/fishery.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/agriculture/tree_greenhouse.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/fusion/plasma_turbines.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/fusion/fusion_scaling.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/fusion/start_fusion_machines.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/draco_infusion.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/greenhouse_growing.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/mystical_agriculture.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/essence_burning.js in 0.002 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/essence_enchancer.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/mystical agriculture/essence_replication.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/hellforge.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/gate_based/dsg.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/gate_based/misc.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/gate_based/csg.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/gate_based/quantum_compressor.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/gate_based/asg.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/gate_based/dimensional_pinging.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/gate_based/misc_materials.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/gate_based/runes.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/cryostate_quantum_chiller.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/research.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/resource gen/abyss_harvesting.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/resource gen/dimensional_destabilising.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/resource gen/seawater.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/resource gen/hydrocarbons.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/resource gen/exotic_gas_siphon.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/threading.js in 0.001 s
+[13:20:43] [INFO] tiab_modes.js#5: Loaded Java class 'net.minecraft.server.level.ServerPlayer'
+[13:20:43] [INFO] tiab_modes.js#6: Loaded Java class 'com.gregtechceu.gtceu.api.blockentity.MetaMachineBlockEntity'
+[13:20:43] [INFO] Loaded script server_scripts:tiab_modes.js in 0.008 s
+[13:20:43] [INFO] Loaded script server_scripts:deprecated/chemical_builder.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:deprecated/kinetic_box.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:deprecated/resource_gen/filtration.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:deprecated/resource_gen/meteorites.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:deprecated/resource_gen/produce.js in 0.001 s
+[13:20:43] [INFO] Loaded script server_scripts:deprecated/resource_gen/large_filtration.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:deprecated/large_sieve.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:deprecated/cobbleworks.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/systems/pulverizer.js in 0.0 s
+[13:20:43] [INFO] Loaded script server_scripts:common/modifications/ebf_speedup.js in 0.0 s
+[13:20:43] [INFO] Loaded 197/197 KubeJS server scripts in 0.16 s with 0 errors and 0 warnings
+[13:20:43] [INFO] Scripts loaded
+[13:20:43] [INFO] Initializing recipe event...
+[13:20:44] [INFO] [minecraft:fluid] Found 956 tags, added 1 objects, removed 2 objects
+[13:20:45] [INFO] [minecraft:block] Found 2450 tags, added 1249 objects, removed 3 objects
+[13:20:45] [INFO] [minecraft:item] Found 8758 tags, added 130 objects, removed 22 objects
+[13:20:47] [INFO] Processing recipes...
+[13:20:47] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_cherry[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:cherry_log\"}
+[13:20:47] [WARN] Failed to parse recipe 'vintage:craft/aluminum_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'infinitestoragecell:infinity_chemical_cell[minecraft:smithing_transform]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_oak[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:oak_log\"}
+[13:20:47] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_dark_oak[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:dark_oak_log\",\"Properties\":{\"axis\":\"y\"}}
+[13:20:47] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_spruce[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:spruce_log\",\"Properties\":{\"axis\":\"y\"}}
+[13:20:47] [WARN] Failed to parse recipe 'vintage:craft/palladium_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_wireless_crafting_monitor[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_wireless_grid[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_portable_grid[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'vintage:craft/platinum_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_controller[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'ironchests:netherite_chest[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'base' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_rubberwood[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"thermal:rubberwood_log\",\"Properties\":{\"axis\":\"y\"}}
+[13:20:47] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_jungle[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:jungle_log\",\"Properties\":{\"axis\":\"y\"}}
+[13:20:47] [WARN] Failed to parse recipe 'vintage:craft/rhodium_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'vintage:craft/palladium_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'vintage:craft/aluminum_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'ironchests:netherite_upgrade[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'base' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_birch[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:birch_log\",\"Properties\":{\"axis\":\"y\"}}
+[13:20:47] [WARN] Failed to parse recipe 'vintage:craft/rhodium_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'powerlessrefinedstorage:powerless_wireless_fluid_grid[minecraft:crafting_shapeless]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:47] [WARN] Failed to parse recipe 'ironchests:netherite_barrel[minecraft:smithing_transform]'! Falling back to vanilla: Ingredient 'base' can't be empty!
+[13:20:48] [WARN] Failed to parse recipe 'vintage:craft/electrum_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:48] [WARN] Failed to parse recipe 'vintage:craft/electrum_wire[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:48] [WARN] Failed to parse recipe 'vintage:craft/platinum_rod[minecraft:crafting_shaped]'! Falling back to vanilla: ItemStack 'result' can't be empty!
+[13:20:48] [WARN] Failed to parse recipe 'thermal:devices/tree_extractor/tree_extractor_acacia[thermal:tree_extractor]'! Falling back to vanilla: Non [a-z0-9_.-] character in namespace of location: {\"Name\":\"minecraft:acacia_log\",\"Properties\":{\"axis\":\"y\"}}
+[13:20:48] [INFO] Found 73908 recipes in 940.5 ms
+[13:20:51] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/mars, Max itemInputs: 3
+[13:20:51] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/vasilisa, Max itemInputs: 3
+[13:20:51] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/valenok, Max itemInputs: 3
+[13:20:51] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/poomba, Max itemInputs: 3
+[13:20:51] [WARN] common/additions/progression/misc_additions.js#87: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/maxwell, Max itemInputs: 3
+[13:20:51] [WARN] common/additions/progression/misc_additions.js#133: Trying to add more inputs than RecipeType can support, id: start:catto_shrine/why_are_you_worrying, Max itemInputs: 3
+[13:20:53] [INFO] common/modifications/ebf_speedup.js#100: [KubeJS EBF Speedup] Velocizzate con successo 377 ricette della EBF (durata divisa per 10).
+[13:20:53] [INFO] Posted recipe events in 4.975 s
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_1024a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_4096a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_256a_laser_source_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_4a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_1024a_laser_source_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_4096a_laser_source_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_16a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_4096a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_4a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_256a_laser_source_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_substation_output_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_16a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_substation_input_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_4a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_1024a_laser_source_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_16a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_4096a_laser_source_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_substation_input_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_4a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_256a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_1024a_laser_target_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_16a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_256a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_4096a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_1024a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_substation_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_substation_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_1024a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_4096a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_4096a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_substation_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_256a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_substation_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_substation_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_substation_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_substation_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_substation_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_1024a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_256a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_256a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_1024a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_4096a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_output_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_4096a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_256a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_substation_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_256a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_1024a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_4096a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_1024a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_1024a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_256a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_output_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_input_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_256a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_256a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_input_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_1024a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_4096a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_1024a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_substation_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_1024a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_4096a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_4096a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_input_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start_core:assembler/iv_64a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_substation_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_input_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start_core:assembler/luv_64a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_4096a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_input_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_input_hatch_16a_direct!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_substation_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_input_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_4096a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start_core:assembler/zpm_64a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_input_hatch_16a_direct!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_input_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:hv_energy_input_hatch_16a_from_1a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:hv_energy_input_hatch_16a_from_1a!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:gold_hex_wire'], ['gtceu:hv_transformer_16a'], ['gtceu:gold_hex_wire'], ['gtceu:hv_voltage_coil'], ['gtceu:hv_energy_input_hatch'], ['gtceu:hv_voltage_coil'], ['gtceu:stainless_steel_plate'], ['gtceu:stainless_steel_plate'], ['gtceu:stainless_steel_plate']], out='gtceu:hv_energy_input_hatch_16a'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:gold_hex_wire'], ['gtceu:hv_transformer_16a'], ['gtceu:gold_hex_wire'], ['gtceu:hv_voltage_coil'], ['gtceu:hv_energy_input_hatch'], ['gtceu:hv_voltage_coil'], ['gtceu:stainless_steel_plate'], ['gtceu:stainless_steel_plate'], ['gtceu:stainless_steel_plate']], out='gtceu:hv_energy_input_hatch_16a'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_256a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_256a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_substation_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_1024a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_1024a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start_core:assembler/uv_64a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_4096a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_4096a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_256a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_substation_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_substation_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/ev_energy_output_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/iv_4096a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start_core:assembler/uhv_64a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_1024a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/luv_4096a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uev_4096a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start_core:assembler/uev_64a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start_core:assembler/iv_64a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_substation_input_hatch_64a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/hv_energy_output_hatch_64a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_64a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_64a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_256a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_256a_laser_source_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_substation_output_hatch_64a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_1024a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_substation_input_hatch_64a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_1024a_laser_source_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_256a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_input_hatch_4096a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/luv_4096a_laser_source_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_1024a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_256a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_256a_laser_target_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start_core:assembler/luv_64a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_4a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_1024a_laser_target_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start_core:assembler/zpm_64a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_1024a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_4096a_laser_target_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_energy_output_hatch_4096a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start_core:assembler/uv_64a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_4a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_256a_laser_source_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start_core:assembler/uhv_64a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_16a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_1024a_laser_source_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start_core:assembler/uev_64a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_16a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_64a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_4096a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/lv_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/lv_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:soul_infused_single_wire'], ['gtceu:basic_electronic_circuit', 'gtceu:basic_integrated_circuit', 'gtceu:microchip_processor', 'kubejs:lv_universal_circuit'], ['gtceu:soul_infused_single_wire'], ['gtceu:soul_infused_single_wire'], ['gtceu:lv_machine_hull'], ['gtceu:soul_infused_single_wire']], out='gtceu:lv_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:soul_infused_single_wire'], ['gtceu:basic_electronic_circuit', 'gtceu:basic_integrated_circuit', 'gtceu:microchip_processor', 'kubejs:lv_universal_circuit'], ['gtceu:soul_infused_single_wire'], ['gtceu:soul_infused_single_wire'], ['gtceu:lv_machine_hull'], ['gtceu:soul_infused_single_wire']], out='gtceu:lv_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uev_4096a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_substation_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_256a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_256a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_substation_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_1024a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_substation_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_256a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/mv_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/mv_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:signalum_single_wire'], ['gtceu:good_electronic_circuit', 'gtceu:good_integrated_circuit', 'gtceu:micro_processor', 'kubejs:mv_universal_circuit'], ['gtceu:signalum_single_wire'], ['gtceu:signalum_single_wire'], ['gtceu:mv_machine_hull'], ['gtceu:signalum_single_wire']], out='gtceu:mv_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:signalum_single_wire'], ['gtceu:good_electronic_circuit', 'gtceu:good_integrated_circuit', 'gtceu:micro_processor', 'kubejs:mv_universal_circuit'], ['gtceu:signalum_single_wire'], ['gtceu:signalum_single_wire'], ['gtceu:mv_machine_hull'], ['gtceu:signalum_single_wire']], out='gtceu:mv_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_256a_energy_converter_direct!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_256a_energy_converter_direct!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_4a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/zpm_4096a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/hv_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_4a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/hv_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:lumium_single_wire'], ['gtceu:advanced_integrated_circuit', 'gtceu:micro_processor_assembly', 'gtceu:nano_processor', 'kubejs:hv_universal_circuit'], ['gtceu:lumium_single_wire'], ['gtceu:lumium_single_wire'], ['gtceu:hv_machine_hull'], ['gtceu:lumium_single_wire']], out='gtceu:hv_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:lumium_single_wire'], ['gtceu:advanced_integrated_circuit', 'gtceu:micro_processor_assembly', 'gtceu:nano_processor', 'kubejs:hv_universal_circuit'], ['gtceu:lumium_single_wire'], ['gtceu:lumium_single_wire'], ['gtceu:hv_machine_hull'], ['gtceu:lumium_single_wire']], out='gtceu:hv_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_4096a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/ev_256a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_substation_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_input_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/iv_4096a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uv_4096a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/ev_256a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/ev_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/ev_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:enderium_single_wire'], ['gtceu:micro_processor_computer', 'gtceu:nano_processor_assembly', 'gtceu:quantum_processor', 'kubejs:ev_universal_circuit'], ['gtceu:enderium_single_wire'], ['gtceu:enderium_single_wire'], ['gtceu:ev_machine_hull'], ['gtceu:enderium_single_wire']], out='gtceu:ev_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:enderium_single_wire'], ['gtceu:micro_processor_computer', 'gtceu:nano_processor_assembly', 'gtceu:quantum_processor', 'kubejs:ev_universal_circuit'], ['gtceu:enderium_single_wire'], ['gtceu:enderium_single_wire'], ['gtceu:ev_machine_hull'], ['gtceu:enderium_single_wire']], out='gtceu:ev_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/ev_256a_energy_converter_direct!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/ev_256a_energy_converter_direct!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uhv_4096a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_256a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/iv_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_1024a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/iv_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:shellite_single_wire'], ['gtceu:micro_processor_mainframe', 'gtceu:nano_processor_computer', 'gtceu:quantum_processor_assembly', 'gtceu:crystal_processor', 'kubejs:iv_universal_circuit'], ['gtceu:shellite_single_wire'], ['gtceu:shellite_single_wire'], ['gtceu:iv_machine_hull'], ['gtceu:shellite_single_wire']], out='gtceu:iv_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:shellite_single_wire'], ['gtceu:micro_processor_mainframe', 'gtceu:nano_processor_computer', 'gtceu:quantum_processor_assembly', 'gtceu:crystal_processor', 'kubejs:iv_universal_circuit'], ['gtceu:shellite_single_wire'], ['gtceu:shellite_single_wire'], ['gtceu:iv_machine_hull'], ['gtceu:shellite_single_wire']], out='gtceu:iv_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/iv_256a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/iv_256a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_substation_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uev_4096a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/iv_256a_energy_converter_direct!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_1024a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/luv_256a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_4a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_4096a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_256a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/luv_4096a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/luv_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/luv_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:twinite_single_wire'], ['gtceu:nano_processor_mainframe', 'gtceu:quantum_processor_computer', 'gtceu:crystal_processor_assembly', 'gtceu:wetware_processor', 'kubejs:luv_universal_circuit'], ['gtceu:twinite_single_wire'], ['gtceu:twinite_single_wire'], ['gtceu:luv_machine_hull'], ['gtceu:twinite_single_wire']], out='gtceu:luv_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:twinite_single_wire'], ['gtceu:nano_processor_mainframe', 'gtceu:quantum_processor_computer', 'gtceu:crystal_processor_assembly', 'gtceu:wetware_processor', 'kubejs:luv_universal_circuit'], ['gtceu:twinite_single_wire'], ['gtceu:twinite_single_wire'], ['gtceu:luv_machine_hull'], ['gtceu:twinite_single_wire']], out='gtceu:luv_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_1024a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/zpm_4096a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/iv_256a_energy_converter_direct!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/luv_256a_energy_converter_direct!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_energy_output_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_16a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uv_4096a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_256a_laser_source_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uhv_4096a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_1024a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/zpm_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/zpm_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:dragonsteel_single_wire'], ['gtceu:quantum_processor_mainframe', 'gtceu:crystal_processor_computer', 'gtceu:wetware_processor_assembly', 'kubejs:runic_processor', 'kubejs:draconic_microchip_processor', 'kubejs:zpm_universal_circuit'], ['gtceu:dragonsteel_single_wire'], ['gtceu:dragonsteel_single_wire'], ['gtceu:zpm_machine_hull'], ['gtceu:dragonsteel_single_wire']], out='gtceu:zpm_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:dragonsteel_single_wire'], ['gtceu:quantum_processor_mainframe', 'gtceu:crystal_processor_computer', 'gtceu:wetware_processor_assembly', 'kubejs:runic_processor', 'kubejs:draconic_microchip_processor', 'kubejs:zpm_universal_circuit'], ['gtceu:dragonsteel_single_wire'], ['gtceu:dragonsteel_single_wire'], ['gtceu:zpm_machine_hull'], ['gtceu:dragonsteel_single_wire']], out='gtceu:zpm_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/zpm_256a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_energy_output_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_4096a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_4096a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_4096a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uv_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uv_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:prismalium_single_wire'], ['gtceu:crystal_processor_mainframe', 'gtceu:wetware_processor_computer', 'kubejs:runic_processor_assembly', 'kubejs:draconic_processor', 'kubejs:uv_universal_circuit'], ['gtceu:prismalium_single_wire'], ['gtceu:prismalium_single_wire'], ['gtceu:uv_machine_hull'], ['gtceu:prismalium_single_wire']], out='gtceu:uv_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:prismalium_single_wire'], ['gtceu:crystal_processor_mainframe', 'gtceu:wetware_processor_computer', 'kubejs:runic_processor_assembly', 'kubejs:draconic_processor', 'kubejs:uv_universal_circuit'], ['gtceu:prismalium_single_wire'], ['gtceu:prismalium_single_wire'], ['gtceu:uv_machine_hull'], ['gtceu:prismalium_single_wire']], out='gtceu:uv_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uev_4096a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_256a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_1024a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/luv_256a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_256a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_256a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_256a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_substation_output_hatch_64a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/zpm_256a_energy_converter_direct!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_1024a_laser_target_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_4096a_laser_target_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_4a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_16a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uv_256a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uhv_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uhv_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:stellarium_single_wire'], ['gtceu:wetware_processor_mainframe', 'kubejs:runic_processor_computer', 'kubejs:draconic_processor_assembly', 'kubejs:abyssal_processor', 'kubejs:uhv_universal_circuit'], ['gtceu:stellarium_single_wire'], ['gtceu:stellarium_single_wire'], ['gtceu:uhv_machine_hull'], ['gtceu:stellarium_single_wire']], out='gtceu:uhv_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:stellarium_single_wire'], ['gtceu:wetware_processor_mainframe', 'kubejs:runic_processor_computer', 'kubejs:draconic_processor_assembly', 'kubejs:abyssal_processor', 'kubejs:uhv_universal_circuit'], ['gtceu:stellarium_single_wire'], ['gtceu:stellarium_single_wire'], ['gtceu:uhv_machine_hull'], ['gtceu:stellarium_single_wire']], out='gtceu:uhv_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_1024a_laser_source_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uv_256a_energy_converter_direct!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_substation_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uev_1a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_1024a_laser_source_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/luv_256a_energy_converter_direct!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uev_1a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:ancient_runicalium_single_wire'], ['kubejs:runic_processor_mainframe', 'kubejs:draconic_processor_computer', 'kubejs:abyssal_processor_assembly', 'kubejs:uev_universal_circuit'], ['gtceu:ancient_runicalium_single_wire'], ['gtceu:ancient_runicalium_single_wire'], ['gtceu:uev_machine_hull'], ['gtceu:ancient_runicalium_single_wire']], out='gtceu:uev_1a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:ancient_runicalium_single_wire'], ['kubejs:runic_processor_mainframe', 'kubejs:draconic_processor_computer', 'kubejs:abyssal_processor_assembly', 'kubejs:uev_universal_circuit'], ['gtceu:ancient_runicalium_single_wire'], ['gtceu:ancient_runicalium_single_wire'], ['gtceu:uev_machine_hull'], ['gtceu:ancient_runicalium_single_wire']], out='gtceu:uev_1a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/lv_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/luv_4096a_laser_source_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_256a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/lv_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:soul_infused_quadruple_wire'], ['gtceu:basic_electronic_circuit', 'gtceu:basic_integrated_circuit', 'gtceu:microchip_processor', 'kubejs:lv_universal_circuit'], ['gtceu:soul_infused_quadruple_wire'], ['gtceu:soul_infused_quadruple_wire'], ['gtceu:lv_machine_hull'], ['gtceu:soul_infused_quadruple_wire']], out='gtceu:lv_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:soul_infused_quadruple_wire'], ['gtceu:basic_electronic_circuit', 'gtceu:basic_integrated_circuit', 'gtceu:microchip_processor', 'kubejs:lv_universal_circuit'], ['gtceu:soul_infused_quadruple_wire'], ['gtceu:soul_infused_quadruple_wire'], ['gtceu:lv_machine_hull'], ['gtceu:soul_infused_quadruple_wire']], out='gtceu:lv_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/mv_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/mv_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:signalum_quadruple_wire'], ['gtceu:good_electronic_circuit', 'gtceu:good_integrated_circuit', 'gtceu:micro_processor', 'kubejs:mv_universal_circuit'], ['gtceu:signalum_quadruple_wire'], ['gtceu:signalum_quadruple_wire'], ['gtceu:mv_machine_hull'], ['gtceu:signalum_quadruple_wire']], out='gtceu:mv_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:signalum_quadruple_wire'], ['gtceu:good_electronic_circuit', 'gtceu:good_integrated_circuit', 'gtceu:micro_processor', 'kubejs:mv_universal_circuit'], ['gtceu:signalum_quadruple_wire'], ['gtceu:signalum_quadruple_wire'], ['gtceu:mv_machine_hull'], ['gtceu:signalum_quadruple_wire']], out='gtceu:mv_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/hv_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/hv_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:lumium_quadruple_wire'], ['gtceu:advanced_integrated_circuit', 'gtceu:micro_processor_assembly', 'gtceu:nano_processor', 'kubejs:hv_universal_circuit'], ['gtceu:lumium_quadruple_wire'], ['gtceu:lumium_quadruple_wire'], ['gtceu:hv_machine_hull'], ['gtceu:lumium_quadruple_wire']], out='gtceu:hv_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:lumium_quadruple_wire'], ['gtceu:advanced_integrated_circuit', 'gtceu:micro_processor_assembly', 'gtceu:nano_processor', 'kubejs:hv_universal_circuit'], ['gtceu:lumium_quadruple_wire'], ['gtceu:lumium_quadruple_wire'], ['gtceu:hv_machine_hull'], ['gtceu:lumium_quadruple_wire']], out='gtceu:hv_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uhv_256a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/ev_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uv_4096a_laser_source_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_1024a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/ev_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:enderium_quadruple_wire'], ['gtceu:micro_processor_computer', 'gtceu:nano_processor_assembly', 'gtceu:quantum_processor', 'kubejs:ev_universal_circuit'], ['gtceu:enderium_quadruple_wire'], ['gtceu:enderium_quadruple_wire'], ['gtceu:ev_machine_hull'], ['gtceu:enderium_quadruple_wire']], out='gtceu:ev_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:enderium_quadruple_wire'], ['gtceu:micro_processor_computer', 'gtceu:nano_processor_assembly', 'gtceu:quantum_processor', 'kubejs:ev_universal_circuit'], ['gtceu:enderium_quadruple_wire'], ['gtceu:enderium_quadruple_wire'], ['gtceu:ev_machine_hull'], ['gtceu:enderium_quadruple_wire']], out='gtceu:ev_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uhv_256a_energy_converter_direct!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/zpm_256a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uv_4096a_laser_source_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/iv_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/iv_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:shellite_quadruple_wire'], ['gtceu:micro_processor_mainframe', 'gtceu:nano_processor_computer', 'gtceu:quantum_processor_assembly', 'gtceu:crystal_processor', 'kubejs:iv_universal_circuit'], ['gtceu:shellite_quadruple_wire'], ['gtceu:shellite_quadruple_wire'], ['gtceu:iv_machine_hull'], ['gtceu:shellite_quadruple_wire']], out='gtceu:iv_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:shellite_quadruple_wire'], ['gtceu:micro_processor_mainframe', 'gtceu:nano_processor_computer', 'gtceu:quantum_processor_assembly', 'gtceu:crystal_processor', 'kubejs:iv_universal_circuit'], ['gtceu:shellite_quadruple_wire'], ['gtceu:shellite_quadruple_wire'], ['gtceu:iv_machine_hull'], ['gtceu:shellite_quadruple_wire']], out='gtceu:iv_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uev_256a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_energy_input_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/luv_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_4a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_16a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/luv_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:twinite_quadruple_wire'], ['gtceu:nano_processor_mainframe', 'gtceu:quantum_processor_computer', 'gtceu:crystal_processor_assembly', 'gtceu:wetware_processor', 'kubejs:luv_universal_circuit'], ['gtceu:twinite_quadruple_wire'], ['gtceu:twinite_quadruple_wire'], ['gtceu:luv_machine_hull'], ['gtceu:twinite_quadruple_wire']], out='gtceu:luv_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:twinite_quadruple_wire'], ['gtceu:nano_processor_mainframe', 'gtceu:quantum_processor_computer', 'gtceu:crystal_processor_assembly', 'gtceu:wetware_processor', 'kubejs:luv_universal_circuit'], ['gtceu:twinite_quadruple_wire'], ['gtceu:twinite_quadruple_wire'], ['gtceu:luv_machine_hull'], ['gtceu:twinite_quadruple_wire']], out='gtceu:luv_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_4a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/zpm_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/zpm_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:dragonsteel_quadruple_wire'], ['gtceu:quantum_processor_mainframe', 'gtceu:crystal_processor_computer', 'gtceu:wetware_processor_assembly', 'kubejs:runic_processor', 'kubejs:draconic_microchip_processor', 'kubejs:zpm_universal_circuit'], ['gtceu:dragonsteel_quadruple_wire'], ['gtceu:dragonsteel_quadruple_wire'], ['gtceu:zpm_machine_hull'], ['gtceu:dragonsteel_quadruple_wire']], out='gtceu:zpm_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:dragonsteel_quadruple_wire'], ['gtceu:quantum_processor_mainframe', 'gtceu:crystal_processor_computer', 'gtceu:wetware_processor_assembly', 'kubejs:runic_processor', 'kubejs:draconic_microchip_processor', 'kubejs:zpm_universal_circuit'], ['gtceu:dragonsteel_quadruple_wire'], ['gtceu:dragonsteel_quadruple_wire'], ['gtceu:zpm_machine_hull'], ['gtceu:dragonsteel_quadruple_wire']], out='gtceu:zpm_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uev_256a_energy_converter_direct!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uv_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uv_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:prismalium_quadruple_wire'], ['gtceu:crystal_processor_mainframe', 'gtceu:wetware_processor_computer', 'kubejs:runic_processor_assembly', 'kubejs:draconic_processor', 'kubejs:uv_universal_circuit'], ['gtceu:prismalium_quadruple_wire'], ['gtceu:prismalium_quadruple_wire'], ['gtceu:uv_machine_hull'], ['gtceu:prismalium_quadruple_wire']], out='gtceu:uv_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:prismalium_quadruple_wire'], ['gtceu:crystal_processor_mainframe', 'gtceu:wetware_processor_computer', 'kubejs:runic_processor_assembly', 'kubejs:draconic_processor', 'kubejs:uv_universal_circuit'], ['gtceu:prismalium_quadruple_wire'], ['gtceu:prismalium_quadruple_wire'], ['gtceu:uv_machine_hull'], ['gtceu:prismalium_quadruple_wire']], out='gtceu:uv_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_16a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/zpm_256a_energy_converter_direct!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uhv_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uhv_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:stellarium_quadruple_wire'], ['gtceu:wetware_processor_mainframe', 'kubejs:runic_processor_computer', 'kubejs:draconic_processor_assembly', 'kubejs:abyssal_processor', 'kubejs:uhv_universal_circuit'], ['gtceu:stellarium_quadruple_wire'], ['gtceu:stellarium_quadruple_wire'], ['gtceu:uhv_machine_hull'], ['gtceu:stellarium_quadruple_wire']], out='gtceu:uhv_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:stellarium_quadruple_wire'], ['gtceu:wetware_processor_mainframe', 'kubejs:runic_processor_computer', 'kubejs:draconic_processor_assembly', 'kubejs:abyssal_processor', 'kubejs:uhv_universal_circuit'], ['gtceu:stellarium_quadruple_wire'], ['gtceu:stellarium_quadruple_wire'], ['gtceu:uhv_machine_hull'], ['gtceu:stellarium_quadruple_wire']], out='gtceu:uhv_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_1024a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uiv_256a_laser_target_hatch!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uev_4a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uev_4a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:ancient_runicalium_quadruple_wire'], ['kubejs:runic_processor_mainframe', 'kubejs:draconic_processor_computer', 'kubejs:abyssal_processor_assembly', 'kubejs:uev_universal_circuit'], ['gtceu:ancient_runicalium_quadruple_wire'], ['gtceu:ancient_runicalium_quadruple_wire'], ['gtceu:uev_machine_hull'], ['gtceu:ancient_runicalium_quadruple_wire']], out='gtceu:uev_4a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:ancient_runicalium_quadruple_wire'], ['kubejs:runic_processor_mainframe', 'kubejs:draconic_processor_computer', 'kubejs:abyssal_processor_assembly', 'kubejs:uev_universal_circuit'], ['gtceu:ancient_runicalium_quadruple_wire'], ['gtceu:ancient_runicalium_quadruple_wire'], ['gtceu:uev_machine_hull'], ['gtceu:ancient_runicalium_quadruple_wire']], out='gtceu:uev_4a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_64a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_substation_input_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/lv_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/lv_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:soul_infused_octal_wire'], ['gtceu:basic_electronic_circuit', 'gtceu:basic_integrated_circuit', 'gtceu:microchip_processor', 'kubejs:lv_universal_circuit'], ['gtceu:soul_infused_octal_wire'], ['gtceu:soul_infused_octal_wire'], ['gtceu:lv_machine_hull'], ['gtceu:soul_infused_octal_wire']], out='gtceu:lv_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:soul_infused_octal_wire'], ['gtceu:basic_electronic_circuit', 'gtceu:basic_integrated_circuit', 'gtceu:microchip_processor', 'kubejs:lv_universal_circuit'], ['gtceu:soul_infused_octal_wire'], ['gtceu:soul_infused_octal_wire'], ['gtceu:lv_machine_hull'], ['gtceu:soul_infused_octal_wire']], out='gtceu:lv_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/ev_1024a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/mv_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/mv_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:signalum_octal_wire'], ['gtceu:good_electronic_circuit', 'gtceu:good_integrated_circuit', 'gtceu:micro_processor', 'kubejs:mv_universal_circuit'], ['gtceu:signalum_octal_wire'], ['gtceu:signalum_octal_wire'], ['gtceu:mv_machine_hull'], ['gtceu:signalum_octal_wire']], out='gtceu:mv_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:signalum_octal_wire'], ['gtceu:good_electronic_circuit', 'gtceu:good_integrated_circuit', 'gtceu:micro_processor', 'kubejs:mv_universal_circuit'], ['gtceu:signalum_octal_wire'], ['gtceu:signalum_octal_wire'], ['gtceu:mv_machine_hull'], ['gtceu:signalum_octal_wire']], out='gtceu:mv_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_substation_input_hatch_64a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/hv_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/hv_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:lumium_octal_wire'], ['gtceu:advanced_integrated_circuit', 'gtceu:micro_processor_assembly', 'gtceu:nano_processor', 'kubejs:hv_universal_circuit'], ['gtceu:lumium_octal_wire'], ['gtceu:lumium_octal_wire'], ['gtceu:hv_machine_hull'], ['gtceu:lumium_octal_wire']], out='gtceu:hv_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:lumium_octal_wire'], ['gtceu:advanced_integrated_circuit', 'gtceu:micro_processor_assembly', 'gtceu:nano_processor', 'kubejs:hv_universal_circuit'], ['gtceu:lumium_octal_wire'], ['gtceu:lumium_octal_wire'], ['gtceu:hv_machine_hull'], ['gtceu:lumium_octal_wire']], out='gtceu:hv_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/ev_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/ev_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:enderium_octal_wire'], ['gtceu:micro_processor_computer', 'gtceu:nano_processor_assembly', 'gtceu:quantum_processor', 'kubejs:ev_universal_circuit'], ['gtceu:enderium_octal_wire'], ['gtceu:enderium_octal_wire'], ['gtceu:ev_machine_hull'], ['gtceu:enderium_octal_wire']], out='gtceu:ev_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:enderium_octal_wire'], ['gtceu:micro_processor_computer', 'gtceu:nano_processor_assembly', 'gtceu:quantum_processor', 'kubejs:ev_universal_circuit'], ['gtceu:enderium_octal_wire'], ['gtceu:enderium_octal_wire'], ['gtceu:ev_machine_hull'], ['gtceu:enderium_octal_wire']], out='gtceu:ev_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/iv_1024a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/iv_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/iv_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:shellite_octal_wire'], ['gtceu:micro_processor_mainframe', 'gtceu:nano_processor_computer', 'gtceu:quantum_processor_assembly', 'gtceu:crystal_processor', 'kubejs:iv_universal_circuit'], ['gtceu:shellite_octal_wire'], ['gtceu:shellite_octal_wire'], ['gtceu:iv_machine_hull'], ['gtceu:shellite_octal_wire']], out='gtceu:iv_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:shellite_octal_wire'], ['gtceu:micro_processor_mainframe', 'gtceu:nano_processor_computer', 'gtceu:quantum_processor_assembly', 'gtceu:crystal_processor', 'kubejs:iv_universal_circuit'], ['gtceu:shellite_octal_wire'], ['gtceu:shellite_octal_wire'], ['gtceu:iv_machine_hull'], ['gtceu:shellite_octal_wire']], out='gtceu:iv_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/luv_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/luv_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:twinite_octal_wire'], ['gtceu:nano_processor_mainframe', 'gtceu:quantum_processor_computer', 'gtceu:crystal_processor_assembly', 'gtceu:wetware_processor', 'kubejs:luv_universal_circuit'], ['gtceu:twinite_octal_wire'], ['gtceu:twinite_octal_wire'], ['gtceu:luv_machine_hull'], ['gtceu:twinite_octal_wire']], out='gtceu:luv_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:twinite_octal_wire'], ['gtceu:nano_processor_mainframe', 'gtceu:quantum_processor_computer', 'gtceu:crystal_processor_assembly', 'gtceu:wetware_processor', 'kubejs:luv_universal_circuit'], ['gtceu:twinite_octal_wire'], ['gtceu:twinite_octal_wire'], ['gtceu:luv_machine_hull'], ['gtceu:twinite_octal_wire']], out='gtceu:luv_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/luv_1024a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uv_256a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/zpm_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/zpm_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:dragonsteel_octal_wire'], ['gtceu:quantum_processor_mainframe', 'gtceu:crystal_processor_computer', 'gtceu:wetware_processor_assembly', 'kubejs:runic_processor', 'kubejs:draconic_microchip_processor', 'kubejs:zpm_universal_circuit'], ['gtceu:dragonsteel_octal_wire'], ['gtceu:dragonsteel_octal_wire'], ['gtceu:zpm_machine_hull'], ['gtceu:dragonsteel_octal_wire']], out='gtceu:zpm_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:dragonsteel_octal_wire'], ['gtceu:quantum_processor_mainframe', 'gtceu:crystal_processor_computer', 'gtceu:wetware_processor_assembly', 'kubejs:runic_processor', 'kubejs:draconic_microchip_processor', 'kubejs:zpm_universal_circuit'], ['gtceu:dragonsteel_octal_wire'], ['gtceu:dragonsteel_octal_wire'], ['gtceu:zpm_machine_hull'], ['gtceu:dragonsteel_octal_wire']], out='gtceu:zpm_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_256a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_16a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/zpm_1024a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_1024a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_1024a!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uv_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uv_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:prismalium_octal_wire'], ['gtceu:crystal_processor_mainframe', 'gtceu:wetware_processor_computer', 'kubejs:runic_processor_assembly', 'kubejs:draconic_processor', 'kubejs:uv_universal_circuit'], ['gtceu:prismalium_octal_wire'], ['gtceu:prismalium_octal_wire'], ['gtceu:uv_machine_hull'], ['gtceu:prismalium_octal_wire']], out='gtceu:uv_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:prismalium_octal_wire'], ['gtceu:crystal_processor_mainframe', 'gtceu:wetware_processor_computer', 'kubejs:runic_processor_assembly', 'kubejs:draconic_processor', 'kubejs:uv_universal_circuit'], ['gtceu:prismalium_octal_wire'], ['gtceu:prismalium_octal_wire'], ['gtceu:uv_machine_hull'], ['gtceu:prismalium_octal_wire']], out='gtceu:uv_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_4096a!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_input_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uhv_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uv_256a_energy_converter_direct!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_substation_output_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uhv_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:stellarium_octal_wire'], ['gtceu:wetware_processor_mainframe', 'kubejs:runic_processor_computer', 'kubejs:draconic_processor_assembly', 'kubejs:abyssal_processor', 'kubejs:uhv_universal_circuit'], ['gtceu:stellarium_octal_wire'], ['gtceu:stellarium_octal_wire'], ['gtceu:uhv_machine_hull'], ['gtceu:stellarium_octal_wire']], out='gtceu:uhv_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:stellarium_octal_wire'], ['gtceu:wetware_processor_mainframe', 'kubejs:runic_processor_computer', 'kubejs:draconic_processor_assembly', 'kubejs:abyssal_processor', 'kubejs:uhv_universal_circuit'], ['gtceu:stellarium_octal_wire'], ['gtceu:stellarium_octal_wire'], ['gtceu:uhv_machine_hull'], ['gtceu:stellarium_octal_wire']], out='gtceu:uhv_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uev_8a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uev_8a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:ancient_runicalium_octal_wire'], ['kubejs:runic_processor_mainframe', 'kubejs:draconic_processor_computer', 'kubejs:abyssal_processor_assembly', 'kubejs:uev_universal_circuit'], ['gtceu:ancient_runicalium_octal_wire'], ['gtceu:ancient_runicalium_octal_wire'], ['gtceu:uev_machine_hull'], ['gtceu:ancient_runicalium_octal_wire']], out='gtceu:uev_8a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:ancient_runicalium_octal_wire'], ['kubejs:runic_processor_mainframe', 'kubejs:draconic_processor_computer', 'kubejs:abyssal_processor_assembly', 'kubejs:uev_universal_circuit'], ['gtceu:ancient_runicalium_octal_wire'], ['gtceu:ancient_runicalium_octal_wire'], ['gtceu:uev_machine_hull'], ['gtceu:ancient_runicalium_octal_wire']], out='gtceu:uev_8a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/lv_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/lv_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:soul_infused_hex_wire'], ['gtceu:basic_electronic_circuit', 'gtceu:basic_integrated_circuit', 'gtceu:microchip_processor', 'kubejs:lv_universal_circuit'], ['gtceu:soul_infused_hex_wire'], ['gtceu:soul_infused_hex_wire'], ['gtceu:lv_machine_hull'], ['gtceu:soul_infused_hex_wire']], out='gtceu:lv_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:soul_infused_hex_wire'], ['gtceu:basic_electronic_circuit', 'gtceu:basic_integrated_circuit', 'gtceu:microchip_processor', 'kubejs:lv_universal_circuit'], ['gtceu:soul_infused_hex_wire'], ['gtceu:soul_infused_hex_wire'], ['gtceu:lv_machine_hull'], ['gtceu:soul_infused_hex_wire']], out='gtceu:lv_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/mv_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/iv_energy_output_hatch_256a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uhv_256a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_substation_input_hatch_64a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_256a_laser_target_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/mv_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:signalum_hex_wire'], ['gtceu:good_electronic_circuit', 'gtceu:good_integrated_circuit', 'gtceu:micro_processor', 'kubejs:mv_universal_circuit'], ['gtceu:signalum_hex_wire'], ['gtceu:signalum_hex_wire'], ['gtceu:mv_machine_hull'], ['gtceu:signalum_hex_wire']], out='gtceu:mv_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:signalum_hex_wire'], ['gtceu:good_electronic_circuit', 'gtceu:good_integrated_circuit', 'gtceu:micro_processor', 'kubejs:mv_universal_circuit'], ['gtceu:signalum_hex_wire'], ['gtceu:signalum_hex_wire'], ['gtceu:mv_machine_hull'], ['gtceu:signalum_hex_wire']], out='gtceu:mv_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/hv_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_1024a_laser_target_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/hv_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:lumium_hex_wire'], ['gtceu:advanced_integrated_circuit', 'gtceu:micro_processor_assembly', 'gtceu:nano_processor', 'kubejs:hv_universal_circuit'], ['gtceu:lumium_hex_wire'], ['gtceu:lumium_hex_wire'], ['gtceu:hv_machine_hull'], ['gtceu:lumium_hex_wire']], out='gtceu:hv_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:lumium_hex_wire'], ['gtceu:advanced_integrated_circuit', 'gtceu:micro_processor_assembly', 'gtceu:nano_processor', 'kubejs:hv_universal_circuit'], ['gtceu:lumium_hex_wire'], ['gtceu:lumium_hex_wire'], ['gtceu:hv_machine_hull'], ['gtceu:lumium_hex_wire']], out='gtceu:hv_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/ev_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uhv_256a_energy_converter_direct!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_4096a_laser_target_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/ev_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:enderium_hex_wire'], ['gtceu:micro_processor_computer', 'gtceu:nano_processor_assembly', 'gtceu:quantum_processor', 'kubejs:ev_universal_circuit'], ['gtceu:enderium_hex_wire'], ['gtceu:enderium_hex_wire'], ['gtceu:ev_machine_hull'], ['gtceu:enderium_hex_wire']], out='gtceu:ev_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:enderium_hex_wire'], ['gtceu:micro_processor_computer', 'gtceu:nano_processor_assembly', 'gtceu:quantum_processor', 'kubejs:ev_universal_circuit'], ['gtceu:enderium_hex_wire'], ['gtceu:enderium_hex_wire'], ['gtceu:ev_machine_hull'], ['gtceu:enderium_hex_wire']], out='gtceu:ev_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uv_1024a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_256a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uhv_1024a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_4a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uev_1024a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_4096a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_256a_laser_target_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/ev_4096a_energy_converter!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_1024a_laser_target_hatch!
-Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
-Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
-Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/iv_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/iv_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:shellite_hex_wire'], ['gtceu:micro_processor_mainframe', 'gtceu:nano_processor_computer', 'gtceu:quantum_processor_assembly', 'gtceu:crystal_processor', 'kubejs:iv_universal_circuit'], ['gtceu:shellite_hex_wire'], ['gtceu:shellite_hex_wire'], ['gtceu:iv_machine_hull'], ['gtceu:shellite_hex_wire']], out='gtceu:iv_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:shellite_hex_wire'], ['gtceu:micro_processor_mainframe', 'gtceu:nano_processor_computer', 'gtceu:quantum_processor_assembly', 'gtceu:crystal_processor', 'kubejs:iv_universal_circuit'], ['gtceu:shellite_hex_wire'], ['gtceu:shellite_hex_wire'], ['gtceu:iv_machine_hull'], ['gtceu:shellite_hex_wire']], out='gtceu:iv_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/luv_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/luv_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:twinite_hex_wire'], ['gtceu:nano_processor_mainframe', 'gtceu:quantum_processor_computer', 'gtceu:crystal_processor_assembly', 'gtceu:wetware_processor', 'kubejs:luv_universal_circuit'], ['gtceu:twinite_hex_wire'], ['gtceu:twinite_hex_wire'], ['gtceu:luv_machine_hull'], ['gtceu:twinite_hex_wire']], out='gtceu:luv_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:twinite_hex_wire'], ['gtceu:nano_processor_mainframe', 'gtceu:quantum_processor_computer', 'gtceu:crystal_processor_assembly', 'gtceu:wetware_processor', 'kubejs:luv_universal_circuit'], ['gtceu:twinite_hex_wire'], ['gtceu:twinite_hex_wire'], ['gtceu:luv_machine_hull'], ['gtceu:twinite_hex_wire']], out='gtceu:luv_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_4096a_laser_target_hatch!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uev_256a_energy_converter!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/zpm_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/zpm_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:dragonsteel_hex_wire'], ['gtceu:quantum_processor_mainframe', 'gtceu:crystal_processor_computer', 'gtceu:wetware_processor_assembly', 'kubejs:runic_processor', 'kubejs:draconic_microchip_processor', 'kubejs:zpm_universal_circuit'], ['gtceu:dragonsteel_hex_wire'], ['gtceu:dragonsteel_hex_wire'], ['gtceu:zpm_machine_hull'], ['gtceu:dragonsteel_hex_wire']], out='gtceu:zpm_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:dragonsteel_hex_wire'], ['gtceu:quantum_processor_mainframe', 'gtceu:crystal_processor_computer', 'gtceu:wetware_processor_assembly', 'kubejs:runic_processor', 'kubejs:draconic_microchip_processor', 'kubejs:zpm_universal_circuit'], ['gtceu:dragonsteel_hex_wire'], ['gtceu:dragonsteel_hex_wire'], ['gtceu:zpm_machine_hull'], ['gtceu:dragonsteel_hex_wire']], out='gtceu:zpm_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uv_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_1024a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uev_256a_energy_converter_direct!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uv_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:prismalium_hex_wire'], ['gtceu:crystal_processor_mainframe', 'gtceu:wetware_processor_computer', 'kubejs:runic_processor_assembly', 'kubejs:draconic_processor', 'kubejs:uv_universal_circuit'], ['gtceu:prismalium_hex_wire'], ['gtceu:prismalium_hex_wire'], ['gtceu:uv_machine_hull'], ['gtceu:prismalium_hex_wire']], out='gtceu:uv_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:prismalium_hex_wire'], ['gtceu:crystal_processor_mainframe', 'gtceu:wetware_processor_computer', 'kubejs:runic_processor_assembly', 'kubejs:draconic_processor', 'kubejs:uv_universal_circuit'], ['gtceu:prismalium_hex_wire'], ['gtceu:prismalium_hex_wire'], ['gtceu:uv_machine_hull'], ['gtceu:prismalium_hex_wire']], out='gtceu:uv_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uhv_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uhv_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:stellarium_hex_wire'], ['gtceu:wetware_processor_mainframe', 'kubejs:runic_processor_computer', 'kubejs:draconic_processor_assembly', 'kubejs:abyssal_processor', 'kubejs:uhv_universal_circuit'], ['gtceu:stellarium_hex_wire'], ['gtceu:stellarium_hex_wire'], ['gtceu:uhv_machine_hull'], ['gtceu:stellarium_hex_wire']], out='gtceu:uhv_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:stellarium_hex_wire'], ['gtceu:wetware_processor_mainframe', 'kubejs:runic_processor_computer', 'kubejs:draconic_processor_assembly', 'kubejs:abyssal_processor', 'kubejs:uhv_universal_circuit'], ['gtceu:stellarium_hex_wire'], ['gtceu:stellarium_hex_wire'], ['gtceu:uhv_machine_hull'], ['gtceu:stellarium_hex_wire']], out='gtceu:uhv_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start:shaped/uev_16a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_16a!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:shaped/uev_16a_energy_converter!
 Recipe A: {type=minecraft:crafting_shaped, in=[['gtceu:ancient_runicalium_hex_wire'], ['kubejs:runic_processor_mainframe', 'kubejs:draconic_processor_computer', 'kubejs:abyssal_processor_assembly', 'kubejs:uev_universal_circuit'], ['gtceu:ancient_runicalium_hex_wire'], ['gtceu:ancient_runicalium_hex_wire'], ['gtceu:uev_machine_hull'], ['gtceu:ancient_runicalium_hex_wire']], out='gtceu:uev_16a_energy_converter'}
 Recipe B: {type=minecraft:crafting_shaped, in=[['gtceu:ancient_runicalium_hex_wire'], ['kubejs:runic_processor_mainframe', 'kubejs:draconic_processor_computer', 'kubejs:abyssal_processor_assembly', 'kubejs:uev_universal_circuit'], ['gtceu:ancient_runicalium_hex_wire'], ['gtceu:ancient_runicalium_hex_wire'], ['gtceu:uev_machine_hull'], ['gtceu:ancient_runicalium_hex_wire']], out='gtceu:uev_16a_energy_converter'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_64a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/zpm_energy_output_hatch_64a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [ERROR] ! Duplicate added recipe for id start_core:assembler/ev_64a_energy_converter!
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_energy_input_hatch_4096a!
 Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
 Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
 Using last one encountered.
-[21:28:58] [INFO] Added 6824 recipes, removed 5560 recipes, modified 572 recipes, with 0 failed recipes in 1.396 s
-[21:29:01] [INFO] Server resource reload complete!
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_64a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_256a_laser_target_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start_core:assembler/ev_64a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_1024a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/ev_1024a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/iv_1024a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_1024a_laser_target_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/luv_1024a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id start:assembler/uhv_4096a_laser_target_hatch!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/zpm_1024a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uv_1024a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uhv_1024a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/uev_1024a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/hv_4096a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:53] [ERROR] ! Duplicate added recipe for id gtceu:assembler/ev_4096a_energy_converter!
+Recipe A: {type=gtceu:machine, in=[], out='minecraft:air'}
+Recipe B: {type=gtceu:machine, in=[], out='minecraft:air'}
+Using last one encountered.
+[13:20:55] [INFO] Added 6824 recipes, removed 5560 recipes, modified 572 recipes, with 0 failed recipes in 2.010 s
+[13:20:57] [INFO] Server resource reload complete!

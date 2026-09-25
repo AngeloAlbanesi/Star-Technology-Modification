@@ -10,6 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+    const $StarTPartAbility = Java.loadClass('com.startechnology.start_core.machine.StarTPartAbility');
 
     event.create('cyclonic_sifter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -31,7 +32,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:fusion_glass')
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities($StarTPartAbility.ABSOLUTE_PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("D", Predicates.blocks("gtceu:thacoloy_nq_42x_frame"))
             .where("E", Predicates.blocks("gtceu:uv_machine_casing"))
             .where("F", Predicates.blocks("gtceu:vibration_safe_casing"))

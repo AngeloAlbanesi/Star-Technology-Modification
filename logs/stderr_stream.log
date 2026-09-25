@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------
-DateTime: 24.09.2026 21:28:06:674 +02:00; PID: 37192
+DateTime: 25.09.2026 13:19:27:530 +02:00; PID: 76856
 This file contains the stderr stream of the Minecraft process logged to a file.
 It does not include stdout or log (log4j) messages to avoid performance impact.
 -----------------------------------------------------------------------------------
-[21:28:11:481] [STDERR]: Exception in thread "Thread-4" 
+[13:19:32:240] [STDERR]: Exception in thread "Thread-5" 

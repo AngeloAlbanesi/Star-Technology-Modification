@@ -1,294 +1,294 @@
-[21:28:17] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[21:28:17] [INIT] Loaded plugins:
-[21:28:17] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[21:28:17] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[21:28:17] [INIT] - dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration
-[21:28:17] [INIT] - com.jesz.createdieselgenerators.compat.kubejs.CDGKubeJSPlugin
-[21:28:17] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
-[21:28:17] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.KubeJSIntegration
-[21:28:17] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbchunks.kubejs.FTBChunksKubeJSPlugin
-[21:28:17] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbteams.kubejs.FTBTeamsKubeJSPlugin
-[21:28:17] [INIT] - dev.latvian.mods.kubejs.thermal.KubeJSThermalPlugin
-[21:28:17] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
-[21:28:17] [INIT] - novamachina.exnihilosequentia.common.compat.kubejs.KubeJSExNihiloPlugin
-[21:28:17] [INIT] - dev.bluephs.vintage.compat.kubejs.VINTAGEKubeJSPlugin
-[21:28:17] [INIT] - com.startechnology.start_core.integration.kjs.StarTKubeJSPlugin
-[21:28:17] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
-[21:28:17] [INIT] - com.blakebr0.cucumber.compat.kubejs.CucumberKubeJSPlugin
-[21:28:17] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/elements_materials/materials/materials.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/elements_materials/materials/hm_material_modifications.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/elements_materials/materials/element_materials.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/elements_materials/elements/rare_earths.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/objects/item_modifications.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/objects/blocks.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/objects/items.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/utils/events.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/utils/hm_modification.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/utils/fluid_interactions.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/utils/mob_removals.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Resource_Gen.js/industrial_pump.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Resource_Gen.js/Electric_Sifter.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Resource_Gen.js/High_Pressure_Steam_Sifter.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Resource_Gen.js/Bessemer_Forge.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/reinforced_blast_furnace.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/Steam_Casting_Array.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/steeled_blast_furnace.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/steam_forge.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/Rugged_Alloyer.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Progression/Circuit_Manufacturing_Facility.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Progression/Component_Chamber.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Progression/Machine_Facility.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/single block/stirling_generator.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/single block/steam_machines.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/single block/ulv_gt_machines.js: Pack mode mismatch
-[21:28:17] [INFO] Skipped startup_scripts:hardmode/machines/single block/auto_scavenger.js: Pack mode mismatch
-[21:28:17] [INFO] utils/helpers/const_loader.js#6: Loaded Java class 'com.startechnology.start_core.recipe.StarTRecipeModifiers'
-[21:28:17] [INFO] utils/helpers/const_loader.js#10: Loaded Java class 'com.startechnology.start_core.machine.StarTPartAbility'
-[21:28:17] [INFO] utils/helpers/const_loader.js#15: Loaded Java class 'com.startechnology.start_core.machine.boosting.BoostedPlasmaTurbine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#21: Loaded Java class 'com.startechnology.start_core.machine.steam.StarTSteamParallelMultiblockMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#27: Loaded Java class 'com.startechnology.start_core.machine.threading.StarTThreadingStatsPredicate'
-[21:28:17] [INFO] utils/helpers/const_loader.js#31: Loaded Java class 'com.startechnology.start_core.machine.threading.StarTThreadingCapableMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#37: Loaded Java class 'com.startechnology.start_core.machine.komaru.StarTKomaruFrameMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#39: Loaded Java class 'com.startechnology.start_core.machine.draconic_infusion.StarTDraconicInfusionMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#43: Loaded Java class 'com.startechnology.start_core.machine.vcrc.VacuumChemicalReactionChamberMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#46: Loaded Java class 'com.startechnology.start_core.machine.vacuum_pump.StarTVacuumPumpPredicates'
-[21:28:17] [INFO] utils/helpers/const_loader.js#51: Loaded Java class 'com.gregtechceu.gtceu.api.pattern.util.RelativeDirection'
-[21:28:17] [INFO] utils/helpers/const_loader.js#58: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#65: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.electric.AssemblyLineMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#72: Loaded Java class 'com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#77: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.generator.LargeTurbineMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#83: Loaded Java class 'com.gregtechceu.gtceu.api.machine.property.GTMachineModelProperties'
-[21:28:17] [INFO] utils/helpers/const_loader.js#85: Loaded Java class 'com.gregtechceu.gtceu.api.machine.multiblock.CleanroomType'
-[21:28:17] [INFO] utils/helpers/const_loader.js#89: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.part.CleaningMaintenanceHatchPartMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#92: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.part.FluidHatchPartMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#95: Loaded Java class 'com.gregtechceu.gtceu.api.machine.multiblock.LayeredWorkableElectricMultiblockMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#100: Loaded Java class 'com.gregtechceu.gtceu.utils.FormattingUtil'
-[21:28:17] [INFO] utils/helpers/const_loader.js#103: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.electric.research.OpticalComputationMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#106: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.part.EnergyHatchPartMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#107: Loaded Java class 'com.gregtechceu.gtceu.api.capability.recipe.IO'
-[21:28:17] [INFO] utils/helpers/const_loader.js#110: Loaded Java class 'com.gregtechceu.gtceu.common.machine.electric.ConverterMachine'
-[21:28:17] [INFO] utils/helpers/const_loader.js#111: Loaded Java class 'com.gregtechceu.gtceu.api.capability.compat.FeCompat'
-[21:28:17] [INFO] utils/helpers/const_loader.js#114: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey'
-[21:28:17] [INFO] utils/helpers/const_loader.js#115: Loaded Java class 'com.gregtechceu.gtceu.api.GTCEuAPI'
-[21:28:17] [INFO] Loaded script startup_scripts:utils/helpers/const_loader.js in 0.067 s
-[21:28:17] [INFO] Loaded script startup_scripts:utils/helpers/gt_helpers.js in 0.005 s
-[21:28:17] [INFO] utils/helpers/packmode.js#3: Loaded Java class 'dev.latvian.mods.kubejs.CommonProperties'
-[21:28:17] [INFO] Loaded script startup_scripts:utils/helpers/packmode.js in 0.001 s
-[21:28:17] [INFO] utils/helpers/ui_builder.js#3: Loaded Java class 'com.gregtechceu.gtceu.api.gui.editor.EditableMachineUI'
-[21:28:17] [INFO] utils/helpers/ui_builder.js#4: Loaded Java class 'com.gregtechceu.gtceu.api.gui.widget.SlotWidget'
-[21:28:17] [INFO] utils/helpers/ui_builder.js#5: Loaded Java class 'com.gregtechceu.gtceu.api.gui.widget.TankWidget'
-[21:28:17] [INFO] Loaded script startup_scripts:utils/helpers/ui_builder.js in 0.005 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/elements/helpers.js in 0.001 s
-[21:28:17] [INFO] common/elements_materials/material/helpers.js#3: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty'
-[21:28:17] [INFO] common/elements_materials/material/helpers.js#4: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty'
-[21:28:17] [INFO] common/elements_materials/material/helpers.js#5: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty'
-[21:28:17] [INFO] common/elements_materials/material/helpers.js#6: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty'
-[21:28:17] [INFO] common/elements_materials/material/helpers.js#7: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties'
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/material/helpers.js in 0.004 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/material/materials.js in 0.034 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ebf_lcr_parallel.js in 0.005 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/low_tier_parallel_hatches.js in 0.008 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/pallaridium_casings.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:utils/extras/creative_tab.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:utils/extras/world_gen_layers.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:config.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/elements/netherite.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/elements/abydos.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/elements/modifications.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/elements/nether.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/elements/end.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/elements/extras.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/elements/nuclear.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/elements_materials/elements/gate.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/deprecated.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/gate_blocks.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/extras.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/stones.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/end_multis.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/superconductor_casings.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/nether_multis.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/stargate_casings.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/riftic_multis.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/abydos_multis.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/runic_casings.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/threading_casings.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/naquadah_casings.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/nyanium_casing.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/basic_casings.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/large_cube_casings.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/structures.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/block_modifications.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/fusion.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/blocks/coils.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/solar/photovoltaic_cells.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/solar/energy_cores.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/misc/thermal_augments.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/misc/extras.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/misc/drinks.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/stargate/gate_materials.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/stargate/gate_components.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/stargate/misc.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/stargate/singularities.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/stargate/runic_platings.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/stargate/coordinate_crystals.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/geodes.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/nuclear_fuel_rods.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/misc.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/lines/draconic.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/lines/nether_stars.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/lines/deionized_water_aerogel.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/lines/akreyrium.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/voltage_coils.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/universal_circuits.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/circuit_components.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/circuits.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/circuit_chips.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/component_parts.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/progression/draconic.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/progression/riftic.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/progression/dimensional.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/items/progression/neutron_reflectors.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/effects/dimensional_debuffs.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/effects/drinks.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/objects/effects/nuclear.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/power/more_plasma_turbine.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/power/nuclear_reactor.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/runic_inscriber.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/stargate_component_assembly.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/quantum_compressor.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/large_rotor_machine.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/dimensional_finder.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/runic_circuitry_assembling_station.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/bacteria_synthesizer.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/dimensional_destabiliser.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/hydroponic_garden.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/composting_factory.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/greenhouse.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/tree_synthesizer.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/industrial_fishery.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/geodes/rock_filtrator.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/geodes/rock_sifter.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/molten_destabalizer.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/large sieve/large_sieve.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/large sieve/mechanical_sieve.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/exotic_tectonic_formation_apparatus.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/industrial_barrel.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/akreyrium_line/abyssal_akreyriadix_stabilizer.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/akreyrium_line/folding_akreyrium_stabiliser.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/miners/void_extractor.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/miners/void_excavator.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/mystical_agriculture/essence_enchancer.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/mystical_agriculture/essence_replication.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ae2/me_circuit_assembler.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/draco_infusion.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/primordial_infusion.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/incomprehensible_chemical_reactor.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/component_part_hub.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/true_synthesis_array.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/draco_circuit_assembly.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/omega_pressure_heat_chamber.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/ultimate_ebf.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/atomic_materialization_plant.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/kaledoscopic_fractalizer.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/auroric_vacuum_isolation_reactor.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/riftion_injector.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/riftion_accelerator.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/komaru_modules.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/riftion_slammer.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/ultimate_abs.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/subatomic_particle_lattice_isolation_terminal.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/electro_magnetic_material_ripper.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/fermenting_arboreal_rejuvination_monstronsity.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/byteforce_unified_incomparable_logistics_depot.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/material_annihilation_array.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/multithreaded_component_synthesis_forge.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/aqueous_transformation_processing_center.js in 0.002 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/yielding_excression_advanced_seperation_transformator.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/superior_particulate_isolation_nexus.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/molecular_inducing_xanadu.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/gravitational_compression_chamber.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/ascendant_engraving_matrix.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/nether_multis/cryostate_quantum_chiller.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/nether_multis/mega_abs.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/nether_multis/super_compact_heat_chamber.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/pre_gate/catto_shrine.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/pre_gate/component_part_assembly.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/pre_gate/heat_chamber.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/pre_gate/vacuum_chemical_reaction_chamber.js in 0.001 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/titan_forge.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/compact_assembly_line.js in 0.0 s
-[21:28:17] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/cyclonic_sifter.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/manifold_centrifuge.js in 0.006 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/component_nexus.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/injection_mixer.js in 0.001 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/limitless_smelter.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/dual_chambered_vacuum_complex.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/advanced_synthesis_plant.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/exotic_gas_siphon.js in 0.001 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/super_pressure_heat_chamber.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/chemical_plant.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/Kiln.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/large_barrel.js in 0.001 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/Steam_Kiln.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/large_farm.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/latex_plantation.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/High_Pressure_Steam_Hammer.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/large_stone_barrel.js in 0.001 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/solid_blast_furnace.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/super_eof.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/steam_ore_factory.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/ore_processing_plant.js in 0.001 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/electric_ore_factory.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/bulk_processing_array.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/primitive_ore_factory.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/csg_helper.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_barrel.js in 0.001 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/large_cubes.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_implosion_compressor.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_cracker.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_gas_collector.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_cutter.js in 0.001 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_vacuum_freezer.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_abs.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_ebf.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_pyrolyse.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/chemical_builder.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/kinetic_box.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/nuclear_turbine.js in 0.001 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/petrochemical_plant.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/heated_cracking_unit.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/large_greens_extractor.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/super_dynamo.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/meteorites/drone_pad.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/meteorites/docking_station.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/meteorites/deep_space_scanner.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/Filtrators/Electro_Kinetic_Filtrator.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/Filtrators/Kinetic_Filtrator.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/cobbleworks.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/pressure_heater.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/primitive_alloy_smelter.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/high_amp_energy_converters.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/machine_io_changes.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/machine_recipe_type_changes.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/single_blocks/mystical_agricuture_machines.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/single_blocks/barrels/wooden_barrel.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/single_blocks/barrels/stone_barrel.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/single_blocks/advanced_composter.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/single_blocks/casket.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/single_blocks/ae2_machines.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/single_blocks/pulverizer.js in 0.003 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/custom_hatches.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/machines/high_amp_energy_hatches.js in 0.0 s
-[21:28:18] [INFO] Loaded script startup_scripts:common/elements_materials/material/wire_amperage_boost.js in 0.0 s
-[21:28:18] [INFO] Loaded 201/201 KubeJS startup scripts in 0.658 s with 0 errors and 0 warnings
-[21:28:18] [INFO] common/elements_materials/material/wire_amperage_boost.js#32: [Star Technology] Successfully upgraded amperage for 66 GregTech wire materials!
-[21:28:18] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#4: Loaded Java class 'com.gregtechceu.gtceu.common.data.machines.GTMultiMachines'
-[21:28:18] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#5: Loaded Java class 'com.gregtechceu.gtceu.common.data.GTRecipeModifiers'
-[21:28:18] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#6: Loaded Java class 'com.gregtechceu.gtceu.api.recipe.modifier.RecipeModifierList'
-[21:28:18] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#7: Loaded Java class 'com.gregtechceu.gtceu.common.data.GTBlocks'
-[21:28:18] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#8: Loaded Java class 'com.gregtechceu.gtceu.api.machine.multiblock.PartAbility'
-[21:28:18] [INFO] common/machines/low_tier_parallel_hatches.js#4: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.part.ParallelHatchPartMachine'
-[21:28:18] [INFO] common/machines/low_tier_parallel_hatches.js#7: Loaded Java class 'net.minecraft.resources.ResourceLocation'
-[21:28:18] [INFO] common/machines/high_amp_energy_converters.js#25: Loaded Java class 'com.tterrag.registrate.util.nullness.NonNullBiConsumer'
-[21:29:06] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#188: Loaded Java class 'com.gregtechceu.gtceu.common.data.machines.GTAEMachines'
+[13:19:38] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[13:19:38] [INIT] Loaded plugins:
+[13:19:38] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[13:19:38] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[13:19:38] [INIT] - dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration
+[13:19:38] [INIT] - com.jesz.createdieselgenerators.compat.kubejs.CDGKubeJSPlugin
+[13:19:38] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[13:19:38] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbquests.kubejs.KubeJSIntegration
+[13:19:38] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbchunks.kubejs.FTBChunksKubeJSPlugin
+[13:19:38] [INIT] - dev.ftb.mods.ftbxmodcompat.ftbteams.kubejs.FTBTeamsKubeJSPlugin
+[13:19:38] [INIT] - dev.latvian.mods.kubejs.thermal.KubeJSThermalPlugin
+[13:19:38] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
+[13:19:38] [INIT] - novamachina.exnihilosequentia.common.compat.kubejs.KubeJSExNihiloPlugin
+[13:19:38] [INIT] - dev.bluephs.vintage.compat.kubejs.VINTAGEKubeJSPlugin
+[13:19:38] [INIT] - com.startechnology.start_core.integration.kjs.StarTKubeJSPlugin
+[13:19:38] [INIT] - com.almostreliable.lootjs.kube.LootJSPlugin
+[13:19:38] [INIT] - com.blakebr0.cucumber.compat.kubejs.CucumberKubeJSPlugin
+[13:19:38] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/elements_materials/materials/materials.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/elements_materials/materials/hm_material_modifications.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/elements_materials/materials/element_materials.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/elements_materials/elements/rare_earths.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/objects/item_modifications.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/objects/blocks.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/objects/items.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/utils/events.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/utils/hm_modification.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/utils/fluid_interactions.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/utils/mob_removals.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Resource_Gen.js/industrial_pump.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Resource_Gen.js/Electric_Sifter.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Resource_Gen.js/High_Pressure_Steam_Sifter.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Resource_Gen.js/Bessemer_Forge.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/reinforced_blast_furnace.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/Steam_Casting_Array.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/steeled_blast_furnace.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/steam_forge.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/pre_lv/Rugged_Alloyer.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Progression/Circuit_Manufacturing_Facility.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Progression/Component_Chamber.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/multiblocks/Progression/Machine_Facility.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/single block/stirling_generator.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/single block/steam_machines.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/single block/ulv_gt_machines.js: Pack mode mismatch
+[13:19:38] [INFO] Skipped startup_scripts:hardmode/machines/single block/auto_scavenger.js: Pack mode mismatch
+[13:19:38] [INFO] utils/helpers/const_loader.js#6: Loaded Java class 'com.startechnology.start_core.recipe.StarTRecipeModifiers'
+[13:19:38] [INFO] utils/helpers/const_loader.js#10: Loaded Java class 'com.startechnology.start_core.machine.StarTPartAbility'
+[13:19:38] [INFO] utils/helpers/const_loader.js#15: Loaded Java class 'com.startechnology.start_core.machine.boosting.BoostedPlasmaTurbine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#21: Loaded Java class 'com.startechnology.start_core.machine.steam.StarTSteamParallelMultiblockMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#27: Loaded Java class 'com.startechnology.start_core.machine.threading.StarTThreadingStatsPredicate'
+[13:19:38] [INFO] utils/helpers/const_loader.js#31: Loaded Java class 'com.startechnology.start_core.machine.threading.StarTThreadingCapableMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#37: Loaded Java class 'com.startechnology.start_core.machine.komaru.StarTKomaruFrameMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#39: Loaded Java class 'com.startechnology.start_core.machine.draconic_infusion.StarTDraconicInfusionMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#43: Loaded Java class 'com.startechnology.start_core.machine.vcrc.VacuumChemicalReactionChamberMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#46: Loaded Java class 'com.startechnology.start_core.machine.vacuum_pump.StarTVacuumPumpPredicates'
+[13:19:38] [INFO] utils/helpers/const_loader.js#51: Loaded Java class 'com.gregtechceu.gtceu.api.pattern.util.RelativeDirection'
+[13:19:38] [INFO] utils/helpers/const_loader.js#58: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#65: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.electric.AssemblyLineMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#72: Loaded Java class 'com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#77: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.generator.LargeTurbineMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#83: Loaded Java class 'com.gregtechceu.gtceu.api.machine.property.GTMachineModelProperties'
+[13:19:38] [INFO] utils/helpers/const_loader.js#85: Loaded Java class 'com.gregtechceu.gtceu.api.machine.multiblock.CleanroomType'
+[13:19:38] [INFO] utils/helpers/const_loader.js#89: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.part.CleaningMaintenanceHatchPartMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#92: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.part.FluidHatchPartMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#95: Loaded Java class 'com.gregtechceu.gtceu.api.machine.multiblock.LayeredWorkableElectricMultiblockMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#100: Loaded Java class 'com.gregtechceu.gtceu.utils.FormattingUtil'
+[13:19:38] [INFO] utils/helpers/const_loader.js#103: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.electric.research.OpticalComputationMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#106: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.part.EnergyHatchPartMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#107: Loaded Java class 'com.gregtechceu.gtceu.api.capability.recipe.IO'
+[13:19:38] [INFO] utils/helpers/const_loader.js#110: Loaded Java class 'com.gregtechceu.gtceu.common.machine.electric.ConverterMachine'
+[13:19:38] [INFO] utils/helpers/const_loader.js#111: Loaded Java class 'com.gregtechceu.gtceu.api.capability.compat.FeCompat'
+[13:19:38] [INFO] utils/helpers/const_loader.js#114: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey'
+[13:19:38] [INFO] utils/helpers/const_loader.js#115: Loaded Java class 'com.gregtechceu.gtceu.api.GTCEuAPI'
+[13:19:38] [INFO] Loaded script startup_scripts:utils/helpers/const_loader.js in 0.069 s
+[13:19:38] [INFO] Loaded script startup_scripts:utils/helpers/gt_helpers.js in 0.003 s
+[13:19:38] [INFO] utils/helpers/packmode.js#3: Loaded Java class 'dev.latvian.mods.kubejs.CommonProperties'
+[13:19:38] [INFO] Loaded script startup_scripts:utils/helpers/packmode.js in 0.0 s
+[13:19:38] [INFO] utils/helpers/ui_builder.js#3: Loaded Java class 'com.gregtechceu.gtceu.api.gui.editor.EditableMachineUI'
+[13:19:38] [INFO] utils/helpers/ui_builder.js#4: Loaded Java class 'com.gregtechceu.gtceu.api.gui.widget.SlotWidget'
+[13:19:38] [INFO] utils/helpers/ui_builder.js#5: Loaded Java class 'com.gregtechceu.gtceu.api.gui.widget.TankWidget'
+[13:19:38] [INFO] Loaded script startup_scripts:utils/helpers/ui_builder.js in 0.006 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/elements/helpers.js in 0.0 s
+[13:19:38] [INFO] common/elements_materials/material/helpers.js#3: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty'
+[13:19:38] [INFO] common/elements_materials/material/helpers.js#4: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty'
+[13:19:38] [INFO] common/elements_materials/material/helpers.js#5: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty'
+[13:19:38] [INFO] common/elements_materials/material/helpers.js#6: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty'
+[13:19:38] [INFO] common/elements_materials/material/helpers.js#7: Loaded Java class 'com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties'
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/material/helpers.js in 0.013 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/material/materials.js in 0.027 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ebf_lcr_parallel.js in 0.003 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/low_tier_parallel_hatches.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/pallaridium_casings.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:utils/extras/creative_tab.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:utils/extras/world_gen_layers.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:config.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/elements/netherite.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/elements/abydos.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/elements/modifications.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/elements/nether.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/elements/end.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/elements/extras.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/elements/nuclear.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/elements/gate.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/deprecated.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/gate_blocks.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/extras.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/stones.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/end_multis.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/superconductor_casings.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/nether_multis.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/stargate_casings.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/riftic_multis.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/abydos_multis.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/runic_casings.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/threading_casings.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/naquadah_casings.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/nyanium_casing.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/basic_casings.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/casings/large_cube_casings.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/structures.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/block_modifications.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/fusion.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/blocks/coils.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/solar/photovoltaic_cells.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/solar/energy_cores.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/misc/thermal_augments.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/misc/extras.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/misc/drinks.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/stargate/gate_materials.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/stargate/gate_components.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/stargate/misc.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/stargate/singularities.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/stargate/runic_platings.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/stargate/coordinate_crystals.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/geodes.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/nuclear_fuel_rods.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/misc.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/lines/draconic.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/lines/nether_stars.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/lines/deionized_water_aerogel.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/resource_generation/lines/akreyrium.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/voltage_coils.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/universal_circuits.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/circuit_components.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/circuits.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/circuit_chips.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/circuits_and_components/component_parts.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/progression/draconic.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/progression/riftic.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/progression/dimensional.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/items/progression/neutron_reflectors.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/effects/dimensional_debuffs.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/effects/drinks.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/objects/effects/nuclear.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/power/more_plasma_turbine.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/power/nuclear_reactor.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/runic_inscriber.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/stargate_component_assembly.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/quantum_compressor.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/large_rotor_machine.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/dimensional_finder.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/stargate_related_multiblocks/runic_circuitry_assembling_station.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/bacteria_synthesizer.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/dimensional_destabiliser.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/hydroponic_garden.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/composting_factory.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/greenhouse.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/tree_synthesizer.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/plants/industrial_fishery.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/geodes/rock_filtrator.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/geodes/rock_sifter.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/molten_destabalizer.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/large sieve/large_sieve.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/large sieve/mechanical_sieve.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/exotic_tectonic_formation_apparatus.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/industrial_barrel.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/akreyrium_line/abyssal_akreyriadix_stabilizer.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/akreyrium_line/folding_akreyrium_stabiliser.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/miners/void_extractor.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/miners/void_excavator.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/mystical_agriculture/essence_enchancer.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/resource_production/mystical_agriculture/essence_replication.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ae2/me_circuit_assembler.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/draco_infusion.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/primordial_infusion.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/incomprehensible_chemical_reactor.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/component_part_hub.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/true_synthesis_array.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/draco_circuit_assembly.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/omega_pressure_heat_chamber.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/ultimate_ebf.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/end_multis/atomic_materialization_plant.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/kaledoscopic_fractalizer.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/auroric_vacuum_isolation_reactor.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/riftion_injector.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/riftion_accelerator.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/komaru_modules.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/riftion_slammer.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/riftic_multis/ultimate_abs.js in 0.002 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/subatomic_particle_lattice_isolation_terminal.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/electro_magnetic_material_ripper.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/fermenting_arboreal_rejuvination_monstronsity.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/byteforce_unified_incomparable_logistics_depot.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/material_annihilation_array.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/multithreaded_component_synthesis_forge.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/aqueous_transformation_processing_center.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/yielding_excression_advanced_seperation_transformator.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/superior_particulate_isolation_nexus.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/molecular_inducing_xanadu.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/gravitational_compression_chamber.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/threaded_multis/ascendant_engraving_matrix.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/nether_multis/cryostate_quantum_chiller.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/nether_multis/mega_abs.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/nether_multis/super_compact_heat_chamber.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/pre_gate/catto_shrine.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/pre_gate/component_part_assembly.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/pre_gate/heat_chamber.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/pre_gate/vacuum_chemical_reaction_chamber.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/titan_forge.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/compact_assembly_line.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/cyclonic_sifter.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/manifold_centrifuge.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/component_nexus.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/injection_mixer.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/limitless_smelter.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/dual_chambered_vacuum_complex.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/advanced_synthesis_plant.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/exotic_gas_siphon.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/super_pressure_heat_chamber.js in 0.006 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/very_late_game_multis/abydos_multis/chemical_plant.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/Kiln.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/large_barrel.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/Steam_Kiln.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/large_farm.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/latex_plantation.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/High_Pressure_Steam_Hammer.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/large_stone_barrel.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/primitives/solid_blast_furnace.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/super_eof.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/steam_ore_factory.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/ore_processing_plant.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/electric_ore_factory.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/bulk_processing_array.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/ore factories/primitive_ore_factory.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/csg_helper.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_barrel.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/large_cubes.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_implosion_compressor.js in 0.002 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_cracker.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_gas_collector.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_cutter.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_vacuum_freezer.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_abs.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_ebf.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/intermediate_multiblocks/super_pyrolyse.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/chemical_builder.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/kinetic_box.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/nuclear_turbine.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/petrochemical_plant.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/heated_cracking_unit.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/large_greens_extractor.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/super_dynamo.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/meteorites/drone_pad.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/meteorites/docking_station.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/meteorites/deep_space_scanner.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/Filtrators/Electro_Kinetic_Filtrator.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/Filtrators/Kinetic_Filtrator.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/cobbleworks.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/pressure_heater.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/multiblocks/deprecated/primitive_alloy_smelter.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/high_amp_energy_converters.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/machine_io_changes.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/machine_recipe_type_changes.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/single_blocks/mystical_agricuture_machines.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/single_blocks/barrels/wooden_barrel.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/single_blocks/barrels/stone_barrel.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/single_blocks/advanced_composter.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/single_blocks/casket.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/single_blocks/ae2_machines.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/single_blocks/pulverizer.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/custom_hatches.js in 0.001 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/machines/high_amp_energy_hatches.js in 0.0 s
+[13:19:38] [INFO] Loaded script startup_scripts:common/elements_materials/material/wire_amperage_boost.js in 0.001 s
+[13:19:38] [INFO] Loaded 201/201 KubeJS startup scripts in 0.629 s with 0 errors and 0 warnings
+[13:19:39] [INFO] common/elements_materials/material/wire_amperage_boost.js#32: [Star Technology] Successfully upgraded amperage for 66 GregTech wire materials!
+[13:19:39] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#4: Loaded Java class 'com.gregtechceu.gtceu.common.data.machines.GTMultiMachines'
+[13:19:39] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#5: Loaded Java class 'com.gregtechceu.gtceu.common.data.GTRecipeModifiers'
+[13:19:39] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#6: Loaded Java class 'com.gregtechceu.gtceu.api.recipe.modifier.RecipeModifierList'
+[13:19:39] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#7: Loaded Java class 'com.gregtechceu.gtceu.common.data.GTBlocks'
+[13:19:39] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#8: Loaded Java class 'com.gregtechceu.gtceu.api.machine.multiblock.PartAbility'
+[13:19:39] [INFO] common/machines/low_tier_parallel_hatches.js#4: Loaded Java class 'com.gregtechceu.gtceu.common.machine.multiblock.part.ParallelHatchPartMachine'
+[13:19:39] [INFO] common/machines/low_tier_parallel_hatches.js#7: Loaded Java class 'net.minecraft.resources.ResourceLocation'
+[13:19:39] [INFO] common/machines/high_amp_energy_converters.js#25: Loaded Java class 'com.tterrag.registrate.util.nullness.NonNullBiConsumer'
+[13:21:06] [INFO] common/machines/multiblocks/ebf_lcr_parallel.js#188: Loaded Java class 'com.gregtechceu.gtceu.common.data.machines.GTAEMachines'
